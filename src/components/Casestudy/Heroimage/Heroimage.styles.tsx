@@ -1,23 +1,20 @@
 import styled from "styled-components";
-import image from "../../../images/ProjectFive.png"
 
-// type StyledImageProps = {
-//     image: string,
-//   }
 
-// export const StyledImage = styled.div<StyledImageProps>(({image})=>`
+type StyledImageProps = {
+    image: string,
+  }
 
-// `);
-
-export const StyledImage= styled.div`
-grid-column-start: 3;
+export const StyledImage = styled.div<StyledImageProps>(({image})=>`
+grid-column-start: 1;
 grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 2; 
-
-background-image:url(image);
-background-position: right;
+height: 456px;
+/* grid-row-start: 1;
+grid-row-end: 2;  */
+background-image:url(${image});
+background-position: center;
 background-repeat: no-repeat;
 background-size: contain; 
-background-color: #0E407E;
-`;
+background-color: #2D83D1;
+`);
+

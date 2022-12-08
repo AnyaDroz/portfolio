@@ -1,14 +1,16 @@
-import React from 'react'
-import Grid from '../../Grid/Grid'
+import React, { ReactPropTypes } from 'react'
+import { StyledProps } from 'styled-components'
+
 import {StyledImage} from "./Heroimage.styles"
+// import image from "../../../images/ProjectFive.png"
 
 
-const Heroimage = () => {
+
+const Heroimage = ({image}:any) => {
+  //shouldnt be any^
   return (
     <>
-    <Grid>
-    
-    </Grid>
+    <StyledImage image={image}/>
     </>
   )
 }
