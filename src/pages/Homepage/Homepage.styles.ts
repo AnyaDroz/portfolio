@@ -114,7 +114,7 @@ export const StyledFooter = styled.div`
     padding-bottom: 8px; 
     padding-left: 8px;
     padding-right: 8px;
-    font-family: TWKLausanne;
+    font-family:TWKLausanneLight;
     font-size: 23px;
     font-weight: 150;
 `;
@@ -164,11 +164,11 @@ export const StyledNavbar = styled.div`
     display: flex;
     justify-content: space-between;
     padding:10px;
-    font-family: TWKLausanne;
+    font-family:TWKLausanneLight;
     font-size: 18px;
     line-height: 140%;
-    font-weight: 150;
 `;
+
 export const StyledNavItems = styled.div`
     display: flex;
     justify-content: space-between;

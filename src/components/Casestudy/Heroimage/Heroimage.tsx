@@ -1,13 +1,13 @@
 import React, { ReactPropTypes } from 'react'
-import { StyledProps } from 'styled-components'
-
 import {StyledImage} from "./Heroimage.styles"
-// import image from "../../../images/ProjectFive.png"
 
 
+type HeroImageProps = {
+  image: string
+}
 
-const Heroimage = ({image}:any) => {
-  //shouldnt be any^
+
+const Heroimage = ({image}:HeroImageProps) => {
   return (
     <>
     <StyledImage image={image}/>

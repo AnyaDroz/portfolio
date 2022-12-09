@@ -6,7 +6,7 @@ const Grid = ({children}:PropsWithChildren) => {
   return (
    <StyledGrid>
      {children}
-    </StyledGrid>
+   </StyledGrid>
   )
 }
 
