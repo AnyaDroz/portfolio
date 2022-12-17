@@ -58,7 +58,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   background-repeat: no-repeat;
   background-size: contain;
   height: 400px;
-width: auto;
+    width: auto;
 `);
 
 export const StyledCaption = styled.div`

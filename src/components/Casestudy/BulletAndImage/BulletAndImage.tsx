@@ -53,8 +53,6 @@ const BulletAndImage = ({
             <Paragraph>{paragraphFour}</Paragraph>
         </StyledBulletFour>
         <StyledImage image={image}/>
-
-     
     </StyledGrid>
   )
 }

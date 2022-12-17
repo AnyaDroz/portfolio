@@ -26,9 +26,6 @@ grid-column-start: 1;
   background-repeat: no-repeat;
   background-size: contain;
 
-
- 
-
 `);
 
 export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`

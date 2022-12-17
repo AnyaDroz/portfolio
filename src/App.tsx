@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
-import Homepage from './components/Homepage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
 import Buyerupgrades from './pages/Buyerupgrades/Buyerupgrades';
 import Multitransactions from './pages/Multi-transactions/Multi-transactions';
 import InstantAccess from './pages/InstantAccess/InstantAccess';

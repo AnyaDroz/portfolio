@@ -100,7 +100,6 @@ const ModularPricing = () => {
     <SubHeading>What stops you from using iwocaPay on every transaction?</SubHeading>
     <Paragraph>Businesses requested card payments, subscription options, repeat invoices, milestone payments, card payments, more integrations and international payments to name a few.</Paragraph>
     <SingleImage fit={"cover"} height={500} marginTop={0} marginBottom={0} color={"#F9F9F9"} image={MPFinal}/>
-    
     </div>
   )
 }

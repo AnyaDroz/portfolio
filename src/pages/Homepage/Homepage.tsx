@@ -23,89 +23,72 @@ import {
     StyledFooterItemThree,
     StyledFooterItemFour,
     StyledCaseStudyOneActive,
+    StyledCaseStudyThreeActive
   } from "./Homepage.styles"
 
 
-import { useEffect, useState } from "react"
-
-
-const projects: Array<{name: string, defaultImage: string, ActiveImage: string}> = [
-  {
-    name: "Buyer Upgrades",
-    defaultImage: "",
-    ActiveImage: ""
-  }
-]
-
-
-
+import { useRef, useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 
 const Homepage = () => {
+  const firstContainerRef = useRef<any>(null);
+  const introContainerRef = useRef<any>(null);
+  const [positiony, setPositiony] = useState<any>(0)
+  const [positionx, setPositionx] = useState<any>(0)
+  const [differenceWidth, setdifferenceWidth] = useState<any>(0)
+  const [differenceHeight, setdifferenceHeight] = useState<any>(0)
+  const [introHeight, setintroHeight] = useState<any>(0)
+  let navigate = useNavigate();
 
- 
-    
-   const [positiony, setPositiony] = useState<any>(0)
-   const [positionx, setPositionx] = useState<any>(0)
-
+  const routeChange = (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Buyerupgrades`; 
+    navigate(path);
+  }
 
     const getPosition = (e: React.MouseEvent) => {
         const x = e.clientX
         const y = e.clientY
-        setPositiony(y)
-        setPositionx(x)
-   
-    }
+        setPositiony(y + window.scrollY)
+        setPositionx(x + window.scrollX)
+
+        const firstContainerWidth:number = firstContainerRef.current.getBoundingClientRect().width;
+        setdifferenceWidth(firstContainerWidth)
+        const firstContainerHeight:number = firstContainerRef.current.getBoundingClientRect().height;
+        setdifferenceHeight(firstContainerHeight)
+        const introHeight:number = introContainerRef.current.getBoundingClientRect().height;
+        setintroHeight(introHeight)
+      }
 
 
   return (
     <>
   <StyledMainContent onMouseMove={getPosition}>
-  <StyledCursorHorizontal positiony={positiony} />
-  <StyledCursorVertical positionx={positionx}/>
-  
-  <StyledNavbar>
-  <StyledIntro>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
+  <StyledCursorHorizontal positiony={positiony}/>
+  <StyledCursorVertical positionx={positionx} positiony={positiony}/>
+  <StyledNavbar ref={introContainerRef}>
+    <StyledIntro>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
   <StyledNavItems>
-      <StyledNavItemOne>/ work</StyledNavItemOne>
-      <StyledNavItemTwo>/ info</StyledNavItemTwo>
-      <StyledNavItemThree>/ code</StyledNavItemThree>
-      </StyledNavItems>
+    <StyledNavItemOne >/ work</StyledNavItemOne>
+    <StyledNavItemTwo>/ info</StyledNavItemTwo>
+    <StyledNavItemThree>/ code</StyledNavItemThree>
+    </StyledNavItems>
   </StyledNavbar>
-    
-   
-    
-   
-    
     <StyledGrid>
-    {/* {projects.map((item, index) => {
-        return (
-          <StyledCaseStudy
-          image={projects.DefaultImage}
-          />
-          <StyledCaseStudyActive
-          image={projects.ActiveImage}
-          position={position} 
-          positionx={positionx}
-          />
-        );
-      })} */}
-        <StyledCaseStudyOneEmpty>
-        </StyledCaseStudyOneEmpty>
-        <StyledCaseStudyOneActive positiony={positiony} positionx={positionx}>
-        </StyledCaseStudyOneActive>
-        
-        <StyledCaseStudyTwoEmpty>
-        </StyledCaseStudyTwoEmpty>
-        <StyledCaseStudyTwoActive positiony={positiony} positionx={positionx}>
-        </StyledCaseStudyTwoActive>
-
-
-        <StyledCaseStudyThreeEmpty>
-        </StyledCaseStudyThreeEmpty>
-
-
-        <StyledCaseStudyFourEmpty>
+      <StyledCaseStudyOneEmpty ref={firstContainerRef} onClick={routeChange}/>
+      <StyledCaseStudyOneActive 
+      positiony={positiony} 
+      positionx={positionx} 
+      introHeight={introHeight}
+      onClick={routeChange}
+      />
+      <StyledCaseStudyTwoEmpty/>
+      <StyledCaseStudyTwoActive differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyThreeEmpty/>
+      <StyledCaseStudyThreeActive differenceHeight={differenceHeight} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      
+      <StyledCaseStudyFourEmpty>
         </StyledCaseStudyFourEmpty>
         <StyledCaseStudyFiveEmpty>
         </StyledCaseStudyFiveEmpty>
