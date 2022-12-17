@@ -3,14 +3,15 @@ import {StyledImage} from "./Heroimage.styles"
 
 
 type HeroImageProps = {
-  image: string
+  image: string,
+  color: string
 }
 
 
-const Heroimage = ({image}:HeroImageProps) => {
+const Heroimage = ({image, color}:HeroImageProps) => {
   return (
     <>
-    <StyledImage image={image}/>
+    <StyledImage image={image} color={color}/>
     </>
   )
 }

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledDescriptionContainer = styled.div`
 margin-top:50px;
 grid-column-start: 2;
-grid-column-end: 10;
+grid-column-end: 8;
 margin-bottom: 80px;
 `;
 

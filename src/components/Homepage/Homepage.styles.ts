@@ -8,7 +8,7 @@ export const StyledNavbar = styled.div`
     display: flex;
     justify-content: space-between;
     padding:10px;
-    font-family: TWKLausanne;
+    font-family: TWKLausanneLight;
     font-size: 23px;
     line-height: 140%;
     font-weight: 150;
@@ -75,15 +75,6 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({position}
 
 
 
-
-// export const StyledImageOne = styled.img`
-//     margin: auto;
-//     max-width:50%;
-// `;
-
-
-
-
 export const StyledCaseStudyTwo = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
@@ -115,7 +106,7 @@ export const StyledCaseStudyFour = styled.div`
   background-color: #F9F9F9;
 `;
 export const StyledCaseStudyFive= styled.div`
-   grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
@@ -139,7 +130,7 @@ export const StyledFooter = styled.div`
     padding-bottom: 8px; 
     padding-left: 8px;
     padding-right: 8px;
-    font-family: TWKLausanne;
+    font-family: TWKLausanneLight;
     font-size: 23px;
     font-weight: 150;
 `;
