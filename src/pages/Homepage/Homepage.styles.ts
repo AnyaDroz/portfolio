@@ -9,6 +9,9 @@ import ProjectFour from "../../images/ProjectFour.png"
 import ProjectFourInitial from "../../images/ProjectFourInitial.svg"
 import ProjectFiveInitial from "../../images/ProjectFiveInitial.svg"
 import ProjectFive from "../../images/ProjectFive.png"
+import ProjectSix from "../../images/ProjectSix.png"
+import ProjectSixInitial from "../../images/ProjectSixInitial.svg"
+import Logo from "../../images/Logo.svg"
 
 export const StyledGrid = styled.div`
   display: grid;
@@ -190,7 +193,33 @@ export const StyledCaseStudySixEmpty= styled.div`
   grid-row-start: 5;
   grid-row-end: 6;
   background-color: #F9F9F9;
+  background-image:url(${ProjectSixInitial});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
+
+type StyledImageSixProps = {
+  positiony: number,
+  positionx: number,
+  differenceWidth: number,
+  introHeight: number,
+  differenceHeight: number,
+}
+
+export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+ grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-image:url(${ProjectSix});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #141414;
+  position: relative;
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony - (2 * differenceHeight) - introHeight - 16}px);
+`);
 
 export const StyledMainContent = styled.div`
 `;
@@ -205,6 +234,20 @@ export const StyledFooter = styled.div`
   font-size: 23px;
   font-weight: 150;
   
+`;
+
+type StyledLogoProps = {
+  image: string,
+}
+
+export const StyledLogo= styled.div`
+height: 20px;
+width:20px;
+margin: auto;
+  background-image:url(${Logo});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 export const StyledFooterItemTwo = styled.div` 
@@ -260,7 +303,6 @@ export const StyledNavbar = styled.div`
     font-size: 18px;
     line-height: 140%;
     height: 20px;
-    
 `;
 
 export const StyledNavItems = styled.div`
@@ -282,4 +324,6 @@ export const StyledNavItemThree = styled.div`
 
 export const StyledIntro= styled.div`
     max-width: 100%;
+    display: flexbox;
+    gap: 15px;
 `

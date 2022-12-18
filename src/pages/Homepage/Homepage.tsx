@@ -25,7 +25,9 @@ import {
     StyledFooterItemFour,
     StyledCaseStudyOneActive,
     StyledCaseStudyThreeActive,
-    StyledCaseStudyFiveActive
+    StyledCaseStudyFiveActive,
+    StyledCaseStudySixActive,
+    StyledLogo,
   } from "./Homepage.styles"
 
 
@@ -74,6 +76,12 @@ const Homepage = () => {
     navigate(path);
   }
 
+  const routeChangeSix= (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Hydra`; 
+    navigate(path);
+  }
+
     const getPosition = (e: React.MouseEvent) => {
         const x = e.clientX
         const y = e.clientY
@@ -109,7 +117,8 @@ const Homepage = () => {
   <StyledCursorHorizontal positiony={positiony}/>
   <StyledCursorVertical positionx={positionx} offset={offset}/>
   <StyledNavbar ref={introContainerRef}>
-    <StyledIntro>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
+    
+    <StyledIntro><StyledLogo/>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
   <StyledNavItems>
     <StyledNavItemOne >/ work</StyledNavItemOne>
     <StyledNavItemTwo>/ info</StyledNavItemTwo>
@@ -127,8 +136,8 @@ const Homepage = () => {
       <StyledCaseStudyFourActive onClick={routeChangeFour} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
       <StyledCaseStudyFiveEmpty onClick={routeChangeFive}/>
       <StyledCaseStudyFiveActive onClick={routeChangeFive} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
-        <StyledCaseStudySixEmpty>
-        </StyledCaseStudySixEmpty>
+      <StyledCaseStudySixEmpty onClick={routeChangeSix}/>
+      <StyledCaseStudySixActive onClick={routeChangeSix} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
     </StyledGrid>
     
     </StyledMainContent>
