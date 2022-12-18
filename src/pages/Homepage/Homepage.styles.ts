@@ -135,6 +135,7 @@ export const StyledCaseStudySixEmpty= styled.div`
 `;
 
 export const StyledMainContent = styled.div`
+  overflow-y: scroll;
 `;
 
 export const StyledFooter = styled.div`
@@ -146,6 +147,7 @@ export const StyledFooter = styled.div`
   font-family:TWKLausanneLight;
   font-size: 23px;
   font-weight: 150;
+  
 `;
 
 export const StyledFooterItemTwo = styled.div` 
@@ -177,11 +179,11 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony})
 
 type StyledLinedPropsV = {
   positionx: number,
-  positiony: number
+  offset: number
 }
 
-export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, positiony})=>`
-  top: ${positiony - window.innerHeight/2}px;
+export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, offset})=>`
+  top: ${offset}px;
   height:100vh;
   width: 1px; 
   position: absolute;

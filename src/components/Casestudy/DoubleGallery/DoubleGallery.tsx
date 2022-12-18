@@ -8,6 +8,8 @@ import {
     StyledImageFour,
     StyledImageFive,
     StyledImageSix, 
+    StyledImageSeven,
+    StyledImageEight,
 } from "./DoubleGallery.styles"
 
 
@@ -18,11 +20,13 @@ type GalleryProps ={
     imageFour: string,
     imageFive: string,
     imageSix: string,
+    imageSeven?: string,
+    imageEight?: string,
     color: string,
 }
 
 
-const DoubleGallery = ({imageOne,imageTwo, imageThree, imageFour, imageFive, imageSix, color}:GalleryProps) => {
+const DoubleGallery = ({imageOne,imageTwo, imageThree, imageFour, imageFive, imageSix, imageSeven, imageEight, color}:GalleryProps) => {
   return (
 <GalleryGrid color={color}>
         <StyledImageOne image={imageOne}/>
@@ -31,6 +35,8 @@ const DoubleGallery = ({imageOne,imageTwo, imageThree, imageFour, imageFive, ima
         <StyledImageFour image={imageFour}/>
         <StyledImageFive image={imageFive}/>
         <StyledImageSix image={imageSix}/>
+        {imageSeven ? <StyledImageSeven image={imageSeven}/> : ""}
+        {imageEight ? <StyledImageEight image={imageEight}/> : ""}
 </GalleryGrid>
   )
 }

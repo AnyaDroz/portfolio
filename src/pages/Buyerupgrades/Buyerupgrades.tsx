@@ -1,22 +1,29 @@
-import React from 'react'
+//components
 import Heroimage from '../../components/Casestudy/Heroimage/Heroimage'
-import BuyerProblemImage from "../../images/BuyerUpgradesInlineImage.png"
-import Hero from "../../images/BuyerupgradesHero.png"
 import Description from '../../components/Casestudy/Description/Description'
 import FullBleedGif from '../../components/Casestudy/FullBleedGif/FullBleedGif'
-import BuyerUpgradeGifOne from "../../images/Buyerupgradesgif01.gif"
-import BuyerCompetitorOne from "../../images/BuyerCompetitorOne.png"
-import BuyerCompetitorTwo from "../../images/BuyerCompetitorTwo.png"
-import BuyerCompetitorThree from "../../images/BuyerCompetitorThree.png"
 import TwoImages from '../../components/Casestudy/TwoImages/TwoImages'
-import BuyerChartOne from "../../images/BuyerChartOne.svg"
-import BuyerChartTwo from "../../images/BuyerChartTwo.svg"
 import SpacerMedium from "../../components/Casestudy/Spacers/SpacerMedium/SpacerMedium"
 import SpacerLarge from '../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge'
 import ImageAndText from '../../components/Casestudy/ImageAndText/ImageAndText'
+import DoubleGallery from "../../components/Casestudy/DoubleGallery/DoubleGallery"
+import SingleImage from '../../components/Casestudy/SingleImage/SingleImage'
+import SpacerXSmall from '../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall'
+import SpacerSmall from '../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall'
+import Heading from '../../components/Casestudy/TextSection/Heading/Heading'
+import Paragraph from '../../components/Casestudy/TextSection/Paragraph/Paragraph'
+import InlineImage from '../../components/Casestudy/TextSection/InlineImage/InlineImage'
+import SubHeading from '../../components/Casestudy/TextSection/SubHeading/SubHeading'
+import Quote from '../../components/Casestudy/TextSection/Quote/Quote'
+import Callout from '../../components/Casestudy/TextSection/CallOut/CallOut'
+//images
+import BuyerProblemImage from "../../images/BuyerUpgradesInlineImage.png"
+import Hero from "../../images/BuyerupgradesHero.png"
+import BuyerChartOne from "../../images/BuyerChartOne.svg"
+import BuyerChartTwo from "../../images/BuyerChartTwo.svg"
+import BuyerUpgradeGifOne from "../../images/Buyerupgradesgif01.gif"
 import BuyerResearchOne from "../../images/buyerresearchwall.png"
 import BuyerResearchTwo from "../../images/buyerresearchwalltwo.png"
-import DoubleGallery from "../../components/Casestudy/DoubleGallery/DoubleGallery"
 import BuyerWireframeOne from "../../images/BuyerWireframeOne.png"
 import BuyerWireframeTwo from "../../images/BuyerWireframeTwo.png"
 import BuyerWireframeThree from "../../images/BuyerWireframeThree.png"
@@ -25,8 +32,6 @@ import BuyerWireframeFive from "../../images/BuyerWireframeFive.png"
 import BuyerWireframeSix from "../../images/BuyerWireframeSix.png"
 import BuyerWireframeSeven from "../../images/BuyerWireframeSeven.png"
 import BuyerWireframeEight from "../../images/BuyerWireframeEight.png"
-import SingleImage from '../../components/Casestudy/SingleImage/SingleImage'
-import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png"
 import BuyerScreen from "../../images/BuyerScreen.png"
 import BuyerMobile from "../../images/BuyerMobile.png"
 import BuyerComponents from "../../images/BuyerComponents.png"
@@ -38,14 +43,9 @@ import HighFidelityFive from "../../images/HighFidelityFive.png"
 import HighFidelitySix from "../../images/HighFidelitySix.png"
 import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg"
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.svg"
-import SpacerXSmall from '../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall'
-import SpacerSmall from '../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall'
-import Heading from '../../components/Casestudy/TextSection/Heading/Heading'
-import Paragraph from '../../components/Casestudy/TextSection/Paragraph/Paragraph'
-import InlineImage from '../../components/Casestudy/TextSection/InlineImage/InlineImage'
-import SubHeading from '../../components/Casestudy/TextSection/SubHeading/SubHeading'
-import Quote from '../../components/Casestudy/TextSection/Quote/Quote'
-import Callout from '../../components/Casestudy/TextSection/CallOut/CallOut'
+import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png"
+
+
 
 const Buyerupgrades = () => {
   return (
@@ -54,7 +54,7 @@ const Buyerupgrades = () => {
       <Description companyName={"iwocaPay"} projectName={"Buyer Upgrades"} description={"Get sellers paid more by increasing usage of Pay Later"}/>
       <Heading>The problem</Heading><SpacerSmall/>
       <Callout>The seller’s customers, the buyers, aren’t utilising the Pay Later financing option, this means sellers aren’t seeing the growth benefit they expected.</Callout><SpacerSmall/>
-      <Paragraph>To date our key outcome was to simply Get sellers paid. ﻿The focus was on the activation phase of a model called the Product-Led Growth Flywheel.</Paragraph>
+      <Paragraph>To date our key outcome was to simply Get sellers paid. ﻿The focus was on the activation phase of a model called the Product-Led Growth Flywheel.</Paragraph><SpacerXSmall/>  
       <Paragraph>Now, our strategy is to encourage the beginners to adopt. The jobs to be done is: as a seller, I want to offer financing to enable customers to purchase more and often, so I can grow my business.</Paragraph><SpacerXSmall/>
       <Paragraph>In a nutshell, we need to increase buyer conversion on Pay Later, for sellers to engage with iwocaPay.</Paragraph><SpacerXSmall/>     
       <InlineImage image={BuyerProblemImage} imageHeight={300} imageWidth={300}/><SpacerLarge/>
@@ -81,20 +81,24 @@ const Buyerupgrades = () => {
       <Quote>“It depends how you'd normally pay them.  You never pay an invoice straightaway.  You always pay it later on the due date as it were.”</Quote><SpacerMedium/>
       <SubHeading>Mobilise the team</SubHeading><SpacerSmall/>
       <Paragraph>This was the first time we looked at the buyer side & it was important to get everyone’s perspectives and buy-in.  This first phase consisted of presenting all the research we had and running a quick fire round of How Might We’s based on the problem area of the checkout experience.</Paragraph><SpacerLarge/>
-      <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
+      {/* <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
           bulletPointOne={"➊ HMW reduce the cognitive load by aligning to a users existing mental models of a digital payment experience? "}
           bulletPointTwo={"➋ HMW convert the opportunists at the moment of a transaction to try Pay Later?"}
-          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/>
+          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/> */}
       <Heading>Low fidelity</Heading><SpacerSmall/>
       <Paragraph>After establishing our HMWs and evaluating the mental models our customers have around payments and payment terms - I worked on wire frames with ‘small but mighty’ changes that would address drop offs.</Paragraph><SpacerLarge/>
-      <DoubleGallery color={"#F9F9F9"} 
+      <DoubleGallery 
+      color={"#F9F9F9"} 
       imageOne={BuyerWireframeOne} 
       imageTwo={BuyerWireframeTwo} 
       imageThree={BuyerWireframeThree} 
       imageFour={BuyerWireframeFour} 
       imageFive={BuyerWireframeFive} 
       imageSix={BuyerWireframeSix} 
+      imageSeven={BuyerWireframeSeven}
+      imageEight={BuyerWireframeEight}
       />
+      <SpacerLarge/>
       <Heading>High Fidelity</Heading><SpacerXSmall/> 
       <Paragraph>We upgraded the checkout experience in two phases, the first focussed on small but impactful changes at the top of the funnel. The second release re-designed the ‘Pay Later’ flow and buyer sign up into a single page process.</Paragraph><SpacerLarge/> 
       <SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={BuyerBeforeAndAfter} color={"#2D83D1"}/><SpacerLarge/>

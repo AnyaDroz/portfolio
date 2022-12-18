@@ -13,3 +13,11 @@
   font-family: TWKLausanneHeavy;
   src: url("./fonts/TWKLausanne-600.woff2");
 }
+
+const size = {
+  mobileM: '425px', 
+}
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};

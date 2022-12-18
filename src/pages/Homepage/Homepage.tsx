@@ -27,7 +27,7 @@ import {
   } from "./Homepage.styles"
 
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 
 
@@ -39,6 +39,7 @@ const Homepage = () => {
   const [differenceWidth, setdifferenceWidth] = useState<any>(0)
   const [differenceHeight, setdifferenceHeight] = useState<any>(0)
   const [introHeight, setintroHeight] = useState<any>(0)
+  const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
 
   const routeChange = (e: React.MouseEvent) => { 
@@ -61,12 +62,27 @@ const Homepage = () => {
         setintroHeight(introHeight)
       }
 
+      useEffect(() => {
+        const onScroll = () => setOffset(window.pageYOffset);
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        console.log(offset)
+        
+        return () => window.removeEventListener('scroll', onScroll);
+        
+    }, []);
+
+
+    console.log(offset); 
+
 
   return (
+    
     <>
+    
   <StyledMainContent onMouseMove={getPosition}>
   <StyledCursorHorizontal positiony={positiony}/>
-  <StyledCursorVertical positionx={positionx} positiony={positiony}/>
+  <StyledCursorVertical positionx={positionx} offset={offset}/>
   <StyledNavbar ref={introContainerRef}>
     <StyledIntro>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
   <StyledNavItems>
