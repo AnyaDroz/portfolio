@@ -5,7 +5,10 @@ import ProjectTwoInitial from "../../images/ProjectTwoInitial.svg"
 import ProjectTwo from "../../images/ProjectTwo.png"
 import ProjectThreeInitial from "../../images/ProjectThreeInitial.svg"
 import ProjectThree from "../../images/ProjectThree.png"
-
+import ProjectFour from "../../images/ProjectFour.png"
+import ProjectFourInitial from "../../images/ProjectFourInitial.svg"
+import ProjectFiveInitial from "../../images/ProjectFiveInitial.svg"
+import ProjectFive from "../../images/ProjectFive.png"
 
 export const StyledGrid = styled.div`
   display: grid;
@@ -117,14 +120,69 @@ export const StyledCaseStudyFourEmpty = styled.div`
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: #F9F9F9;
+  background-image:url(${ProjectFourInitial});
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
+
+type StyledImageFourProps = {
+  positiony: number,
+  positionx: number,
+  differenceWidth: number,
+  introHeight: number,
+  differenceHeight: number,
+}
+
+export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image:url(${ProjectFour});
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFCC3D;
+  position:relative;
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony - differenceHeight - introHeight - 8}px, 0% ${positiony - differenceHeight - introHeight - 8}px);
+`);
+
+
+
 export const StyledCaseStudyFiveEmpty= styled.div`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
   background-color: #F9F9F9;
+  background-image:url(${ProjectFiveInitial});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
+
+type StyledImageFiveProps = {
+  positiony: number,
+  positionx: number,
+  differenceWidth: number,
+  introHeight: number,
+  differenceHeight: number,
+}
+
+export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+ grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-image:url(${ProjectFive});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #E29FBB;
+  position: relative;
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${positiony - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony - (2 * differenceHeight) - introHeight - 16}px);
+`);
 
 export const StyledCaseStudySixEmpty= styled.div`
   grid-column-start: 3;
@@ -135,7 +193,6 @@ export const StyledCaseStudySixEmpty= styled.div`
 `;
 
 export const StyledMainContent = styled.div`
-  overflow-y: scroll;
 `;
 
 export const StyledFooter = styled.div`
@@ -202,6 +259,8 @@ export const StyledNavbar = styled.div`
     font-family:TWKLausanneLight;
     font-size: 18px;
     line-height: 140%;
+    height: 20px;
+    
 `;
 
 export const StyledNavItems = styled.div`
@@ -222,5 +281,5 @@ export const StyledNavItemThree = styled.div`
 `;
 
 export const StyledIntro= styled.div`
-    max-width: 40%;
+    max-width: 100%;
 `

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const size = {
-    mobileM: '425px', 
+    mobileM: '768px', 
 }
   
 export const device = {

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -20,14 +20,18 @@ export const StyledBulletPoint = styled.div`
 `;
 
 export const StyledTextContainer = styled.div`
-   width: 220px;
+   width: 20vw;
    font-family:TWKLausanneLight;
     line-height: 150%;
     font-size: 16px;
     margin-top: 50px;
+
     @media ${device.mobileM} { 
       font-size: 14px;
-    width: 100%;
+    width: 90vw;
+    
+
+    padding-bottom: 16px;
   }
 `;
 
@@ -38,22 +42,26 @@ type StyledImageProps = {
 
 export const StyledImageContainerOne = styled.div<StyledImageProps>(({image})=>`
  
- height: 558px;
- width: 419px;
-  
+ height: 100vw;
+ width: 100vw;
+ margin: auto;
     background-image:url(${image});
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
     @media ${device.mobileM} { 
-      height: 500px;
-
+    
+      height: 100vw;
+ width: 100vw;
+ margin: auto;
   }
 `);
 
 export const StyledImageContainerTwo = styled.div<StyledImageProps>(({image})=>`
-  height: 558px;
-    width: 419px;
+
+height: 100vw;
+ width: 100vw;
+ margin: auto;
 
     background-image:url(${image});
     background-position: center;
@@ -61,7 +69,7 @@ export const StyledImageContainerTwo = styled.div<StyledImageProps>(({image})=>`
     background-size: contain; 
 
     @media ${device.mobileM} { 
-      height: 500px;
+ 
    
   }
 `);

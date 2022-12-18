@@ -65,7 +65,7 @@ const ModularPricing = () => {
     <Paragraph>A year later, we upgraded with the launch of a ‘Generic link’ - Sellers now have just one link they can reshare multiple times and get paid anywhere, by anyone.</Paragraph>
     <Paragraph>Today, we’ve acquired three different ways of generating Pay Links- but, we never took the time to explain the use cases for these within the dashboard, mainly because buyers always saw the same checkout on every link type before the release of modular pricing.</Paragraph>
     <Paragraph>Internally we started referring to them as 'The Generic link', 'The Custom Link' and 'The Pre-filled' link - there was still some work to do on how to present these to customers.</Paragraph>
-    <DoubleGallery 
+    {/* <DoubleGallery 
         color={"#F9F9F9"}
         imageOne={WireframeOne}
         imageTwo={WireframeTwo}
@@ -73,7 +73,8 @@ const ModularPricing = () => {
         imageFour={WireframeFour}
         imageFive={WireframeFive}
         imageSix={WireframeSix}
-        />
+       
+        /> */}
     <Heading>UserJourney</Heading>
     <Paragraph>There were several choices for how and when to showcase the pay link types and pricing options. The decision for this was made by imagining frequency of usage - the user will only ever have to understand this information once, so is best suited in an onboarding and FAQ.</Paragraph>
     <SingleImage fit={"contain"} height={800} marginTop={50} marginBottom={50} color={"#F9F9F9"} image={MPUserJourney}/>

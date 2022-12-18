@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -17,13 +17,14 @@ export const StyledContainerOne = styled.div<StyledContainerProps>(({color})=>`
   grid-column-start: 1;
   grid-column-end: 13;
   background-color: ${color};
+ 
 
 @media ${device.mobileM} { 
   grid-column-start: 1;
   grid-column-end: 25;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding: 20px;
+  
   }
 `);
 
@@ -32,13 +33,14 @@ export const StyledContainerTwo = styled.div<StyledContainerProps>(({color})=>`
   grid-column-start: 13;
   grid-column-end: 25;
   background-color: ${color};
+  
 
 @media ${device.mobileM} { 
   grid-column-start: 1;
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding: 20px;
+ 
 }`);
 
 type StyledImageProps = {

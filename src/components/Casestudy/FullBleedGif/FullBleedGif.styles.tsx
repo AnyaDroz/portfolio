@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -39,10 +39,7 @@ type StyledContainerProps = {
 export const StyledContainer = styled.div<StyledContainerProps>(({color})=>`
     background-color: ${color};
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
     justify-content: center;
-   
 `);
 
 

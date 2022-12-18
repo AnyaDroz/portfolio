@@ -23,12 +23,13 @@ type GalleryProps ={
     imageSeven?: string,
     imageEight?: string,
     color: string,
+    grid: any,
 }
 
 
-const DoubleGallery = ({imageOne,imageTwo, imageThree, imageFour, imageFive, imageSix, imageSeven, imageEight, color}:GalleryProps) => {
+const DoubleGallery = ({imageOne,imageTwo, imageThree, imageFour, imageFive, imageSix, imageSeven, imageEight, color, grid}:GalleryProps) => {
   return (
-<GalleryGrid color={color}>
+<GalleryGrid color={color} grid={grid}>
         <StyledImageOne image={imageOne}/>
         <StyledImageTwo image={imageTwo}/>
         <StyledImageThree image={imageThree}/>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -28,9 +28,8 @@ margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
-    height: 40vw;
-    background-size: contain;
-
+    height: 100vw;
+    width: 95vw;
   }
 `);
 
@@ -42,7 +41,13 @@ export const StyledContainer = styled.div<StyledBackgroundProps>(({color})=>`
     background-color: ${color};
     display: flexbox;
     width: 100vw;
-    justify-content: center;   
+    justify-content: center; 
+    
+    @media ${device.mobileM} { 
+    height: 100vw;
+    width: 95vw;
+    margin: auto;
+  }  
 `);
 
 

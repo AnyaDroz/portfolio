@@ -13,6 +13,7 @@ import {
     StyledCaseStudyTwoEmpty,
     StyledCaseStudyTwoActive,
     StyledCaseStudyThreeEmpty,
+    StyledCaseStudyFourActive,
     StyledCaseStudyFourEmpty,
     StyledCaseStudyFiveEmpty,
     StyledCaseStudySixEmpty,
@@ -23,7 +24,8 @@ import {
     StyledFooterItemThree,
     StyledFooterItemFour,
     StyledCaseStudyOneActive,
-    StyledCaseStudyThreeActive
+    StyledCaseStudyThreeActive,
+    StyledCaseStudyFiveActive
   } from "./Homepage.styles"
 
 
@@ -42,9 +44,33 @@ const Homepage = () => {
   const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
 
-  const routeChange = (e: React.MouseEvent) => { 
+  const routeChangeOne = (e: React.MouseEvent) => { 
     console.log("click")
     let path = `/Buyerupgrades`; 
+    navigate(path);
+  }
+
+  const routeChangeTwo = (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Multitransactions`; 
+    navigate(path);
+  }
+
+  const routeChangeThree = (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Instantaccess`; 
+    navigate(path);
+  }
+
+  const routeChangeFour = (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Modularpricing`; 
+    navigate(path);
+  }
+
+  const routeChangeFive = (e: React.MouseEvent) => { 
+    console.log("click")
+    let path = `/Quotes`; 
     navigate(path);
   }
 
@@ -67,7 +93,6 @@ const Homepage = () => {
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         console.log(offset)
-        
         return () => window.removeEventListener('scroll', onScroll);
         
     }, []);
@@ -92,22 +117,16 @@ const Homepage = () => {
     </StyledNavItems>
   </StyledNavbar>
     <StyledGrid>
-      <StyledCaseStudyOneEmpty ref={firstContainerRef} onClick={routeChange}/>
-      <StyledCaseStudyOneActive 
-      positiony={positiony} 
-      positionx={positionx} 
-      introHeight={introHeight}
-      onClick={routeChange}
-      />
-      <StyledCaseStudyTwoEmpty/>
-      <StyledCaseStudyTwoActive differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
-      <StyledCaseStudyThreeEmpty/>
-      <StyledCaseStudyThreeActive differenceHeight={differenceHeight} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
-      
-      <StyledCaseStudyFourEmpty>
-        </StyledCaseStudyFourEmpty>
-        <StyledCaseStudyFiveEmpty>
-        </StyledCaseStudyFiveEmpty>
+      <StyledCaseStudyOneEmpty ref={firstContainerRef} onClick={routeChangeOne}/>
+      <StyledCaseStudyOneActive positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeOne}/>
+      <StyledCaseStudyTwoEmpty onClick={routeChangeTwo}/>
+      <StyledCaseStudyTwoActive differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeTwo}/>
+      <StyledCaseStudyThreeEmpty onClick={routeChangeThree}/>
+      <StyledCaseStudyThreeActive onClick={routeChangeThree} differenceHeight={differenceHeight} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyFourEmpty onClick={routeChangeFour}/>
+      <StyledCaseStudyFourActive onClick={routeChangeFour} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyFiveEmpty onClick={routeChangeFive}/>
+      <StyledCaseStudyFiveActive onClick={routeChangeFive} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
         <StyledCaseStudySixEmpty>
         </StyledCaseStudySixEmpty>
     </StyledGrid>

@@ -20,8 +20,8 @@ function App() {
           <Route path="/code" index element={""} />
           <Route path="/Buyerupgrades" index element={<Buyerupgrades/>} />
           <Route path="/Multitransactions" index element={<Multitransactions/>} />
-          <Route path="/InstantAccess" index element={<InstantAccess/>} />
-          <Route path="/ModularPricing" index element={<ModularPricing/>} />
+          <Route path="/Instantaccess" index element={<InstantAccess/>} />
+          <Route path="/Modularpricing" index element={<ModularPricing/>} />
           <Route path="/Quotes" index element={<Quotes/>} />
           <Route path="Hydra" index element={<Hydra/>} />
         </Routes>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -10,15 +10,16 @@ export const device = {
 
 type StyledImageGallery = {
   color: string,
+  grid: any
 }
 
-export const GalleryGrid = styled.div<StyledImageGallery>(({color})=>`
+export const GalleryGrid = styled.div<StyledImageGallery>(({color, grid})=>`
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 40vw 40vw 40vw 40vw;
+  grid-template-rows: ${grid};
   background-color: ${color};
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 16px;
+  
 
   @media ${device.mobileM} { 
     grid-template-columns: 100%;
@@ -44,9 +45,10 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
   background-size: contain;
   margin-right: 8px;
   margin-left: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   margin-bottom: 16px;
-  box-sizing: border-box;
+  
+ 
 
   @media ${device.mobileM} { 
     grid-column-start: 1;
@@ -60,7 +62,7 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
     margin-left: 0px;
 }`)
 
-//border here^^
+//border
 
 
 
@@ -76,7 +78,7 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
   margin-left: 8px;
   margin-right: 16px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
 
   @media ${device.mobileM} { 
     grid-column-start: 1;
@@ -103,7 +105,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   background-size: contain; 
   margin-right: 8px;
   margin-left: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   margin-bottom: 16px;
 
   @media ${device.mobileM} { 
@@ -131,7 +133,7 @@ export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
   margin-right: 16px;
   margin-left: 8px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   
   @media ${device.mobileM} { 
     grid-column-start: 1;
@@ -158,7 +160,8 @@ export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
   margin-right: 8px;
   margin-left: 16px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
+
   @media ${device.mobileM} { 
     grid-column-start: 1;
   grid-column-end: 1;
@@ -184,7 +187,7 @@ export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
   margin-right: 16px;
   margin-left: 8px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   @media ${device.mobileM} { 
     grid-column-start: 1;
   grid-column-end: 1;
@@ -210,7 +213,7 @@ export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
   margin-right: 8px;
   margin-left: 16px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   
 
   @media ${device.mobileM} { 
@@ -238,7 +241,7 @@ export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
   margin-right: 16px;
   margin-left: 8px;
   margin-bottom: 16px;
-  border: #c6c6c6 1px solid;
+  filter: drop-shadow(0 0 1px #c6c6c6);
   @media ${device.mobileM} { 
     grid-column-start: 1;
   grid-column-end: 1;

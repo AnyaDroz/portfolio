@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '425px', 
+  mobileM: '768px', 
 }
 
 export const device = {
@@ -16,6 +16,7 @@ export const StyledGrid = styled.div`
 
   @media ${device.mobileM} { 
     column-gap: 2px;
+    row-gap: 8px;
     margin: 8px;
   }
 `;

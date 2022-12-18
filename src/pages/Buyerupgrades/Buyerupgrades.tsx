@@ -42,8 +42,9 @@ import HighFidelityFour from "../../images/HighFidelityFour.png"
 import HighFidelityFive from "../../images/HighFidelityFive.png"
 import HighFidelitySix from "../../images/HighFidelitySix.png"
 import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg"
-import BuyerResultsTwo from "../../images/BuyerResultsTwo.svg"
+import BuyerResults from "../../images/BuyerResult.svg"
 import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png"
+import { resolvePath } from 'react-router-dom'
 
 
 
@@ -53,12 +54,12 @@ const Buyerupgrades = () => {
       <Heroimage color={"#2D83D1"} image={Hero}></Heroimage>
       <Description companyName={"iwocaPay"} projectName={"Buyer Upgrades"} description={"Get sellers paid more by increasing usage of Pay Later"}/>
       <Heading>The problem</Heading><SpacerSmall/>
-      <Callout>The seller’s customers, the buyers, aren’t utilising the Pay Later financing option, this means sellers aren’t seeing the growth benefit they expected.</Callout><SpacerSmall/>
+      <Callout>The seller’s customers, the buyers, aren’t utilising the Pay Later financing option, this means sellers aren’t seeing the growth benefit they expected.</Callout><SpacerXSmall/>
+      {/* <InlineImage image={BuyerProblemImage} imageHeight={300} imageWidth={300}/><SpacerXSmall/> */}
       <Paragraph>To date our key outcome was to simply Get sellers paid. ﻿The focus was on the activation phase of a model called the Product-Led Growth Flywheel.</Paragraph><SpacerXSmall/>  
       <Paragraph>Now, our strategy is to encourage the beginners to adopt. The jobs to be done is: as a seller, I want to offer financing to enable customers to purchase more and often, so I can grow my business.</Paragraph><SpacerXSmall/>
-      <Paragraph>In a nutshell, we need to increase buyer conversion on Pay Later, for sellers to engage with iwocaPay.</Paragraph><SpacerXSmall/>     
-      <InlineImage image={BuyerProblemImage} imageHeight={300} imageWidth={300}/><SpacerLarge/>
-      <FullBleedGif color={"#F9F9F9"} width={720} height={452} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
+      <Paragraph>In a nutshell, we need to increase buyer conversion on Pay Later, for sellers to engage with iwocaPay.</Paragraph><SpacerLarge/>     
+      <FullBleedGif color={"white"} width={720} height={452} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
       <Heading>Competitors</Heading><SpacerXSmall/>
       <Paragraph>Trust & familiarity are connected, checkouts and banks build on users' existing mental models so that handling the money is a streamline experience. Taking a heuristic look at the interface of other B2B (& B2C) checkouts there are a few patterns worth noting.</Paragraph><SpacerMedium/>
       <SubHeading>White labelled</SubHeading><SpacerSmall/>
@@ -69,7 +70,7 @@ const Buyerupgrades = () => {
       <Paragraph>The entire process, regardless of how you pay, the process for card payments or BNPL are all completed on steps on the same page.</Paragraph><SpacerLarge/> 
       <Heading>Data</Heading><SpacerSmall/>
       <Paragraph>The number of Pay later transactions (our growth feature for sellers) isn’t going up - the majority of payments are through Pay now and for very small transaction values.</Paragraph><SpacerLarge/>
-      <TwoImages imageOne={BuyerChartOne} imageTwo={BuyerChartTwo} color={"#F9F9F9"}/><SpacerLarge/>
+      <TwoImages imageOne={BuyerChartOne} imageTwo={BuyerChartTwo} color={"white"}/><SpacerLarge/>
       <Heading>User insights</Heading><SpacerSmall/>
       <Paragraph>We already know, many businesses see the word interest  & immediately think debt, but we also know there is an opportunity to reframe this attitude & with the prevailance of BNPL in consumer transactions, it’s only  a matter of time before this becomes common place.</Paragraph><SpacerMedium/>
       <SubHeading>Debt Aversion</SubHeading><SpacerSmall/>
@@ -81,14 +82,15 @@ const Buyerupgrades = () => {
       <Quote>“It depends how you'd normally pay them.  You never pay an invoice straightaway.  You always pay it later on the due date as it were.”</Quote><SpacerMedium/>
       <SubHeading>Mobilise the team</SubHeading><SpacerSmall/>
       <Paragraph>This was the first time we looked at the buyer side & it was important to get everyone’s perspectives and buy-in.  This first phase consisted of presenting all the research we had and running a quick fire round of How Might We’s based on the problem area of the checkout experience.</Paragraph><SpacerLarge/>
-      <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
+      {/* <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
           bulletPointOne={"➊ HMW reduce the cognitive load by aligning to a users existing mental models of a digital payment experience? "}
           bulletPointTwo={"➋ HMW convert the opportunists at the moment of a transaction to try Pay Later?"}
-          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/>
+          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/> */}
       <Heading>Low fidelity</Heading><SpacerSmall/>
       <Paragraph>After establishing our HMWs and evaluating the mental models our customers have around payments and payment terms - I worked on wire frames with ‘small but mighty’ changes that would address drop offs.</Paragraph><SpacerLarge/>
       <DoubleGallery 
-      color={"#F9F9F9"} 
+      grid = {"40vw 40vw 40vw 40vw"}
+      color={"white"} 
       imageOne={BuyerWireframeOne} 
       imageTwo={BuyerWireframeTwo} 
       imageThree={BuyerWireframeThree} 
@@ -121,10 +123,10 @@ const Buyerupgrades = () => {
       <Paragraph>Users who move their cursor to close the window, or remain inactive will be asked their reason for leaving so we can learn more about drop-offs.</Paragraph><SpacerMedium/>
       <SubHeading>08 faq has exposed supporting information</SubHeading><SpacerSmall/>
       <Paragraph>The FAQ provides information without the user having to click on it.</Paragraph><SpacerLarge/>
-      <TwoImages color={"#2D83D1"} imageOne={BuyerScreen} imageTwo={BuyerMobile}/>
-      <SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={BuyerComponents} color={"#2D83D1"}/><SpacerLarge/>
+      <TwoImages color={"#2D83D1"} imageOne={BuyerScreen} imageTwo={BuyerMobile}/><SpacerXSmall/>
+      <SingleImage fit={"cover"} height={700} marginTop={0} marginBottom={0} image={BuyerComponents} color={"#2D83D1"}/><SpacerLarge/>
       <Heading>Release two</Heading><SpacerSmall/>
-      <Paragraph>The second release enables seller to ‘brand’ their checkout by adding a logo and changing the colours of CTAs and the visuals to match their websites. It consolidates all the ‘Pay Later’ steps into a single page checkout, to make the process more streamline, allow users to go back and forth between steps and feel less like a sign up.</Paragraph>
+      <Paragraph>The second release enables seller to ‘brand’ their checkout by adding a logo and changing the colours of CTAs and the visuals to match their websites. It consolidates all the ‘Pay Later’ steps into a single page checkout, to make the process more streamline, allow users to go back and forth between steps and feel less like a sign up.</Paragraph><SpacerLarge/>
         <DoubleGallery 
         color={"#2D83D1"}
         imageOne={HighFidelityOne}
@@ -133,15 +135,14 @@ const Buyerupgrades = () => {
         imageFour={HighFidelityFour}
         imageFive={HighFidelityFive}
         imageSix={HighFidelitySix}
-        />
-        <Heading>The result</Heading>
+        grid = {"30vw 30vw 30vw"}
+        /><SpacerLarge/>
+
+        <Heading>The result</Heading><SpacerSmall/>
         <Paragraph>It’s still early days... however, we we’ve released this checkout with one of our active B2B e-commerce merchants and here are some early indicators that the project has been successful.</Paragraph>
         <Paragraph>Our test merchant has processed almost 3x as much in volume through Pay later than Pay now.</Paragraph>
-          <TwoImages 
-          imageOne={BuyerResultsGraph} 
-          imageTwo={BuyerResultsTwo} 
-          color={"#F9F9F9"}/>
-          
+        <SpacerLarge/>
+        <SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={BuyerResults} color={"white"}/><SpacerLarge/>   
     </div>
   )
 }
