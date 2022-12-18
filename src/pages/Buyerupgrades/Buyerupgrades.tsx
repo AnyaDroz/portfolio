@@ -81,10 +81,10 @@ const Buyerupgrades = () => {
       <Quote>“It depends how you'd normally pay them.  You never pay an invoice straightaway.  You always pay it later on the due date as it were.”</Quote><SpacerMedium/>
       <SubHeading>Mobilise the team</SubHeading><SpacerSmall/>
       <Paragraph>This was the first time we looked at the buyer side & it was important to get everyone’s perspectives and buy-in.  This first phase consisted of presenting all the research we had and running a quick fire round of How Might We’s based on the problem area of the checkout experience.</Paragraph><SpacerLarge/>
-      {/* <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
+      <ImageAndText imageOne={BuyerResearchOne} imageTwo={BuyerResearchTwo} header={"Top three HMWs"}
           bulletPointOne={"➊ HMW reduce the cognitive load by aligning to a users existing mental models of a digital payment experience? "}
           bulletPointTwo={"➋ HMW convert the opportunists at the moment of a transaction to try Pay Later?"}
-          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/> */}
+          bulletPointThree={"➌ HMW improve the perceptions of security by leveraging on familiarity and the merchant sending the order?"}/><SpacerLarge/>
       <Heading>Low fidelity</Heading><SpacerSmall/>
       <Paragraph>After establishing our HMWs and evaluating the mental models our customers have around payments and payment terms - I worked on wire frames with ‘small but mighty’ changes that would address drop offs.</Paragraph><SpacerLarge/>
       <DoubleGallery 

@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+const size = {
+  mobileM: '425px', 
+}
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`, 
+};
+
 type StyledImageProps = {
     image: string,
     marginTop:number,
@@ -18,6 +26,12 @@ background-size: ${fit};
 position:relative;
 margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
+
+@media ${device.mobileM} { 
+    height: 40vw;
+    background-size: contain;
+
+  }
 `);
 
 type StyledBackgroundProps = {

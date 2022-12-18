@@ -1,6 +1,11 @@
 import styled from "styled-components"
+const size = {
+  mobileM: '425px', 
+}
 
-
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
 export const StyledHeader = styled.div`
     font-family:TWKLausanneHeavy;
@@ -20,6 +25,10 @@ export const StyledTextContainer = styled.div`
     line-height: 150%;
     font-size: 16px;
     margin-top: 50px;
+    @media ${device.mobileM} { 
+      font-size: 14px;
+    width: 100%;
+  }
 `;
 
 
@@ -36,6 +45,10 @@ export const StyledImageContainerOne = styled.div<StyledImageProps>(({image})=>`
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
+    @media ${device.mobileM} { 
+      height: 500px;
+
+  }
 `);
 
 export const StyledImageContainerTwo = styled.div<StyledImageProps>(({image})=>`
@@ -46,6 +59,11 @@ export const StyledImageContainerTwo = styled.div<StyledImageProps>(({image})=>`
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
+
+    @media ${device.mobileM} { 
+      height: 500px;
+   
+  }
 `);
 
 export const StyledImageContainer = styled.div`
@@ -55,6 +73,10 @@ justify-self: center;
 justify-content: center;  
 margin-top: 50px;
 margin-bottom: 50px;
+
+@media ${device.mobileM} { 
+  display: block;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -62,5 +84,9 @@ display: flexbox;
 gap: 10px;
 background-color:#F9F9F9;
 width: 100vw;
-justify-content: center;    
+justify-content: center; 
+
+@media ${device.mobileM} { 
+  display: block;
+  }
 `;
