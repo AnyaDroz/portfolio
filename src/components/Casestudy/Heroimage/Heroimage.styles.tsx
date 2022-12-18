@@ -8,13 +8,15 @@ export const device = {
   mobileM: `(max-width: ${size.mobileM})`,
 };
 
+//this is currently in every file ^^ doesn't seem right.
+
 type StyledImageProps = {
     image: string,
     color: string,
   }
 
 export const StyledImage = styled.div<StyledImageProps>(({image, color})=>`
-  height: 456px;
+  height: 500px;
   background-image:url(${image});
   background-position: center;
   background-repeat: no-repeat;

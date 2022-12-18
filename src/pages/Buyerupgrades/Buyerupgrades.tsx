@@ -58,7 +58,7 @@ const Buyerupgrades = () => {
       <Paragraph>Now, our strategy is to encourage the beginners to adopt. The jobs to be done is: as a seller, I want to offer financing to enable customers to purchase more and often, so I can grow my business.</Paragraph><SpacerXSmall/>
       <Paragraph>In a nutshell, we need to increase buyer conversion on Pay Later, for sellers to engage with iwocaPay.</Paragraph><SpacerXSmall/>     
       <InlineImage image={BuyerProblemImage} imageHeight={300} imageWidth={300}/><SpacerLarge/>
-      <FullBleedGif color={"#F9F9F9"} width={520} height={326} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
+      <FullBleedGif color={"#F9F9F9"} width={720} height={452} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
       <Heading>Competitors</Heading><SpacerXSmall/>
       <Paragraph>Trust & familiarity are connected, checkouts and banks build on users' existing mental models so that handling the money is a streamline experience. Taking a heuristic look at the interface of other B2B (& B2C) checkouts there are a few patterns worth noting.</Paragraph><SpacerMedium/>
       <SubHeading>White labelled</SubHeading><SpacerSmall/>

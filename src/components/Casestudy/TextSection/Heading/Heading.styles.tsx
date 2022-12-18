@@ -1,4 +1,11 @@
 import styled from "styled-components";
+const size = {
+    mobileM: '425px', 
+}
+  
+export const device = {
+    mobileM: `(max-width: ${size.mobileM})`, 
+};
 
 export const StyledHeading = styled.div`
     grid-column-start: 11;
@@ -7,4 +14,8 @@ export const StyledHeading = styled.div`
     line-height: 150%;
     font-size: 14px;
     text-transform: uppercase;
-`;
+
+@media ${device.mobileM} { 
+    grid-column-start: 1;
+    grid-column-end: 25; 
+}`;

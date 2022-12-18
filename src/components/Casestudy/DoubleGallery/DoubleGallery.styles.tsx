@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+const size = {
+  mobileM: '425px', 
+}
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`, 
+};
+
 type StyledImageGallery = {
   color: string,
 }
@@ -11,7 +19,15 @@ export const GalleryGrid = styled.div<StyledImageGallery>(({color})=>`
   background-color: ${color};
   padding-bottom: 40px;
   padding-top: 40px;
-`);
+
+  @media ${device.mobileM} { 
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 60vw);
+    gap: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}`);
+
 
 type StyledImageProps = {
     image: string,
@@ -30,7 +46,23 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
   margin-left: 16px;
   border: #c6c6c6 1px solid;
   margin-bottom: 16px;
-`);
+  box-sizing: border-box;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: auto;
+    height: 100%;
+    border: none;
+    margin-right: 0px;
+    margin-left: 0px;
+}`)
+
+//border here^^
+
+
 
 export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
   grid-column-start: 2;
@@ -45,7 +77,20 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
   margin-right: 16px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
-`);
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: auto;
+  height: 100%;
+  border: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  
+}`
+);
 
 export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   grid-column-start: 1;
@@ -60,6 +105,18 @@ export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   margin-left: 16px;
   border: #c6c6c6 1px solid;
   margin-bottom: 16px;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: auto;
+  height: 100%;
+  border: none;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 `);
 
 export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
@@ -75,6 +132,18 @@ export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
   margin-left: 8px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
+  
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: auto;
+  height: 100%;
+  border: none;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 `);
 
 export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
@@ -90,6 +159,17 @@ export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
   margin-left: 16px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: auto;
+  height: 100%;
+  border: none;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 `);
 
 export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
@@ -105,6 +185,17 @@ export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
   margin-left: 8px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  width: auto;
+  height: 100%;
+  border: none;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 `);
 
 export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
@@ -120,6 +211,19 @@ export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
   margin-left: 16px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
+  
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: auto;
+  height: 100%;
+  border: none;
+}
 `);
 
 export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
@@ -135,6 +239,17 @@ export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
   margin-left: 8px;
   margin-bottom: 16px;
   border: #c6c6c6 1px solid;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: auto;
+  height: 100%;
+  border: none;
+}
 `);
 
 
