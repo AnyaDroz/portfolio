@@ -28,8 +28,9 @@ margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
-    height: 100vw;
+    height: 200px;
     width: 95vw;
+    background-size: cover;
   }
 `);
 
@@ -44,8 +45,8 @@ export const StyledContainer = styled.div<StyledBackgroundProps>(({color})=>`
     justify-content: center; 
     
     @media ${device.mobileM} { 
-    height: 100vw;
-    width: 95vw;
+    /* height: 100vw;
+    width: 95vw; */
     margin: auto;
   }  
 `);

@@ -48,7 +48,7 @@ const Multitransactions = () => {
       <Heading>The problem</Heading><SpacerSmall/>
       <Callout>Buyers can only pay for a second invoice using Pay Later if they have paid off their first balance. This means iwocaPay is only really suitable for one-off invoices.</Callout><SpacerSmall/>
       <Paragraph>This stops potential buyers from completing the sign-up and puts-off sellers with a regular client base from joining iwocaPay. Additionally, competing B2B Pay Later players such as TreviPay, Tillit, Balance and Behalf all offer financing on recurring payments.</Paragraph><SpacerLarge/>
-    <SingleImage fit={"contain"} height={500} marginTop={0} marginBottom={0} color={"#F9F9F9"} image={MultiSingleImage}/><SpacerLarge/>
+    <SingleImage fit={"coVER"} height={500} marginTop={0} marginBottom={0} color={"#F9F9F9"} image={MultiSingleImage}/><SpacerLarge/>
     <Heading>Evidence</Heading><SpacerSmall/>
     <Paragraph>Data shows that the majority of businesses receive upto 10 invoices per month from upto 5 suppliers (a proportion of those being regular suppliers) it’s just not worthwhile to sign up for Pay later for only one of those transactions.</Paragraph><SpacerXSmall/>
     <Paragraph>By allowing multiple transactions for Pay later, there will be less friction to usage - both for buyers and sellers.</Paragraph><SpacerLarge/>
@@ -92,20 +92,20 @@ const Multitransactions = () => {
     <Heading>User Testing</Heading><SpacerSmall/>
     <Paragraph>We tested the designs with participants in user testing and with existing customers.</Paragraph><SpacerSmall/>
     <SubHeading>User Insight</SubHeading><SpacerXSmall/>
-    <Paragraph>Users found the dashboard intuitive and the account overview matched the information they wanted to see</Paragraph>
-    <Callout>“The dashboard clearly states my next payment, there’s a countdown, I can see what my balance is. How much of a remaining limit I have almost like a credit card...”</Callout>
-    <Callout>“Pretty simple and straightforward, everything in one dashboard, there’s nothing else I’d really want to see from there, that’s pretty straightforward.”</Callout>
-    <SubHeading>User Insight</SubHeading>
-    <Paragraph>Visuals support their understanding and add a little delight.</Paragraph>
-    <Quote>“I don’t really have any questions about this payment so far it all seems to make sense. The interest calculations do make sense as well, yeah they do make perfect sense, so no,it’s pretty easy to understand andI quite like the little graphic of the circle being filled..”</Quote>
-    <SubHeading>User Insight</SubHeading>
-    <Paragraph>Business owners couldn’t understand the schedules, and why there was interest included in the first month, as it states that the first 30 days are interest free on the payment terms.</Paragraph>
-    <Paragraph>The system is set up so that the repayments calculate to be equal, this makes it look like a mistake - which is a big friction point in financial products where trust is paramount</Paragraph>
+    <Paragraph>Users found the dashboard intuitive and the account overview matched the information they wanted to see</Paragraph><SpacerXSmall/>
+    <Quote>“The dashboard clearly states my next payment, there’s a countdown, I can see what my balance is. How much of a remaining limit I have almost like a credit card...”</Quote><SpacerXSmall/>
+    <Quote>“Pretty simple and straightforward, everything in one dashboard, there’s nothing else I’d really want to see from there, that’s pretty straightforward.”</Quote><SpacerSmall/>
+    <SubHeading>User Insight</SubHeading><SpacerXSmall/>
+    <Paragraph>Visuals support their understanding and add a little delight.</Paragraph><SpacerXSmall/>
+    <Quote>“I don’t really have any questions about this payment so far it all seems to make sense. The interest calculations do make sense as well, yeah they do make perfect sense, so no,it’s pretty easy to understand andI quite like the little graphic of the circle being filled..”</Quote><SpacerSmall/>
+    <SubHeading>User Insight</SubHeading><SpacerXSmall/>
+    <Paragraph>Business owners couldn’t understand the schedules, and why there was interest included in the first month, as it states that the first 30 days are interest free on the payment terms.</Paragraph><SpacerXSmall/>
+    <Paragraph>The system is set up so that the repayments calculate to be equal, this makes it look like a mistake - which is a big friction point in financial products where trust is paramount</Paragraph><SpacerLarge/>
     <FullBleedGif color={"white"} width={720} height={452} image={MultiGifTwo}></FullBleedGif><SpacerLarge/> 
-    <Heading>Reflection</Heading>
-    <Paragraph>Since this project, I’ve gained experience in both strategy and programming. If I could go back - I would descope the front-end build and think about what the smallest slice of delivery that could enable multiple transactions - infact the first version might not even need a custom built dashboard.</Paragraph>
-    <Paragraph>In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement. In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement.</Paragraph>
-    <Paragraph>For design - I would use more familiar patterns e.g. my choice in icons and clearer navigation so users can find information more easily.</Paragraph>
+    <Heading>Reflection</Heading><SpacerSmall/>
+    <Paragraph>Since this project, I’ve gained experience in both strategy and programming. If I could go back - I would descope the front-end build and think about what the smallest slice of delivery that could enable multiple transactions - infact the first version might not even need a custom built dashboard.</Paragraph><SpacerXSmall/>
+    <Paragraph>In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement. In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement.</Paragraph><SpacerXSmall/>
+    <Paragraph>For design - I would use more familiar patterns e.g. my choice in icons and clearer navigation so users can find information more easily.</Paragraph><SpacerLarge/>
     <FullBleedGif color={"white"} width={720} height={452} image={MultiGifThree}></FullBleedGif><SpacerLarge/> 
     <SingleImage fit={"contain"} height={500} marginTop={0} marginBottom={0} color={"#F9F9F9"} image={MTFinal}/>
     </div>
