@@ -43,7 +43,7 @@ import MultiGifThree from "../../images/MultiGThree.gif"
 const Multitransactions = () => {
   return (
     <div>
-    <Heroimage color={"#0E407E"} image={Hero}></Heroimage>
+    <Heroimage position={"center"} padding={0} color={"#0E407E"} image={Hero}></Heroimage>
       <Description companyName={"iwocaPay"} projectName={"Multi-transactions"} description={"Let buyers Pay later on multiple invoices at a time"}/>
       <Heading>The problem</Heading><SpacerSmall/>
       <Callout>Buyers can only pay for a second invoice using Pay Later if they have paid off their first balance. This means iwocaPay is only really suitable for one-off invoices.</Callout><SpacerSmall/>
@@ -85,7 +85,7 @@ const Multitransactions = () => {
     <TwoImages imageOne={HighFidOne} imageTwo={HighFidTwo} color={"#0E407E"}/><SpacerLarge/>
     <SubHeading>Onboarding</SubHeading><SpacerXSmall/>
     <Paragraph>A dismissable, walk through tour was created for users to take them through their new dashboard.</Paragraph><SpacerLarge/>
-    <FullBleedGif color={"white"} width={720} height={452} image={MultiGifOne}></FullBleedGif><SpacerLarge/> 
+    <FullBleedGif marginTop={0} marginBottom={0} color={"white"} width={720} height={452} image={MultiGifOne}></FullBleedGif><SpacerLarge/> 
     <SubHeading>Porgress indicators and Visualisations</SubHeading><SpacerXSmall/>
     <Paragraph>There is a lot of information that needs to be displayed for each invoice - rather than relying solely on copy I created a visual system for the types of payments a user could encounter.</Paragraph><SpacerLarge/>
     <LayoutOfThree color={"#0E407E"} imageOne={MTHighFidelOne} imageTwo={MTHighFidelTwo} imageThree={Visualisations}/><SpacerLarge/>
@@ -101,12 +101,12 @@ const Multitransactions = () => {
     <SubHeading>User Insight</SubHeading><SpacerXSmall/>
     <Paragraph>Business owners couldn’t understand the schedules, and why there was interest included in the first month, as it states that the first 30 days are interest free on the payment terms.</Paragraph><SpacerXSmall/>
     <Paragraph>The system is set up so that the repayments calculate to be equal, this makes it look like a mistake - which is a big friction point in financial products where trust is paramount</Paragraph><SpacerLarge/>
-    <FullBleedGif color={"white"} width={720} height={452} image={MultiGifTwo}></FullBleedGif><SpacerLarge/> 
+    <FullBleedGif marginTop={0} marginBottom={0} color={"white"} width={720} height={452} image={MultiGifTwo}></FullBleedGif><SpacerLarge/> 
     <Heading>Reflection</Heading><SpacerSmall/>
     <Paragraph>Since this project, I’ve gained experience in both strategy and programming. If I could go back - I would descope the front-end build and think about what the smallest slice of delivery that could enable multiple transactions - infact the first version might not even need a custom built dashboard.</Paragraph><SpacerXSmall/>
     <Paragraph>In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement. In terms of development, my knowledge in programming has taught me feasibility and in particular for this project - how using CSS grids could make complex layouts simpler to implement.</Paragraph><SpacerXSmall/>
     <Paragraph>For design - I would use more familiar patterns e.g. my choice in icons and clearer navigation so users can find information more easily.</Paragraph><SpacerLarge/>
-    <FullBleedGif color={"white"} width={720} height={452} image={MultiGifThree}></FullBleedGif><SpacerLarge/> 
+    <FullBleedGif marginTop={0} marginBottom={0} color={"white"} width={720} height={452} image={MultiGifThree}></FullBleedGif><SpacerLarge/> 
     <SingleImage fit={"contain"} height={500} marginTop={0} marginBottom={0} color={"#F9F9F9"} image={MTFinal}/>
     </div>
 

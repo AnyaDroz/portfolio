@@ -51,7 +51,7 @@ import { resolvePath } from 'react-router-dom'
 const Buyerupgrades = () => {
   return (
     <div>
-      <Heroimage color={"#2D83D1"} image={Hero}></Heroimage>
+      <Heroimage position={"center"} padding={40} color={"#2D83D1"} image={Hero}></Heroimage>
       <Description companyName={"iwocaPay"} projectName={"Buyer Upgrades"} description={"Get sellers paid more by increasing usage of Pay Later"}/>
       <Heading>The problem</Heading><SpacerSmall/>
       <Callout>The seller’s customers, the buyers, aren’t utilising the Pay Later financing option, this means sellers aren’t seeing the growth benefit they expected.</Callout><SpacerXSmall/>
@@ -59,7 +59,7 @@ const Buyerupgrades = () => {
       <Paragraph>To date our key outcome was to simply Get sellers paid. ﻿The focus was on the activation phase of a model called the Product-Led Growth Flywheel.</Paragraph><SpacerXSmall/>  
       <Paragraph>Now, our strategy is to encourage the beginners to adopt. The jobs to be done is: as a seller, I want to offer financing to enable customers to purchase more and often, so I can grow my business.</Paragraph><SpacerXSmall/>
       <Paragraph>In a nutshell, we need to increase buyer conversion on Pay Later, for sellers to engage with iwocaPay.</Paragraph><SpacerLarge/>     
-      <FullBleedGif color={"white"} width={720} height={452} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
+      <FullBleedGif marginTop={0} marginBottom={0} color={"white"} width={720} height={452} image={BuyerUpgradeGifOne}></FullBleedGif><SpacerLarge/> 
       <Heading>Competitors</Heading><SpacerXSmall/>
       <Paragraph>Trust & familiarity are connected, checkouts and banks build on users' existing mental models so that handling the money is a streamline experience. Taking a heuristic look at the interface of other B2B (& B2C) checkouts there are a few patterns worth noting.</Paragraph><SpacerMedium/>
       <SubHeading>White labelled</SubHeading><SpacerSmall/>
@@ -137,7 +137,6 @@ const Buyerupgrades = () => {
         imageSix={HighFidelitySix}
         grid = {"30vw 30vw 30vw"}
         /><SpacerLarge/>
-
         <Heading>The result</Heading><SpacerSmall/>
         <Paragraph>It’s still early days... however, we we’ve released this checkout with one of our active B2B e-commerce merchants and here are some early indicators that the project has been successful.</Paragraph>
         <Paragraph>Our test merchant has processed almost 3x as much in volume through Pay later than Pay now.</Paragraph>

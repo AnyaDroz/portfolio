@@ -85,7 +85,7 @@ const Homepage = () => {
     const getPosition = (e: React.MouseEvent) => {
         const x = e.clientX
         const y = e.clientY
-        setPositiony(y + window.scrollY)
+        setPositiony(y)
         setPositionx(x + window.scrollX)
 
         const firstContainerWidth:number = firstContainerRef.current.getBoundingClientRect().width;
@@ -101,20 +101,22 @@ const Homepage = () => {
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         console.log(offset)
+        setOffset(offset)
         return () => window.removeEventListener('scroll', onScroll);
         
     }, []);
 
 
     console.log(offset); 
+    console.log(positiony); 
 
 
   return (
     
     <>
-    
+
   <StyledMainContent onMouseMove={getPosition}>
-  <StyledCursorHorizontal positiony={positiony}/>
+  <StyledCursorHorizontal positiony={positiony} offset={offset}/>
   <StyledCursorVertical positionx={positionx} offset={offset}/>
   <StyledNavbar ref={introContainerRef}>
     
@@ -127,17 +129,17 @@ const Homepage = () => {
   </StyledNavbar>
     <StyledGrid>
       <StyledCaseStudyOneEmpty ref={firstContainerRef} onClick={routeChangeOne}/>
-      <StyledCaseStudyOneActive positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeOne}/>
+      <StyledCaseStudyOneActive offset={offset} positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeOne}/>
       <StyledCaseStudyTwoEmpty onClick={routeChangeTwo}/>
-      <StyledCaseStudyTwoActive differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeTwo}/>
+      <StyledCaseStudyTwoActive offset={offset} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight} onClick={routeChangeTwo}/>
       <StyledCaseStudyThreeEmpty onClick={routeChangeThree}/>
-      <StyledCaseStudyThreeActive onClick={routeChangeThree} differenceHeight={differenceHeight} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyThreeActive offset={offset} onClick={routeChangeThree} differenceHeight={differenceHeight} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
       <StyledCaseStudyFourEmpty onClick={routeChangeFour}/>
-      <StyledCaseStudyFourActive onClick={routeChangeFour} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyFourActive offset={offset} onClick={routeChangeFour} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
       <StyledCaseStudyFiveEmpty onClick={routeChangeFive}/>
-      <StyledCaseStudyFiveActive onClick={routeChangeFive} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudyFiveActive offset={offset} onClick={routeChangeFive} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
       <StyledCaseStudySixEmpty onClick={routeChangeSix}/>
-      <StyledCaseStudySixActive onClick={routeChangeSix} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
+      <StyledCaseStudySixActive offset={offset} onClick={routeChangeSix} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positiony={positiony} positionx={positionx} introHeight={introHeight}/>
     </StyledGrid>
     
     </StyledMainContent>

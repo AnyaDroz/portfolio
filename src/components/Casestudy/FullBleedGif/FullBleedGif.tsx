@@ -6,12 +6,14 @@ type FullBleedProps = {
     width: number, 
     height: number,
     color: string,
+    marginTop: number, 
+    marginBottom: number
   }
 
-const FullBleedGif = ({color, image, width, height}:FullBleedProps) => {
+const FullBleedGif = ({color, image, width, height, marginTop, marginBottom}:FullBleedProps) => {
   return (
     <StyledContainer color={color}>
-      <StyledImage image={image} width={width} height={height}/>
+      <StyledImage marginTop={marginTop} marginBottom={marginBottom} image={image} width={width} height={height}/>
     </StyledContainer>
   )
 }

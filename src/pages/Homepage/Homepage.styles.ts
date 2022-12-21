@@ -35,9 +35,10 @@ type StyledImageProps = {
   positiony: number,
   positionx: number,
   introHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony, positionx, introHeight})=>`
+export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony, positionx, introHeight, offset})=>`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -48,7 +49,7 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony
   background-size: contain;
   background-color: #2D82D1;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony - introHeight}px, 0% ${positiony - introHeight}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
 `);
 
 export const StyledCaseStudyTwoEmpty = styled.div`
@@ -67,10 +68,11 @@ type StyledImageTwoProps = {
   positiony: number,
   positionx: number,
   differenceWidth: number,
-  introHeight: number
+  introHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differenceWidth, positiony, positionx, introHeight})=>`
+export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differenceWidth, offset, positiony, positionx, introHeight})=>`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -81,7 +83,7 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differ
   background-size: contain;
   background-color: #0E407E;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony - introHeight}px, 0% ${positiony - introHeight}px);
+  clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
 `);
 
 export const StyledCaseStudyThreeEmpty = styled.div`
@@ -100,10 +102,11 @@ type StyledImageThreeProps = {
   positiony: number,
   positionx: number,
   differenceHeight: number,
-  introHeight: number
+  introHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({positiony, positionx, differenceHeight, introHeight})=>`
+export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({positiony, positionx, differenceHeight, introHeight, offset})=>`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -114,7 +117,7 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({po
   background-size: contain;
   background-color: #33885B;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony - differenceHeight - introHeight - 8}px, 0% ${positiony - differenceHeight - introHeight - 8}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - differenceHeight - introHeight - 8}px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
 `);
 
 export const StyledCaseStudyFourEmpty = styled.div`
@@ -135,9 +138,10 @@ type StyledImageFourProps = {
   differenceWidth: number,
   introHeight: number,
   differenceHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({positiony, positionx, offset, differenceWidth, introHeight, differenceHeight})=>`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -148,7 +152,7 @@ export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({posi
   background-size: contain;
   background-color: #FFCC3D;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony - differenceHeight - introHeight - 8}px, 0% ${positiony - differenceHeight - introHeight - 8}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - differenceHeight - introHeight - 8}px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
 `);
 
 
@@ -171,9 +175,10 @@ type StyledImageFiveProps = {
   differenceWidth: number,
   introHeight: number,
   differenceHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({positiony, positionx, differenceWidth, offset, introHeight, differenceHeight})=>`
  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
@@ -184,7 +189,7 @@ export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({posi
   background-size: contain;
   background-color: #E29FBB;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${positiony - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony - (2 * differenceHeight) - introHeight - 16}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px);
 `);
 
 export const StyledCaseStudySixEmpty= styled.div`
@@ -194,7 +199,7 @@ export const StyledCaseStudySixEmpty= styled.div`
   grid-row-end: 6;
   background-color: #F9F9F9;
   background-image:url(${ProjectSixInitial});
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
 `;
@@ -205,20 +210,21 @@ type StyledImageSixProps = {
   differenceWidth: number,
   introHeight: number,
   differenceHeight: number,
+  offset: number,
 }
 
-export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(({positiony, positionx, differenceWidth, introHeight, differenceHeight})=>`
+export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(({positiony, offset, positionx, differenceWidth, introHeight, differenceHeight})=>`
  grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 6;
   background-image:url(${ProjectSix});
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #141414;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony - (2 * differenceHeight) - introHeight - 16}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px);
 `);
 
 export const StyledMainContent = styled.div`
@@ -263,15 +269,16 @@ export const StyledFooterItemFour = styled.div`
 `;
 
 type StyledLinedProps = {
-  positiony: number
+  positiony: number,
+  offset: number
 }
 
-export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony})=>`
+export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony, offset})=>`
   height: 1px;
   width: 100%; 
   background-color: red;
   position: absolute;
-  top: ${positiony}px;
+  top: ${positiony + offset}px;
   z-index:1;
   pointer-events: none; 
 `);
@@ -279,7 +286,8 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony})
 
 type StyledLinedPropsV = {
   positionx: number,
-  offset: number
+  offset: number,
+
 }
 
 export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, offset})=>`

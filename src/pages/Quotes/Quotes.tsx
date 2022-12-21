@@ -28,24 +28,26 @@ import FourByFourGrid from '../../components/Casestudy/FourByFourGrid/FourByFour
 import QuotesHighTwo from "../../images/QuotesHighTwo.png"
 import QuotesHighThree from "../../images/QuotesHighThree.png"
 import QuotesHighFour from "../../images/QuotesHighFour.png"
-
+import SpacerMedium from '../../components/Casestudy/Spacers/SpacerMedium/SpacerMedium'
+import SpacerSmall from '../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall'
+import SpacerXSmall from '../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall'
+import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge"
 
 const Quotes = () => {
   return (
 <div>
-    <Heroimage color={"#E29FBB"} image={QuotesHero}></Heroimage>
+    <Heroimage position={"bottom"} padding={40} color={"#E29FBB"} image={QuotesHero}></Heroimage>
     <Description companyName={"iwoca"} projectName={"Quotes"} description={"Providing choice, early on."}/>
-    <Heading>The problem</Heading>
-    <Callout>A customer applying for financing has no indication of what options are available</Callout>
-    <Paragraph>Currently, a customer applying for financing has no indication of what options are available, or what they might be eligible for, until they have completed a full application.</Paragraph>
-    <Paragraph>Additionally, the online signup only presents the Flexi-loan, which means customers are never exposed to the other products unless they contact someone or search the website.</Paragraph>     
-    <SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={QuotesHighFid} color={"#F9F9F9"}/>
-    <Heading>Hypothesis</Heading>
-    <Paragraph>More customers will be willing to apply knowing what they are eligible for and how much it will cost. Fewer customers will drop-off if the quote matches the final offer - and by providing choice, we can serve more customers’ needs.</Paragraph>
-    <InlineImage image={QuoteGraph} imageHeight={208} imageWidth={469}/>
-    <Paragraph>The decline does not reflect the first funding increase across Funding Options portfolio (+13.1%) - we believe we lost share to just Cashflow and Esme, in part because they give customers instant, accurate quotes.</Paragraph>
-    <Paragraph>Think Business: “it's about providing the customer certainty as early as possible”</Paragraph>
-    //userjourney
+    <Heading>The problem</Heading><SpacerSmall/>
+    <Callout>A customer applying for financing has no indication of what options are available</Callout><SpacerSmall/>
+    <Paragraph>Currently, a customer applying for financing has no indication of what options are available, or what they might be eligible for, until they have completed a full application.</Paragraph><SpacerSmall/>
+    <Paragraph>Additionally, the online signup only presents the Flexi-loan, which means customers are never exposed to the other products unless they contact someone or search the website.</Paragraph><SpacerLarge/>  
+    <SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={QuotesHighFid} color={"#F9F9F9"}/><SpacerLarge/>
+    <Heading>Hypothesis</Heading><SpacerSmall/>
+    <Paragraph>More customers will be willing to apply knowing what they are eligible for and how much it will cost. Fewer customers will drop-off if the quote matches the final offer - and by providing choice, we can serve more customers’ needs.</Paragraph><SpacerMedium/>
+    <InlineImage image={QuoteGraph} imageHeight={208} imageWidth={469}/><SpacerMedium/>
+    <Paragraph>The decline does not reflect the first funding increase across Funding Options portfolio (+13.1%) - we believe we lost share to just Cashflow and Esme, in part because they give customers instant, accurate quotes.</Paragraph><SpacerSmall/>
+    <Paragraph>Think Business: “it's about providing the customer certainty as early as possible”</Paragraph><SpacerLarge/>
     <BulletAndImage 
     headingOne={"➊ Eligibility indicators"}
     paragraphOne={"Our customers receive no feedback until after entering all their personal and company details, and many would have to upload documents before any indication. The customer will be able to know within three questions if they should continue."}
@@ -55,26 +57,26 @@ const Quotes = () => {
     paragraphThree={"The customer will be able to know the exact price + limits before having to submit documents. They will have a detailed understanding of how each product works."}
     headingFour={"➍ Distinct and tailored products"} 
     paragraphFour={"The customer will be able to understand how our products fit different needs, that the price isn’t just for the amount that you borrow and to make the selection easy and calculator-less and pain-less."} 
-    image={QuotesUserJourney}/>
-    <Heading>The UI and information architecture</Heading>
-    <Paragraph>Loans are difficult to imagine in real-life as tangible products. By representing them as an experience using paper-feel details it relates finance to the world we live in - creating the impression of an experience.</Paragraph>
-    <InlineImage image={QuotesIA} imageHeight={420} imageWidth={681}/>
+    image={QuotesUserJourney}/><SpacerLarge/>
+    <Heading>The UI and information architecture</Heading><SpacerSmall/>
+    <Paragraph>Loans are difficult to imagine in real-life as tangible products. By representing them as an experience using paper-feel details it relates finance to the world we live in - creating the impression of an experience.</Paragraph><SpacerMedium/>
+    <InlineImage image={QuotesIA} imageHeight={420} imageWidth={681}/><SpacerMedium/>
     <Heading>01 First impressions</Heading>
-    <Paragraph>Peaks interest, delights and should be memorable.</Paragraph>
+    <Paragraph>Peaks interest, delights and should be memorable.</Paragraph><SpacerXSmall/>
     <Heading>02 What they asked for</Heading>
-    <Paragraph>Encourage thinking of loans as use cases.</Paragraph>
+    <Paragraph>Encourage thinking of loans as use cases.</Paragraph><SpacerXSmall/>
     <Heading>03 It’s affordable</Heading>
-    <Paragraph>Not only is it affordable, it’s free to repay early.</Paragraph>
+    <Paragraph>Not only is it affordable, it’s free to repay early.</Paragraph><SpacerXSmall/>
     <Heading>04 The facts</Heading>
-    <Paragraph>It’s trustworthy and a serious consideration.</Paragraph>
+    <Paragraph>It’s trustworthy and a serious consideration.</Paragraph><SpacerXSmall/>
     <Heading>05 Options</Heading>
-    <Paragraph>Make it easy, but also give them choice.</Paragraph>
+    <Paragraph>Make it easy, but also give them choice.</Paragraph><SpacerXSmall/>
     <Heading>06 Impact and value</Heading>
-    <Paragraph>Reinforcing the summary in more detail.</Paragraph>
+    <Paragraph>Reinforcing the summary in more detail.</Paragraph><SpacerXSmall/>
     <Heading>07 The true cost</Heading>
-    <Paragraph>Why interest rates aren’t that important.</Paragraph>
+    <Paragraph>Why interest rates aren’t that important.</Paragraph><SpacerXSmall/>
     <Heading>08 About us and reviews</Heading>
-    <Paragraph>How we compare to banks and who we have helped.</Paragraph>
+    <Paragraph>How we compare to banks and who we have helped.</Paragraph><SpacerLarge/>
     <TripleGallery
     color={"#F9F9F9"}
     imageOne={QuotesWireframeOne}
@@ -82,25 +84,23 @@ const Quotes = () => {
     imageThree={QuotesWireframeThree}
     imageFour={QuotesWireframeFour}
     imageFive={QuotesWireframeFive}
-    imageSix={QuotesWireframeSix}/>
-    <Heading>High Fidelity</Heading>
+    imageSix={QuotesWireframeSix}/><SpacerLarge/>
+    <Heading>High Fidelity</Heading><SpacerSmall/>
     <Paragraph>I created custom iwoca loan illustrations and visualisations to demonstrate how the loans work and which use cases they’re suitable for. 
 iwoca is a team of talented and quirky individuals who see small businesses as people first and foremost - we wanted to design human and joyful experiences.</Paragraph>
-{/* <FullBleedGif color={"#F9F9F9"} image={"test"} width={830} height={519}/> */}
-//gif
-<Heading>Testing</Heading>
-<Paragraph>Participants rated the memorability of the products 4 / 5 & they valued the well-thought out copy 'I actually think the text is really good and communicated very well' and 'the text was really well put together'.</Paragraph>
-<SubHeading>What do you think about the options presented?</SubHeading>
-<Paragraph>Users were surprised, but reacted positively, to have a final offer alongside the quotes.</Paragraph>
-<Quote>"most of our work is done custom for the client - so we would use the custom link"</Quote>
-<Quote>"the Payment button is far superior - were sometimes dealing with shopkeepers who arent tech savy"</Quote>
-<SubHeading>What Pricing would you set and why?</SubHeading>
-<Paragraph>Visuals support their understanding and add a little delight.</Paragraph>
-<Quote>"I haven’t really have thought about this I’m not sure which I’d use - we’d probably want to experiment. I like the idea of asking the customer to pay the fees - but if they can’t pay the fees - we can provide some added value."</Quote>
-<SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={QuotesMobileSingle} color={"#F9F9F9"}/>
-<Heading>On reflection</Heading>
-<Paragraph>After implementaton there was a significant increase in both conversion rate (by 2%) and the speed of onboarding (it took on average under a day, compared to a week prior to the release).</Paragraph>
-<Paragraph>There was an even bigger impact for our ops & sales team who no longer had to explain the benefits of the product or manually onboard every merchant.</Paragraph>
+<Heading>Testing</Heading><SpacerSmall/>
+<Paragraph>Participants rated the memorability of the products 4 / 5 & they valued the well-thought out copy 'I actually think the text is really good and communicated very well' and 'the text was really well put together'.</Paragraph><SpacerSmall/>
+<SubHeading>What do you think about the options presented?</SubHeading><SpacerXSmall/>
+<Paragraph>Users were surprised, but reacted positively, to have a final offer alongside the quotes.</Paragraph><SpacerXSmall/>
+<Quote>"most of our work is done custom for the client - so we would use the custom link"</Quote><SpacerXSmall/>
+<Quote>"the Payment button is far superior - were sometimes dealing with shopkeepers who arent tech savy"</Quote><SpacerSmall/>
+<SubHeading>What Pricing would you set and why?</SubHeading><SpacerXSmall/>
+<Paragraph>Visuals support their understanding and add a little delight.</Paragraph><SpacerXSmall/>
+<Quote>"I haven’t really have thought about this I’m not sure which I’d use - we’d probably want to experiment. I like the idea of asking the customer to pay the fees - but if they can’t pay the fees - we can provide some added value."</Quote><SpacerLarge/>
+<SingleImage fit={"contain"} height={500} marginTop={50} marginBottom={50} image={QuotesMobileSingle} color={"#F9F9F9"}/><SpacerLarge/>
+<Heading>On reflection</Heading><SpacerSmall/>
+<Paragraph>After implementaton there was a significant increase in both conversion rate (by 2%) and the speed of onboarding (it took on average under a day, compared to a week prior to the release).</Paragraph><SpacerXSmall/>
+<Paragraph>There was an even bigger impact for our ops & sales team who no longer had to explain the benefits of the product or manually onboard every merchant.</Paragraph><SpacerLarge/>
 //gif
 <FourByFourGrid imageOne={QuotesHighOne} imageTwo={QuotesHighTwo} imageThree={QuotesHighThree} imageFour={QuotesHighFour} color={"#E29FBB"}/>
 </div>

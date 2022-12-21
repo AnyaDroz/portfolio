@@ -2,13 +2,15 @@ import {StyledImage, StyledContainer} from "./Heroimage.styles"
 
 type HeroImageProps = {
   image: string,
-  color: string
+  color: string,
+  padding: number,
+  position: string,
 }
 
-const Heroimage = ({image, color}:HeroImageProps) => {
+const Heroimage = ({image, color, padding, position}:HeroImageProps) => {
   return (
-    <StyledContainer color={color}>
-    <StyledImage image={image} color={color}/>
+    <StyledContainer padding={padding} color={color}>
+    <StyledImage position={position} image={image} color={color}/>
     </StyledContainer>
   )
 }

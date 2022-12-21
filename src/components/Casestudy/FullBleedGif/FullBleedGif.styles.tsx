@@ -12,9 +12,11 @@ type StyledImageProps = {
     image: string,
     width: number, 
     height: number,
+    marginTop: number,
+    marginBottom: number
   }
 
-export const StyledImage = styled.div<StyledImageProps>(({image, width, height})=>`
+export const StyledImage = styled.div<StyledImageProps>(({image, width, height, marginTop, marginBottom})=>`
 margin: auto;
 width: ${width}px;
 height: ${height}px;
@@ -26,6 +28,8 @@ position: relative;
 border-radius: 16px;
 outline: 5px solid black;
 outline-offset: -4px;
+margin-top: ${marginTop}px;
+margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
   width: ${width * 0.5}px;

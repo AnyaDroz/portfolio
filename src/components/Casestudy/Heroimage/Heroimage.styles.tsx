@@ -13,12 +13,13 @@ export const device = {
 type StyledImageProps = {
     image: string,
     color: string,
+    position: string,
   }
 
-export const StyledImage = styled.div<StyledImageProps>(({image, color})=>`
+export const StyledImage = styled.div<StyledImageProps>(({image, color, position})=>`
   height: 500px;
   background-image:url(${image});
-  background-position: center;
+  background-position: ${position};
   background-repeat: no-repeat;
   background-size: contain; 
   background-color: ${color};
@@ -31,14 +32,14 @@ export const StyledImage = styled.div<StyledImageProps>(({image, color})=>`
 `);
 
 
-
 type StyledContainerProps = {
   color: string,
+  padding: number,
 }
 
-export const StyledContainer = styled.div<StyledContainerProps>(({color})=>`
+export const StyledContainer = styled.div<StyledContainerProps>(({color, padding})=>`
 height: 500px;
-padding: 40px;
+padding: ${padding}px;
 background-color: ${color};
 
 
