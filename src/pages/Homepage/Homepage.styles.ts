@@ -13,13 +13,29 @@ import ProjectSix from "../../images/ProjectSix.png"
 import ProjectSixInitial from "../../images/ProjectSixInitial.svg"
 import Logo from "../../images/Logo.svg"
 
+const size = {
+  mobileM: '768px', 
+}
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`, 
+};
+
 export const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: [first] 50% [second] 8px [last] 50%;
   grid-template-rows: [first] 664px [line2] 8px [line3] 664px [line4] 8px [line5] 664px [line6] 8px;
+
+  @media ${device.mobileM} { 
+    margin-top: 400px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 8px 400px 8px 400px  8px 400px  8px;
+  }
 `;
 
 export const StyledCaseStudyOneEmpty = styled.div`
+
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -50,6 +66,12 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony
   background-color: #2D82D1;
   position:relative;
   clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
+
+  @media ${device.mobileM} { 
+    clip-path: polygon(0% 0%, 100% 0%, 100% ${offset}px, 0% ${offset}px);
+   
+  }
+
 `);
 
 export const StyledCaseStudyTwoEmpty = styled.div`
@@ -84,6 +106,10 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differ
   background-color: #0E407E;
   position:relative;
   clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
+
+  
+
+
 `);
 
 export const StyledCaseStudyThreeEmpty = styled.div`
@@ -118,6 +144,12 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({po
   background-color: #33885B;
   position:relative;
   clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - differenceHeight - introHeight - 8}px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
+  
+  @media ${device.mobileM} { 
+    clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 508 + 300}px, 0% ${offset - 508 + 300}px);
+   
+  }
+
 `);
 
 export const StyledCaseStudyFourEmpty = styled.div`
@@ -281,6 +313,9 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony, 
   top: ${positiony + offset}px;
   z-index:1;
   pointer-events: none; 
+  
+  
+  
 `);
 
 
@@ -291,14 +326,18 @@ type StyledLinedPropsV = {
 }
 
 export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, offset})=>`
-  top: ${offset}px;
-  height:100vh;
+  top: 0;
+  bottom:0;
   width: 1px; 
   position: absolute;
   background-color: red;
   left: ${positionx}px;
   z-index:1;
   pointer-events: none; 
+  @media ${device.mobileM} { 
+    display: none;
+   
+  }
 `);
 
 
@@ -311,6 +350,11 @@ export const StyledNavbar = styled.div`
     font-size: 18px;
     line-height: 140%;
     height: 20px;
+
+    @media ${device.mobileM} { 
+    height: 20px;
+   
+  }
 `;
 
 export const StyledNavItems = styled.div`
@@ -334,4 +378,6 @@ export const StyledIntro= styled.div`
     max-width: 100%;
     display: flexbox;
     gap: 15px;
+
+
 `
