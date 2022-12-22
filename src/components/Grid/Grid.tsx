@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import {StyledGrid} from "./Grid.styles"
 
 
-const Grid = ({children}) => {
+const Grid = ({children}:PropsWithChildren) => {
   return (
    <StyledGrid>
-       {children}
-       </StyledGrid>
+     {children}
+   </StyledGrid>
   )
 }
 

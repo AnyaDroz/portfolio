@@ -1,5 +1,23 @@
 
 @font-face {
-  font-family: TWKLausanne;
+  font-family: TWKLausanneLight;
   src: url("./fonts/TWKLausanne-150.woff2");
 }
+
+@font-face {
+  font-family: TWKLausanneMedium;
+  src: url("./fonts/TWKLausanne-300.woff2");
+}
+
+@font-face {
+  font-family: TWKLausanneHeavy;
+  src: url("./fonts/TWKLausanne-600.woff2");
+}
+
+const size = {
+  mobileM: '425px', 
+}
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};

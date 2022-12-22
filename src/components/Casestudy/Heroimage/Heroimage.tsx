@@ -1,15 +1,17 @@
-import React from 'react'
-import Grid from '../../Grid/Grid'
-import {StyledImage} from "./Heroimage.styles"
+import {StyledImage, StyledContainer} from "./Heroimage.styles"
 
+type HeroImageProps = {
+  image: string,
+  color: string,
+  padding: number,
+  position: string,
+}
 
-const Heroimage = () => {
+const Heroimage = ({image, color, padding, position}:HeroImageProps) => {
   return (
-    <>
-    <Grid>
-    
-    </Grid>
-    </>
+    <StyledContainer padding={padding} color={color}>
+    <StyledImage position={position} image={image} color={color}/>
+    </StyledContainer>
   )
 }
 

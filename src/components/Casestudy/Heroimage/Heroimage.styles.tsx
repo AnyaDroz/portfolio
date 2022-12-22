@@ -1,23 +1,51 @@
 import styled from "styled-components";
-import image from "../../../images/ProjectFive.png"
 
-// type StyledImageProps = {
-//     image: string,
-//   }
+const size = {
+  mobileM: '760px', 
+}
 
-// export const StyledImage = styled.div<StyledImageProps>(({image})=>`
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
-// `);
+//this is currently in every file ^^ doesn't seem right.
 
-export const StyledImage= styled.div`
-grid-column-start: 3;
-grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 2; 
+type StyledImageProps = {
+    image: string,
+    color: string,
+    position: string,
+  }
 
-background-image:url(image);
-background-position: right;
-background-repeat: no-repeat;
-background-size: contain; 
-background-color: #0E407E;
-`;
+export const StyledImage = styled.div<StyledImageProps>(({image, color, position})=>`
+  height: 500px;
+  background-image:url(${image});
+  background-position: ${position};
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-color: ${color};
+
+  
+  @media ${device.mobileM} { 
+    height: 80vw;
+    background-color: ${color};
+  }
+`);
+
+
+type StyledContainerProps = {
+  color: string,
+  padding: number,
+}
+
+export const StyledContainer = styled.div<StyledContainerProps>(({color, padding})=>`
+height: 500px;
+padding: ${padding}px;
+background-color: ${color};
+
+
+@media ${device.mobileM} { 
+  height: 80vw;
+  background-color: ${color};
+}
+`);
+
