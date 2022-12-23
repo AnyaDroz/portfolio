@@ -13,6 +13,6 @@ export const StyledSmallSpacer = styled.div`
    width: auto;
    
    @media ${device.mobileM} { 
-   height: 5px;
+   height: 20px;
    width: auto;
 }`

@@ -13,6 +13,6 @@ export const StyledLargeSpacer = styled.div`
    width: auto;
 
 @media ${device.mobileM} { 
-   height: 20px;
+   height: 50px;
    width: auto;
 }`;

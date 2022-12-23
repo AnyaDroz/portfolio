@@ -378,6 +378,10 @@ export const StyledIntro= styled.div`
     max-width: 100%;
     display: flexbox;
     gap: 15px;
-
+    
+    @media ${device.mobileM} { 
+    height: 20px;
+   
+  }
 
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const size = {
-   mobileM: '425px', 
+   mobileM: '768px', 
 }
  
 export const device = {
@@ -13,6 +13,6 @@ export const StyledMediumSpacer = styled.div`
    width: auto;
 
    @media ${device.mobileM} { 
-   height: 10px;
+   height: 15px;
    width: auto;
 }`

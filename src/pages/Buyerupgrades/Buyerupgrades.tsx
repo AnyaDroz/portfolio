@@ -78,7 +78,7 @@ const Buyerupgrades = () => {
       <Quote>"I would never click pay later because I don't believe in taking on debt or anything like that."</Quote><SpacerMedium/>
       <SubHeading>Pay as late as possible</SubHeading><SpacerSmall/>
       <Paragraph>There is quite a large amount of insights that reveal this (new-ish) segment of businesses who understand that paying as late as possible is great for business.</Paragraph><SpacerSmall/>
-      <Quote>"So we don’t have to think about it that much, and it's better business to pay it later as possible.”</Quote><SpacerMedium/>
+      <Quote>"So we don’t have to think about it that much, and it's better business to pay it later as possible.”</Quote><SpacerSmall/>
       <Quote>“It depends how you'd normally pay them.  You never pay an invoice straightaway.  You always pay it later on the due date as it were.”</Quote><SpacerMedium/>
       <SubHeading>Mobilise the team</SubHeading><SpacerSmall/>
       <Paragraph>This was the first time we looked at the buyer side & it was important to get everyone’s perspectives and buy-in.  This first phase consisted of presenting all the research we had and running a quick fire round of How Might We’s based on the problem area of the checkout experience.</Paragraph><SpacerLarge/>

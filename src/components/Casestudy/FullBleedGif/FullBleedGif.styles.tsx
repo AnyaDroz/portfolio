@@ -32,8 +32,8 @@ margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
-  width: ${width * 0.5}px;
-height: ${height * 0.5}px;
+  width: ${width * 0.6}px;
+height: ${height * 0.6}px;
   }
 `);
 
