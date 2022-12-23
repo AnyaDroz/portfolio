@@ -24,7 +24,7 @@ export const StyledContainerOne = styled.div<StyledContainerProps>(({color})=>`
   grid-column-end: 25;
   grid-row-start: 1;
   grid-row-end: 2;
-  
+  padding: 0px;
   }
 `);
 
@@ -40,6 +40,7 @@ export const StyledContainerTwo = styled.div<StyledContainerProps>(({color})=>`
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 3;
+  padding: 50px;
  
 }`);
 
@@ -58,7 +59,7 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
   
 @media ${device.mobileM} { 
   margin: auto;
-  height: 250px;
+  height: 300px;
   }`);
 
 export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
@@ -71,7 +72,8 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
 
 @media ${device.mobileM} { 
   margin: auto;
-  height: 250px;
+  height: 300px;
+  background-size: 120%; 
   }`);
 
 

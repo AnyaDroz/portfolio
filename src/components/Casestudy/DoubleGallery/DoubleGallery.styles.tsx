@@ -23,10 +23,10 @@ export const GalleryGrid = styled.div<StyledImageGallery>(({color, grid})=>`
 
   @media ${device.mobileM} { 
     grid-template-columns: 100%;
-    grid-template-rows: repeat(8, 60vw);
-    gap: 10px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    grid-template-rows: 65vw 65vw 65vw 65vw 65vw 65vw 72vw 72vw;
+    gap: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }`);
 
 
@@ -55,9 +55,8 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: auto;
-    height: 100%;
     border: none;
+
     margin-right: 0px;
     margin-left: 0px;
 }`)
@@ -85,8 +84,7 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: auto;
-  height: 100%;
+  
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -113,8 +111,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 4;
-  width: auto;
-  height: 100%;
+ 
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -140,8 +137,7 @@ export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
   grid-column-end: 1;
   grid-row-start: 4;
   grid-row-end: 5;
-  width: auto;
-  height: 100%;
+  
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -167,8 +163,7 @@ export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
   grid-column-end: 1;
   grid-row-start: 5;
   grid-row-end: 6;
-  width: auto;
-  height: 100%;
+
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -193,8 +188,7 @@ export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
   grid-column-end: 1;
   grid-row-start: 6;
   grid-row-end: 7;
-  width: auto;
-  height: 100%;
+
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -223,8 +217,7 @@ export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
   grid-row-end: 8;
   margin-right: 0px;
   margin-left: 0px;
-  width: auto;
-  height: 100%;
+
   border: none;
 }
 `);
@@ -249,8 +242,6 @@ export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
   grid-row-end: 9;
   margin-right: 0px;
   margin-left: 0px;
-  width: auto;
-  height: 100%;
   border: none;
 }
 `);

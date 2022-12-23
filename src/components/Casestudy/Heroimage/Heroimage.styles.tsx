@@ -26,8 +26,8 @@ export const StyledImage = styled.div<StyledImageProps>(({image, color, position
 
   
   @media ${device.mobileM} { 
-    height: 80vw;
-    background-color: ${color};
+    height: 300px;
+    background-size: 140vw; 
   }
 `);
 
@@ -44,8 +44,8 @@ background-color: ${color};
 
 
 @media ${device.mobileM} { 
-  height: 80vw;
-  background-color: ${color};
+  height: 300px;
+
 }
 `);
 

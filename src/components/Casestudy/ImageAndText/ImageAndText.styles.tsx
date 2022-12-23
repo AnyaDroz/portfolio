@@ -27,10 +27,10 @@ export const StyledTextContainer = styled.div`
     margin-top: 50px;
 
     @media ${device.mobileM} { 
+      margin-top: 0px;
       font-size: 14px;
     width: 90vw;
-    
-
+    margin: auto;
     padding-bottom: 16px;
   }
 `;
@@ -49,11 +49,11 @@ export const StyledImageContainerOne = styled.div<StyledImageProps>(({image})=>`
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
-    @media ${device.mobileM} { 
-    
-      height: 100vw;
- width: 100vw;
- margin: auto;
+    @media ${device.mobileM} {
+      height: 400px; 
+      background-size: 60%;
+      margin: auto;
+      padding-top: 50px;
   }
 `);
 
@@ -69,8 +69,9 @@ height: 100vw;
     background-size: contain; 
 
     @media ${device.mobileM} { 
- 
-   
+      height: 400px;
+      background-size: 60%;
+      margin-top: 20px;
   }
 `);
 
@@ -84,6 +85,7 @@ margin-bottom: 50px;
 
 @media ${device.mobileM} { 
   display: block;
+  margin-top: 0px;
   }
 `;
 
