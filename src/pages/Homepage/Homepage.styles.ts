@@ -1,24 +1,24 @@
 import styled from "styled-components";
-import ProjectOneInitial from "../../images/ProjectOneInitial.svg"
-import ProjectOne from "../../images/ProjectOne.png"
-import ProjectTwoInitial from "../../images/ProjectTwoInitial.svg"
-import ProjectTwo from "../../images/ProjectTwo.png"
-import ProjectThreeInitial from "../../images/ProjectThreeInitial.svg"
-import ProjectThree from "../../images/ProjectThree.png"
-import ProjectFour from "../../images/ProjectFour.png"
-import ProjectFourInitial from "../../images/ProjectFourInitial.svg"
-import ProjectFiveInitial from "../../images/ProjectFiveInitial.svg"
-import ProjectFive from "../../images/ProjectFive.png"
-import ProjectSix from "../../images/ProjectSix.png"
-import ProjectSixInitial from "../../images/ProjectSixInitial.svg"
-import Logo from "../../images/Logo.svg"
+import ProjectOneInitial from "../../images/ProjectOneInitial.svg";
+import ProjectOne from "../../images/ProjectOne.png";
+import ProjectTwoInitial from "../../images/ProjectTwoInitial.svg";
+import ProjectTwo from "../../images/ProjectTwo.png";
+import ProjectThreeInitial from "../../images/ProjectThreeInitial.svg";
+import ProjectThree from "../../images/ProjectThree.png";
+import ProjectFour from "../../images/ProjectFour.png";
+import ProjectFourInitial from "../../images/ProjectFourInitial.svg";
+import ProjectFiveInitial from "../../images/ProjectFiveInitial.svg";
+import ProjectFive from "../../images/ProjectFive.png";
+import ProjectSix from "../../images/ProjectSix.png";
+import ProjectSixInitial from "../../images/ProjectSixInitial.svg";
+import Logo from "../../images/Logo.svg";
 
 const size = {
-  mobileM: '768px', 
-}
+  mobileM: "768px",
+};
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: `(max-width: ${size.mobileM})`,
 };
 
 export const StyledGrid = styled.div`
@@ -26,35 +26,42 @@ export const StyledGrid = styled.div`
   grid-template-columns: [first] 50% [second] 8px [last] 50%;
   grid-template-rows: [first] 664px [line2] 8px [line3] 664px [line4] 8px [line5] 664px [line6] 8px;
 
-  @media ${device.mobileM} { 
-    margin-top: 400px;
+  @media ${device.mobileM} {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 8px 400px 8px 400px  8px 400px  8px;
+    grid-template-rows: 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px;
+    margin-bottom: 496px;
   }
 `;
 
 export const StyledCaseStudyOneEmpty = styled.div`
-
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image:url(${ProjectOneInitial});
+  background-image: url(${ProjectOneInitial});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 `;
 
 type StyledImageProps = {
-  positiony: number,
-  positionx: number,
-  introHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  introHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony, positionx, introHeight, offset})=>`
+export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(
+  ({ positiony, positionx, introHeight, offset }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -65,36 +72,51 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(({positiony
   background-size: contain;
   background-color: #2D82D1;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${
+    positiony + offset - introHeight
+  }px, 0% ${positiony + offset - introHeight}px);
 
   @media ${device.mobileM} { 
     clip-path: polygon(0% 0%, 100% 0%, 100% ${offset}px, 0% ${offset}px);
-   
+  
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  
   }
 
-`);
+`
+);
 
 export const StyledCaseStudyTwoEmpty = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-image:url(${ProjectTwoInitial});
+  background-image: url(${ProjectTwoInitial});
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 `;
 
 type StyledImageTwoProps = {
-  positiony: number,
-  positionx: number,
-  differenceWidth: number,
-  introHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  differenceWidth: number;
+  introHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differenceWidth, offset, positiony, positionx, introHeight})=>`
+export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
+  ({ differenceWidth, offset, positiony, positionx, introHeight }) => `
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -105,34 +127,52 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(({differ
   background-size: contain;
   background-color: #0E407E;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - introHeight}px, 0% ${positiony + offset - introHeight}px);
+  clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${
+    positionx - differenceWidth - 8
+  }px ${positiony + offset - introHeight}px, 0% ${
+    positiony + offset - introHeight
+  }px);
 
-  
+   @media ${device.mobileM} {
+   clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 408}px, 0% ${offset - 408}px);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 
 
-`);
+`
+);
 
 export const StyledCaseStudyThreeEmpty = styled.div`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #F9F9F9;
-  background-image:url(${ProjectThreeInitial});
+  background-color: #f9f9f9;
+  background-image: url(${ProjectThreeInitial});
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
 `;
 
 type StyledImageThreeProps = {
-  positiony: number,
-  positionx: number,
-  differenceHeight: number,
-  introHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  differenceHeight: number;
+  introHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({positiony, positionx, differenceHeight, introHeight, offset})=>`
+export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
+  ({ positiony, positionx, differenceHeight, introHeight, offset }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -143,37 +183,63 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(({po
   background-size: contain;
   background-color: #33885B;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - differenceHeight - introHeight - 8}px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${
+    positiony + offset - differenceHeight - introHeight - 8
+  }px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
   
   @media ${device.mobileM} { 
-    clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 508 + 300}px, 0% ${offset - 508 + 300}px);
+  
+    clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 816}px, 0% ${
+    offset - 816
+  }px);
+  
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  
    
   }
 
-`);
+`
+);
 
 export const StyledCaseStudyFourEmpty = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #F9F9F9;
-  background-image:url(${ProjectFourInitial});
+  background-color: #f9f9f9;
+  background-image: url(${ProjectFourInitial});
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
 `;
 
 type StyledImageFourProps = {
-  positiony: number,
-  positionx: number,
-  differenceWidth: number,
-  introHeight: number,
-  differenceHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  differenceWidth: number;
+  introHeight: number;
+  differenceHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({positiony, positionx, offset, differenceWidth, introHeight, differenceHeight})=>`
+export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(
+  ({
+    positiony,
+    positionx,
+    offset,
+    differenceWidth,
+    introHeight,
+    differenceHeight,
+  }) => `
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -184,33 +250,58 @@ export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(({posi
   background-size: contain;
   background-color: #FFCC3D;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - differenceHeight - introHeight - 8}px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
-`);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${
+    positionx - differenceWidth - 8
+  }px 0%, ${positionx - differenceWidth - 8}px ${
+    positiony + offset - differenceHeight - introHeight - 8
+  }px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
+@media ${device.mobileM} {
+clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224}px, 0% ${offset - 1224}px);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
 
+`
+);
 
-
-export const StyledCaseStudyFiveEmpty= styled.div`
+export const StyledCaseStudyFiveEmpty = styled.div`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
-  background-color: #F9F9F9;
-  background-image:url(${ProjectFiveInitial});
+  background-color: #f9f9f9;
+  background-image: url(${ProjectFiveInitial});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
 `;
 
 type StyledImageFiveProps = {
-  positiony: number,
-  positionx: number,
-  differenceWidth: number,
-  introHeight: number,
-  differenceHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  differenceWidth: number;
+  introHeight: number;
+  differenceHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({positiony, positionx, differenceWidth, offset, introHeight, differenceHeight})=>`
+export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(
+  ({
+    positiony,
+    positionx,
+    differenceWidth,
+    offset,
+    introHeight,
+    differenceHeight,
+  }) => `
  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
@@ -221,31 +312,57 @@ export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(({posi
   background-size: contain;
   background-color: #E29FBB;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px);
-`);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${
+    positiony + offset - 2 * differenceHeight - introHeight - 16
+  }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
+@media ${device.mobileM} {
+clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408}px, 0% ${offset - 1224 - 408}px);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
 
-export const StyledCaseStudySixEmpty= styled.div`
+
+`
+);
+
+export const StyledCaseStudySixEmpty = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 6;
-  background-color: #F9F9F9;
-  background-image:url(${ProjectSixInitial});
+  background-color: #f9f9f9;
+  background-image: url(${ProjectSixInitial});
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
 `;
 
 type StyledImageSixProps = {
-  positiony: number,
-  positionx: number,
-  differenceWidth: number,
-  introHeight: number,
-  differenceHeight: number,
-  offset: number,
-}
+  positiony: number;
+  positionx: number;
+  differenceWidth: number;
+  introHeight: number;
+  differenceHeight: number;
+  offset: number;
+};
 
-export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(({positiony, offset, positionx, differenceWidth, introHeight, differenceHeight})=>`
+export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
+  ({
+    positiony,
+    offset,
+    positionx,
+    differenceWidth,
+    introHeight,
+    differenceHeight,
+  }) => `
  grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
@@ -256,56 +373,76 @@ export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(({positi
   background-size: contain;
   background-color: #141414;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx - differenceWidth - 8}px 0%, ${positionx - differenceWidth - 8}px ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px, 0% ${positiony + offset - (2 * differenceHeight) - introHeight - 16}px);
-`);
+  clip-path: polygon(0% 0%, ${positionx}px 0%, ${
+    positionx - differenceWidth - 8
+  }px 0%, ${positionx - differenceWidth - 8}px ${
+    positiony + offset - 2 * differenceHeight - introHeight - 16
+  }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
+ @media ${device.mobileM} {
+ clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408 - 408}px, 0% ${offset - 1224 - 408 - 408}px);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
 
-export const StyledMainContent = styled.div`
-`;
+`
+);
+
+export const StyledMainContent = styled.div``;
 
 export const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-bottom: 8px; 
+  padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  font-family:TWKLausanneLight;
+  font-family: TWKLausanneLight;
   font-size: 23px;
   font-weight: 150;
-  
 `;
 
 type StyledLogoProps = {
-  image: string,
-}
+  image: string;
+};
 
-export const StyledLogo= styled.div`
-height: 20px;
-width:20px;
-margin: auto;
-  background-image:url(${Logo});
+export const StyledLogo = styled.div`
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  background-image: url(${Logo});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  order: 1;
+  
+
+  @media ${device.mobileM} {
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    order: 1;
+    margin-left: 0px;
+    margin-bottom: 20px;
+   
+  }
 `;
 
-export const StyledFooterItemTwo = styled.div` 
-`;
+export const StyledFooterItemTwo = styled.div``;
 
-export const StyledFooterItemOne = styled.div`
-`;
+export const StyledFooterItemOne = styled.div``;
 
-export const StyledFooterItemThree = styled.div`   
-`;
+export const StyledFooterItemThree = styled.div``;
 
-export const StyledFooterItemFour = styled.div`
-`;
+export const StyledFooterItemFour = styled.div``;
 
 type StyledLinedProps = {
-  positiony: number,
-  offset: number
-}
+  positiony: number;
+  offset: number;
+};
 
-export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony, offset})=>`
+export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
+  ({ positiony, offset }) => `
   height: 1px;
   width: 100%; 
   background-color: red;
@@ -314,18 +451,21 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(({positiony, 
   z-index:1;
   pointer-events: none; 
   
+  @media ${device.mobileM} {
+    top: ${offset + 395}px;
+  }
   
   
-`);
-
+`
+);
 
 type StyledLinedPropsV = {
-  positionx: number,
-  offset: number,
+  positionx: number;
+  offset: number;
+};
 
-}
-
-export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, offset})=>`
+export const StyledCursorVertical = styled.div<StyledLinedPropsV>(
+  ({ positionx, offset }) => `
   top: 0;
   bottom:0;
   width: 1px; 
@@ -338,50 +478,60 @@ export const StyledCursorVertical = styled.div<StyledLinedPropsV>(({positionx, o
     display: none;
    
   }
-`);
-
-
+`
+);
 
 export const StyledNavbar = styled.div`
-    display: flex;
-    justify-content: space-between;
-    padding:10px;
-    font-family:TWKLausanneLight;
-    font-size: 18px;
-    line-height: 140%;
-    height: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: TWKLausanneLight;
+  font-size: 18px;
+  line-height: 140%;
+  height: 20px;
 
-    @media ${device.mobileM} { 
-    height: 20px;
-   
+  @media ${device.mobileM} {
+    flex-flow: column;
+    justify-content: flex-start;
+    height: auto;
   }
 `;
 
 export const StyledNavItems = styled.div`
-    display: flex;
-    justify-content: space-between;
-    gap:80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+order: 3;
+  flex-flow: column;
+
+  @media ${device.mobileM} {
+    gap: 5px;
+    order: 2;
+  }
 `;
 
-
 export const StyledNavItemOne = styled.div`
+margin-top: 10px;
 `;
 
 export const StyledNavItemTwo = styled.div`
-
-`;
+  margin-top: 10px;`;
 
 export const StyledNavItemThree = styled.div`
-`;
+  margin-top: 10px;
+  margin-bottom: 20px;`;
 
-export const StyledIntro= styled.div`
+export const StyledIntro = styled.div`
+  max-width: 100%;
+
+  gap: 15px;
+  order: 2;
+
+  @media ${device.mobileM} {
     max-width: 100%;
-    display: flexbox;
-    gap: 15px;
+    order: 3;
+  
     
-    @media ${device.mobileM} { 
-    height: 20px;
-   
+    
   }
-
-`
+`;

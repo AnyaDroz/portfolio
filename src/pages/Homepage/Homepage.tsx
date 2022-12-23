@@ -119,8 +119,8 @@ const Homepage = () => {
   <StyledCursorHorizontal positiony={positiony} offset={offset}/>
   <StyledCursorVertical positionx={positionx} offset={offset}/>
   <StyledNavbar ref={introContainerRef}>
-    
-    <StyledIntro><StyledLogo/>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
+    <StyledLogo/>
+    <StyledIntro>Anya is a product designer creating soulful & strategic experiences, with a love for programming.</StyledIntro>
   <StyledNavItems>
     <StyledNavItemOne >/ work</StyledNavItemOne>
     <StyledNavItemTwo>/ info</StyledNavItemTwo>
