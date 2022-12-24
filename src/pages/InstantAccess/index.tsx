@@ -1,1 +1,1 @@
-export * from "./InstantAccess"
+export * from "./InstantAccess";

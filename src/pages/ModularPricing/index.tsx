@@ -1,1 +1,1 @@
-export * from "./ModularPricing"
+export * from "./ModularPricing";

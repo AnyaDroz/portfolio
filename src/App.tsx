@@ -15,17 +15,17 @@ function App() {
     <div>
       <Routes>
         <Route path="/" index element={<Passcode />} />
-        <Route path="/Home" index element={<Homepage />} />
-        <Route path="/Buyerupgrades" index element={<Buyerupgrades />} />
+        <Route path="/home" index element={<Homepage />} />
+        <Route path="/buyer-upgrades" index element={<Buyerupgrades />} />
         <Route
-          path="/Multitransactions"
+          path="/multi-transactions"
           index
           element={<Multitransactions />}
         />
-        <Route path="/Instantaccess" index element={<InstantAccess />} />
-        <Route path="/Modularpricing" index element={<ModularPricing />} />
-        <Route path="/Quotes" index element={<Quotes />} />
-        <Route path="Hydra" index element={<Hydra />} />
+        <Route path="/instant-access" index element={<InstantAccess />} />
+        <Route path="/modular-pricing" index element={<ModularPricing />} />
+        <Route path="/quotes" index element={<Quotes />} />
+        <Route path="hydra" index element={<Hydra />} />
       </Routes>
     </div>
   );

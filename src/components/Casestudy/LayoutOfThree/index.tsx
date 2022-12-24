@@ -1,1 +1,1 @@
-export * from "./LayoutOfThree"
+export * from "./LayoutOfThree";

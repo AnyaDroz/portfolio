@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '768px', 
-}
+  mobileM: "768px",
+};
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: `(max-width: ${size.mobileM})`,
 };
 
 type StyledImageProps = {
-    image: string,
-    width: number, 
-    height: number,
-    marginTop: number,
-    marginBottom: number
-  }
+  image: string;
+  width: number;
+  height: number;
+  marginTop: number;
+  marginBottom: number;
+};
 
-export const StyledImage = styled.div<StyledImageProps>(({image, width, height, marginTop, marginBottom})=>`
+export const StyledImage = styled.div<StyledImageProps>(
+  ({ image, width, height, marginTop, marginBottom }) => `
 margin: auto;
 width: ${width}px;
 height: ${height}px;
@@ -35,18 +36,16 @@ margin-bottom: ${marginBottom}px;
   width: ${width * 0.6}px;
 height: ${height * 0.6}px;
   }
-`);
+`
+);
 
 type StyledContainerProps = {
-  color: string,
-}
-export const StyledContainer = styled.div<StyledContainerProps>(({color})=>`
+  color: string;
+};
+export const StyledContainer = styled.div<StyledContainerProps>(
+  ({ color }) => `
     background-color: ${color};
     display: flex;
     justify-content: center;
-`);
-
-
-
-
-
+`
+);

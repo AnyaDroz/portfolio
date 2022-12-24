@@ -1,10 +1,8 @@
-import React from 'react'
-import { StyledXSmallSpacer } from './SpacerXSmall.styles'
+import React from "react";
+import { StyledXSmallSpacer } from "./SpacerXSmall.styles";
 
 const SpacerXSmall = () => {
-  return (
-    <StyledXSmallSpacer></StyledXSmallSpacer>
-  )
-}
+  return <StyledXSmallSpacer></StyledXSmallSpacer>;
+};
 
-export default SpacerXSmall
+export default SpacerXSmall;

@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '768px', 
-}
+  mobileM: "768px",
+};
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: `(max-width: ${size.mobileM})`,
 };
 
 type StyledImageProps = {
-    image: string,
-    marginTop:number,
-    marginBottom: number,
-    height: number,
-    fit: string,
-  }
+  image: string;
+  marginTop: number;
+  marginBottom: number;
+  height: number;
+  fit: string;
+};
 
-export const StyledImage = styled.div<StyledImageProps>(({fit, image, marginTop, marginBottom, height})=>`
+export const StyledImage = styled.div<StyledImageProps>(
+  ({ fit, image, marginTop, marginBottom, height }) => `
 width: 100vw;
 height: ${height}px;
 background-image:url(${image});
@@ -32,13 +33,15 @@ margin-bottom: ${marginBottom}px;
     width: 95vw;
     background-size: cover;
   }
-`);
+`
+);
 
 type StyledBackgroundProps = {
-    color: string,
-  }
+  color: string;
+};
 
-export const StyledContainer = styled.div<StyledBackgroundProps>(({color})=>`
+export const StyledContainer = styled.div<StyledBackgroundProps>(
+  ({ color }) => `
     background-color: ${color};
     display: flexbox;
     width: 100vw;
@@ -49,7 +52,5 @@ export const StyledContainer = styled.div<StyledBackgroundProps>(({color})=>`
     width: 95vw; */
     margin: auto;
   }  
-`);
-
-
-
+`
+);

@@ -1,1 +1,1 @@
-export * from "../CallOut"
+export * from "../CallOut";

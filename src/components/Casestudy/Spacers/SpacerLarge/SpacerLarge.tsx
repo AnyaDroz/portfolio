@@ -1,11 +1,8 @@
-import React from 'react'
-import {StyledLargeSpacer} from "./SpacerLarge.styles"
-
+import React from "react";
+import { StyledLargeSpacer } from "./SpacerLarge.styles";
 
 const SpacerLarge = () => {
-  return (
-    <StyledLargeSpacer></StyledLargeSpacer>
-  )
-}
+  return <StyledLargeSpacer></StyledLargeSpacer>;
+};
 
-export default SpacerLarge
+export default SpacerLarge;

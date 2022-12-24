@@ -1,17 +1,17 @@
-import React from 'react'
-import { StyledCallout } from './CallOut.styles'
-import Grid from "../../../Grid/Grid"
+import React from "react";
+import { StyledCallout } from "./CallOut.styles";
+import Grid from "../../../Grid/Grid";
 
 type CalloutProps = {
-    children: string,
-}
+  children: string;
+};
 
-const Callout = ({children}:CalloutProps) => {
+const Callout = ({ children }: CalloutProps) => {
   return (
     <Grid>
-    <StyledCallout>{children}</StyledCallout>
+      <StyledCallout>{children}</StyledCallout>
     </Grid>
-  )
-}
+  );
+};
 
-export default Callout
+export default Callout;

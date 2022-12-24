@@ -1,1 +1,1 @@
-export * from "./Buyerupgrades"
+export * from "./Buyerupgrades";

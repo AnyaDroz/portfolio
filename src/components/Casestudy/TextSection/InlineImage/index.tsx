@@ -1,1 +1,1 @@
-export * from './InlineImage'
+export * from "./InlineImage";

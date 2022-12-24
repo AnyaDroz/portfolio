@@ -1,1 +1,1 @@
-export * from "./TwoImages"
+export * from "./TwoImages";

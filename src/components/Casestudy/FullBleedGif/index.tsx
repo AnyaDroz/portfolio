@@ -1,1 +1,1 @@
-export * from "./FullBleedGif"
+export * from "./FullBleedGif";

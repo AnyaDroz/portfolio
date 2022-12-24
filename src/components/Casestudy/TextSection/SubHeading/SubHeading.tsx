@@ -1,17 +1,17 @@
-import React from 'react'
-import Grid from "../../../Grid/Grid"
-import {StyledSubHeading} from "../SubHeading/SubHeading.styles"
+import React from "react";
+import Grid from "../../../Grid/Grid";
+import { StyledSubHeading } from "../SubHeading/SubHeading.styles";
 
 type SubHeadingProps = {
-    children: string, 
-}
+  children: string;
+};
 
-const SubHeading = ({children}:SubHeadingProps) => {
+const SubHeading = ({ children }: SubHeadingProps) => {
   return (
     <Grid>
-    <StyledSubHeading>{children}</StyledSubHeading>
+      <StyledSubHeading>{children}</StyledSubHeading>
     </Grid>
-  )
-}
+  );
+};
 
-export default SubHeading
+export default SubHeading;

@@ -1,1 +1,1 @@
-export * from "./BulletAndImage"
+export * from "./BulletAndImage";

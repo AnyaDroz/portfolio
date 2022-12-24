@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: TWKLausanneLight;
   src: url("./fonts/TWKLausanne-150.woff2");
@@ -15,9 +14,9 @@
 }
 
 const size = {
-  mobileM: '425px', 
+  mobilem: "425px";
 }
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`,
-};
+  mobilem: `(max-width: ${size.mobileM}) `;
+}

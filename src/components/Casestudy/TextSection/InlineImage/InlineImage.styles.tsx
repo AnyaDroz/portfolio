@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '768px', 
-}
+  mobileM: "768px",
+};
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: `(max-width: ${size.mobileM})`,
 };
 
 type StyledImageProps = {
-    image: string,
-    imageWidth: number,
-    imageHeight: number,
-  }
+  image: string;
+  imageWidth: number;
+  imageHeight: number;
+};
 
-export const StyledImage = styled.div<StyledImageProps>(({image, imageWidth, imageHeight})=>`
+export const StyledImage = styled.div<StyledImageProps>(
+  ({ image, imageWidth, imageHeight }) => `
 grid-column-start: 11;
 grid-column-end: 24;
 height:${imageHeight}px;
@@ -31,4 +32,5 @@ background-size: contain;
     height: 60vw;
     width: 100%;
 }
-`);
+`
+);

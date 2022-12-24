@@ -1,1 +1,1 @@
-export * from "../SpacerMedium"
+export * from "../SpacerMedium";

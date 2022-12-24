@@ -2,9 +2,7 @@ import {
   StyledNavItems,
   StyledIntro,
   StyledNavbar,
-  StyledNavItemOne,
-  StyledNavItemTwo,
-  StyledNavItemThree,
+  StyledNavItem,
   StyledCursorHorizontal,
   StyledCursorVertical,
   StyledGrid,
@@ -18,10 +16,6 @@ import {
   StyledCaseStudySixEmpty,
   StyledMainContent,
   StyledFooter,
-  StyledFooterItemOne,
-  StyledFooterItemTwo,
-  StyledFooterItemThree,
-  StyledFooterItemFour,
   StyledCaseStudyOneActive,
   StyledCaseStudyThreeActive,
   StyledCaseStudyFiveActive,
@@ -44,39 +38,39 @@ const Homepage = () => {
   const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
 
-  const routeChangeOne = (e: React.MouseEvent) => {
+  const routeChangeBuyer= (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Buyerupgrades`;
+    let path = `/buyer-upgrades`;
     navigate(path);
   };
 
-  const routeChangeTwo = (e: React.MouseEvent) => {
+  const routeChangeMulti = (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Multitransactions`;
+    let path = `/multi-transactions`;
     navigate(path);
   };
 
-  const routeChangeThree = (e: React.MouseEvent) => {
+  const routeChangeInstant = (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Instantaccess`;
+    let path = `/instant-access`;
     navigate(path);
   };
 
-  const routeChangeFour = (e: React.MouseEvent) => {
+  const routeChangeModular = (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Modularpricing`;
+    let path = `/modular-pricing`;
     navigate(path);
   };
 
-  const routeChangeFive = (e: React.MouseEvent) => {
+  const routeChangeQuotes= (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Quotes`;
+    let path = `/quotes`;
     navigate(path);
   };
 
-  const routeChangeSix = (e: React.MouseEvent) => {
+  const routeChangeHydra = (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Hydra`;
+    let path = `/Hhdra`;
     navigate(path);
   };
 
@@ -106,9 +100,6 @@ const Homepage = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  console.log(offset);
-  console.log(positiony);
-
   return (
     <>
       <StyledMainContent onMouseMove={getPosition}>
@@ -123,7 +114,7 @@ const Homepage = () => {
             </StyledIntro>
           </StyledContainerLogo>
           <StyledNavItems>
-            <StyledNavItemTwo>
+            <StyledNavItem>
               <a
                 href="https://www.linkedin.com/in/anya-drozdova/"
                 target="_blank"
@@ -131,8 +122,8 @@ const Homepage = () => {
               >
                 LinkedIn
               </a>
-            </StyledNavItemTwo>
-            <StyledNavItemThree>
+            </StyledNavItem>
+            <StyledNavItem>
               <a
                 href="https://github.com/AnyaDroz?tab=repositories"
                 target="_blank"
@@ -140,63 +131,63 @@ const Homepage = () => {
               >
                 Github
               </a>
-            </StyledNavItemThree>
+            </StyledNavItem>
           </StyledNavItems>
         </StyledNavbar>
         <StyledGrid>
           <StyledCaseStudyOneEmpty
             ref={firstContainerRef}
-            onClick={routeChangeOne}
+            onClick={routeChangeBuyer}
           />
           <StyledCaseStudyOneActive
             offset={offset}
             positiony={positiony}
             positionx={positionx}
             introHeight={introHeight}
-            onClick={routeChangeOne}
+            onClick={routeChangeBuyer}
           />
-          <StyledCaseStudyTwoEmpty onClick={routeChangeTwo} />
+          <StyledCaseStudyTwoEmpty onClick={routeChangeMulti} />
           <StyledCaseStudyTwoActive
             offset={offset}
             differenceWidth={differenceWidth}
             positiony={positiony}
             positionx={positionx}
             introHeight={introHeight}
-            onClick={routeChangeTwo}
+            onClick={routeChangeMulti}
           />
-          <StyledCaseStudyThreeEmpty onClick={routeChangeThree} />
+          <StyledCaseStudyThreeEmpty onClick={routeChangeInstant} />
           <StyledCaseStudyThreeActive
             offset={offset}
-            onClick={routeChangeThree}
+            onClick={routeChangeInstant}
             differenceHeight={differenceHeight}
             positiony={positiony}
             positionx={positionx}
             introHeight={introHeight}
           />
-          <StyledCaseStudyFourEmpty onClick={routeChangeFour} />
+          <StyledCaseStudyFourEmpty onClick={routeChangeModular} />
           <StyledCaseStudyFourActive
             offset={offset}
-            onClick={routeChangeFour}
+            onClick={routeChangeModular}
             differenceHeight={differenceHeight}
             differenceWidth={differenceWidth}
             positiony={positiony}
             positionx={positionx}
             introHeight={introHeight}
           />
-          <StyledCaseStudyFiveEmpty onClick={routeChangeFive} />
+          <StyledCaseStudyFiveEmpty onClick={routeChangeQuotes} />
           <StyledCaseStudyFiveActive
             offset={offset}
-            onClick={routeChangeFive}
+            onClick={routeChangeQuotes}
             differenceHeight={differenceHeight}
             differenceWidth={differenceWidth}
             positiony={positiony}
             positionx={positionx}
             introHeight={introHeight}
           />
-          <StyledCaseStudySixEmpty onClick={routeChangeSix} />
+          <StyledCaseStudySixEmpty onClick={routeChangeHydra} />
           <StyledCaseStudySixActive
             offset={offset}
-            onClick={routeChangeSix}
+            onClick={routeChangeHydra}
             differenceHeight={differenceHeight}
             differenceWidth={differenceWidth}
             positiony={positiony}
@@ -205,8 +196,8 @@ const Homepage = () => {
           />
         </StyledGrid>
         <StyledFooter>
-          <StyledFooterItemOne>anya.drozdova@gmail.com</StyledFooterItemOne>
-          <StyledFooterItemThree>07426728951</StyledFooterItemThree>
+          <div>anya.drozdova@gmail.com</div>
+          <div>07426728951</div>
         </StyledFooter>
       </StyledMainContent>
     </>

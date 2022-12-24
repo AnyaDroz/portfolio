@@ -1,10 +1,8 @@
-import React from 'react'
-import { StyledMediumSpacer } from './SpacerMedium.styles'
+import React from "react";
+import { StyledMediumSpacer } from "./SpacerMedium.styles";
 
 const SpacerMedium = () => {
-  return (
-    <StyledMediumSpacer></StyledMediumSpacer>
-  )
-}
+  return <StyledMediumSpacer></StyledMediumSpacer>;
+};
 
-export default SpacerMedium
+export default SpacerMedium;

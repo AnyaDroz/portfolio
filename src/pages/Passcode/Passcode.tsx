@@ -2,24 +2,24 @@ import React, { useEffect, useState } from "react";
 import useLocalStorage from "use-local-storage";
 import { useNavigate } from "react-router-dom";
 
-// npm install use-local-storage
 
 const Passcode = () => {
   const [number, setNumber] = useLocalStorage<string | null>("secret", null);
   let navigate = useNavigate();
 
   useEffect(() => {
-    if (number !== "666") {
-      const enteredNumber = window.prompt("Type a number", "");
+    if (number !== "1998") {
+      const enteredNumber = window.prompt("Enter the passcode", "");
       setNumber(enteredNumber);
-      console.log(enteredNumber);
+    
     } else {
-      console.log("password was already entered");
-
-      let path = `/Home`;
-      navigate(path);
+      window.prompt("Enter the passcode", "");
+      navigate("/home");
+      
     }
   }, []);
+  //stupid strict mode runs twice had to delete it
+  //also wouldn't let me navigate to home. 
 
   return <div></div>;
 };

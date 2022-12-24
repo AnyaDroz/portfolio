@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '768px', 
-}
+  mobileM: "768px",
+};
 
 export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: `(max-width: ${size.mobileM})`,
 };
 
 type StyledImageGallery = {
-  color: string,
-  grid: any
-}
+  color: string;
+  grid: any;
+};
 
-export const GalleryGrid = styled.div<StyledImageGallery>(({color, grid})=>`
+export const GalleryGrid = styled.div<StyledImageGallery>(
+  ({ color, grid }) => `
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: ${grid};
@@ -27,14 +28,15 @@ export const GalleryGrid = styled.div<StyledImageGallery>(({color, grid})=>`
     gap: 15px;
     padding-bottom: 0px;
     padding-top: 0px;
-}`);
-
+}`
+);
 
 type StyledImageProps = {
-    image: string,
-  }
+  image: string;
+};
 
-export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageOne = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -59,13 +61,13 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
 
     margin-right: 0px;
     margin-left: 0px;
-}`)
+}`
+);
 
 //border
 
-
-
-export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageTwo = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -92,7 +94,8 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
 }`
 );
 
-export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageThree = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -116,9 +119,11 @@ export const StyledImageThree = styled.div<StyledImageProps>(({image})=>`
   margin-right: 0px;
   margin-left: 0px;
 }
-`);
+`
+);
 
-export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageFour = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -142,9 +147,11 @@ export const StyledImageFour = styled.div<StyledImageProps>(({image})=>`
   margin-right: 0px;
   margin-left: 0px;
 }
-`);
+`
+);
 
-export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageFive = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -168,9 +175,11 @@ export const StyledImageFive = styled.div<StyledImageProps>(({image})=>`
   margin-right: 0px;
   margin-left: 0px;
 }
-`);
+`
+);
 
-export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageSix = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start:2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -193,9 +202,11 @@ export const StyledImageSix = styled.div<StyledImageProps>(({image})=>`
   margin-right: 0px;
   margin-left: 0px;
 }
-`);
+`
+);
 
-export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageSeven = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start:1;
   grid-column-end:2;
   grid-row-start: 4;
@@ -220,9 +231,11 @@ export const StyledImageSeven = styled.div<StyledImageProps>(({image})=>`
 
   border: none;
 }
-`);
+`
+);
 
-export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageEight = styled.div<StyledImageProps>(
+  ({ image }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -244,9 +257,5 @@ export const StyledImageEight = styled.div<StyledImageProps>(({image})=>`
   margin-left: 0px;
   border: none;
 }
-`);
-
-
-
-
-
+`
+);

@@ -1,1 +1,1 @@
-export * from "./TripleImageCaption"
+export * from "./TripleImageCaption";

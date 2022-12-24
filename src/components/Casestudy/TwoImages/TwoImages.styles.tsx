@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '768px', 
-}
-
-export const device = {
-  mobileM: `(max-width: ${size.mobileM})`, 
+  mobileM: "768px",
 };
 
-type StyledContainerProps ={
-  color: string,
-}
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
-export const StyledContainerOne = styled.div<StyledContainerProps>(({color})=>`
+type StyledContainerProps = {
+  color: string;
+};
+
+export const StyledContainerOne = styled.div<StyledContainerProps>(
+  ({ color }) => `
   padding: 40px;
   grid-column-start: 1;
   grid-column-end: 13;
@@ -26,9 +27,11 @@ export const StyledContainerOne = styled.div<StyledContainerProps>(({color})=>`
   grid-row-end: 2;
   padding: 0px;
   }
-`);
+`
+);
 
-export const StyledContainerTwo = styled.div<StyledContainerProps>(({color})=>`
+export const StyledContainerTwo = styled.div<StyledContainerProps>(
+  ({ color }) => `
   padding: 40px;
   grid-column-start: 13;
   grid-column-end: 25;
@@ -42,13 +45,15 @@ export const StyledContainerTwo = styled.div<StyledContainerProps>(({color})=>`
   grid-row-end: 3;
   padding: 50px;
  
-}`);
+}`
+);
 
 type StyledImageProps = {
-    image: string,
-  }
+  image: string;
+};
 
-export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageOne = styled.div<StyledImageProps>(
+  ({ image }) => `
   margin: auto;
   height: 500px;
   background-image:url(${image});
@@ -60,9 +65,11 @@ export const StyledImageOne = styled.div<StyledImageProps>(({image})=>`
 @media ${device.mobileM} { 
   margin: auto;
   height: 300px;
-  }`);
+  }`
+);
 
-export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
+export const StyledImageTwo = styled.div<StyledImageProps>(
+  ({ image }) => `
   height: 500px;
   background-image:url(${image});
   background-position: center;
@@ -74,6 +81,5 @@ export const StyledImageTwo = styled.div<StyledImageProps>(({image})=>`
   margin: auto;
   height: 300px;
   background-size: 120%; 
-  }`);
-
-
+  }`
+);

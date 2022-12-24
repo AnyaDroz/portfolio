@@ -1,1 +1,1 @@
-export * from "../QuoteBlock"
+export * from "../QuoteBlock";

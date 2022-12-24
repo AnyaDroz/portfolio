@@ -202,13 +202,11 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
     clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 816}px, 0% ${
     offset - 816
   }px);
-  
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 5;
     grid-row-end: 6;
-  
-   
+
   }
 
 `
@@ -458,13 +456,6 @@ export const StyledContainerLogo = styled.div`
   }
 `;
 
-export const StyledFooterItemTwo = styled.div``;
-
-export const StyledFooterItemOne = styled.div``;
-
-export const StyledFooterItemThree = styled.div``;
-
-export const StyledFooterItemFour = styled.div``;
 
 type StyledLinedProps = {
   positiony: number;
@@ -545,22 +536,15 @@ export const StyledNavItems = styled.div`
   }
 `;
 
-export const StyledNavItemOne = styled.div`
-  @media ${device.mobileM} {
-  }
-`;
 
-export const StyledNavItemTwo = styled.div`
+
+export const StyledNavItem = styled.div`
   @media ${device.mobileM} {
     margin-top: 10px;
   }
 `;
 
-export const StyledNavItemThree = styled.div`
-  @media ${device.mobileM} {
-    margin-top: 5px;
-  }
-`;
+
 
 export const StyledIntro = styled.div`
   max-width: 100%;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const size = {
-  mobileM: '760px', 
-}
+  mobileM: "760px",
+};
 
 export const device = {
   mobileM: `(max-width: ${size.mobileM})`,
@@ -11,12 +11,13 @@ export const device = {
 //this is currently in every file ^^ doesn't seem right.
 
 type StyledImageProps = {
-    image: string,
-    color: string,
-    position: string,
-  }
+  image: string;
+  color: string;
+  position: string;
+};
 
-export const StyledImage = styled.div<StyledImageProps>(({image, color, position})=>`
+export const StyledImage = styled.div<StyledImageProps>(
+  ({ image, color, position }) => `
   height: 500px;
   background-image:url(${image});
   background-position: ${position};
@@ -29,15 +30,16 @@ export const StyledImage = styled.div<StyledImageProps>(({image, color, position
     height: 300px;
     background-size: 140vw; 
   }
-`);
-
+`
+);
 
 type StyledContainerProps = {
-  color: string,
-  padding: number,
-}
+  color: string;
+  padding: number;
+};
 
-export const StyledContainer = styled.div<StyledContainerProps>(({color, padding})=>`
+export const StyledContainer = styled.div<StyledContainerProps>(
+  ({ color, padding }) => `
 height: 500px;
 padding: ${padding}px;
 background-color: ${color};
@@ -47,5 +49,5 @@ background-color: ${color};
   height: 300px;
 
 }
-`);
-
+`
+);

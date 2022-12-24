@@ -1,19 +1,17 @@
-import React from 'react'
-import Grid from '../../../Grid/Grid'
-import {StyledQuote} from "./Quote.styles"
+import React from "react";
+import Grid from "../../../Grid/Grid";
+import { StyledQuote } from "./Quote.styles";
 
 type QuoteProp = {
-    children: string,
-}
+  children: string;
+};
 
-
-
-const Quote = ({children}:QuoteProp) => {
+const Quote = ({ children }: QuoteProp) => {
   return (
     <Grid>
-        <StyledQuote>{children}</StyledQuote>
+      <StyledQuote>{children}</StyledQuote>
     </Grid>
-  )
-}
+  );
+};
 
-export default Quote
+export default Quote;

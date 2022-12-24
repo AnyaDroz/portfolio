@@ -1,1 +1,1 @@
-export * from "./FourByFourGrid"
+export * from "./FourByFourGrid";

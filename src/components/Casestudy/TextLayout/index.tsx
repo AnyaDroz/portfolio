@@ -1,1 +1,1 @@
-export * from "./TextLayout"
+export * from "./TextLayout";
