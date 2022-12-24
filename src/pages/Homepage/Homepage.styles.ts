@@ -28,11 +28,11 @@ export const StyledGrid = styled.div`
   grid-template-rows: [first] 664px [line2] 8px [line3] 664px [line4] 8px [line5] 664px [line6] 8px;
 
   @media ${device.mobileM} {
-    margin-top: 150px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px;
-    margin-bottom: 496px;
+      margin-top: 150px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px;
+      margin-bottom: 496px;
   }
 `;
 
@@ -460,10 +460,11 @@ export const StyledContainerLogo = styled.div`
 type StyledLinedProps = {
   positiony: number;
   offset: number;
+  introHeight: number;
 };
 
 export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
-  ({ positiony, offset }) => `
+  ({ positiony, offset, introHeight}) => `
   height: 1px;
   width: 100%; 
   background-color: red;
@@ -473,7 +474,7 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
   pointer-events: none; 
   
   @media ${device.mobileM} {
-    top: ${offset + 395}px;
+    top: ${offset + introHeight + 150}px;
   }
   
   
@@ -543,8 +544,6 @@ export const StyledNavItem = styled.div`
     margin-top: 10px;
   }
 `;
-
-
 
 export const StyledIntro = styled.div`
   max-width: 100%;

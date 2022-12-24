@@ -70,7 +70,7 @@ const Homepage = () => {
 
   const routeChangeHydra = (e: React.MouseEvent) => {
     console.log("click");
-    let path = `/Hhdra`;
+    let path = `/hydra`;
     navigate(path);
   };
 
@@ -89,6 +89,7 @@ const Homepage = () => {
     const introHeight: number =
       introContainerRef.current.getBoundingClientRect().height;
     setintroHeight(introHeight);
+    
   };
 
   useEffect(() => {
@@ -96,6 +97,10 @@ const Homepage = () => {
     window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
     console.log(offset);
+    const introHeight: number =
+    introContainerRef.current.getBoundingClientRect().height;
+    setintroHeight(introHeight);
+    console.log(introHeight)
     setOffset(offset);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -103,7 +108,7 @@ const Homepage = () => {
   return (
     <>
       <StyledMainContent onMouseMove={getPosition}>
-        <StyledCursorHorizontal positiony={positiony} offset={offset} />
+        <StyledCursorHorizontal introHeight={introHeight} positiony={positiony} offset={offset} />
         <StyledCursorVertical positionx={positionx} offset={offset} />
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
