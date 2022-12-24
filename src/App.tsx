@@ -7,14 +7,15 @@ import InstantAccess from "./pages/InstantAccess/InstantAccess";
 import ModularPricing from "./pages/ModularPricing/ModularPricing";
 import Quotes from "./pages/Quotes/Quotes";
 import Hydra from "./pages/Hydra/Hydra";
+import Passcode from "./pages/Passcode/Passcode";
 
 function App() {
   const location = useLocation();
   return (
     <div>
       <Routes>
-        <Route path="/" index element={<Homepage />} />
-
+        <Route path="/" index element={<Passcode />} />
+        <Route path="/Home" index element={<Homepage />} />
         <Route path="/Buyerupgrades" index element={<Buyerupgrades />} />
         <Route
           path="/Multitransactions"
