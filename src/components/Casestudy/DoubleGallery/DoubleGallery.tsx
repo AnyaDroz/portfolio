@@ -22,7 +22,11 @@ type GalleryProps = {
   imageSeven?: string;
   imageEight?: string;
   color: string;
-  grid: any;
+  grid: string;
+  mobileGrid: string;
+  mobileSize: string;
+  mobilePadding: string;
+  desktopPadding: string;
 };
 
 const DoubleGallery = ({
@@ -36,17 +40,21 @@ const DoubleGallery = ({
   imageEight,
   color,
   grid,
+  mobileGrid,
+  mobileSize,
+  desktopPadding,
+  mobilePadding
 }: GalleryProps) => {
   return (
-    <GalleryGrid color={color} grid={grid}>
-      <StyledImageOne image={imageOne} />
-      <StyledImageTwo image={imageTwo} />
-      <StyledImageThree image={imageThree} />
-      <StyledImageFour image={imageFour} />
-      <StyledImageFive image={imageFive} />
-      <StyledImageSix image={imageSix} />
-      {imageSeven ? <StyledImageSeven image={imageSeven} /> : ""}
-      {imageEight ? <StyledImageEight image={imageEight} /> : ""}
+    <GalleryGrid mobilePadding={mobilePadding} desktopPadding={desktopPadding} mobileGrid={mobileGrid} color={color} grid={grid}>
+      <StyledImageOne mobileSize={mobileSize} image={imageOne} />
+      <StyledImageTwo mobileSize={mobileSize} image={imageTwo} />
+      <StyledImageThree mobileSize={mobileSize} image={imageThree} />
+      <StyledImageFour mobileSize={mobileSize} image={imageFour} />
+      <StyledImageFive mobileSize={mobileSize} image={imageFive} />
+      <StyledImageSix mobileSize={mobileSize} image={imageSix} />
+      {imageSeven ? <StyledImageSeven  mobileSize={mobileSize} image={imageSeven} /> : ""}
+      {imageEight ? <StyledImageEight  mobileSize={mobileSize} image={imageEight} /> : ""}
     </GalleryGrid>
   );
 };

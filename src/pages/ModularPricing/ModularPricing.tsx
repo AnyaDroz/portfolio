@@ -72,6 +72,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -96,6 +97,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -113,6 +115,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -196,6 +199,10 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <DoubleGallery
+       mobilePadding={""}
+       desktopPadding={""}
+       mobileSize={"mobileSize"}
+      mobileGrid={""}
         grid={"40vw 40vw 40vw"}
         color={"#F9F9F9"}
         imageOne={WireframeOne}
@@ -216,6 +223,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={800}
         marginTop={50}
@@ -234,6 +242,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={800}
         marginTop={20}
@@ -332,6 +341,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"cover"}
         height={500}
         marginTop={0}

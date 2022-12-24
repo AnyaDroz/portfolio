@@ -5,7 +5,6 @@ import {
   StyledImageContainerTwo,
   StyledTextContainer,
   StyledHeader,
-  StyledImageContainer,
   StyledContainer,
 } from "./ImageAndText.styles";
 import Grid from "../../Grid/Grid";
@@ -29,10 +28,10 @@ const ImageAndText = ({
 }: ImageAndTextProps) => {
   return (
     <StyledContainer>
-      <StyledImageContainer>
+    
         <StyledImageContainerOne image={imageOne} />
         <StyledImageContainerTwo image={imageTwo} />
-      </StyledImageContainer>
+    
       <StyledTextContainer>
         <StyledHeader>{header}</StyledHeader>
         <StyledBulletPoint>{bulletPointOne}</StyledBulletPoint>

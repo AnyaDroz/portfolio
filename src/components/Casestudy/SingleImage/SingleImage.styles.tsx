@@ -14,24 +14,24 @@ type StyledImageProps = {
   marginBottom: number;
   height: number;
   fit: string;
+  mobileFit: string;
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ fit, image, marginTop, marginBottom, height }) => `
+  ({ fit, image, marginTop, marginBottom, height, mobileFit }) => `
 width: 100vw;
 height: ${height}px;
 background-image:url(${image});
 background-position: center;
 background-repeat: no-repeat;
 background-size: ${fit};
-position:relative;
+position: relative;
 margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
-    height: 200px;
-    width: 95vw;
-    background-size: cover;
+  height: 300px;
+  background-size: ${mobileFit};
   }
 `
 );
@@ -48,8 +48,7 @@ export const StyledContainer = styled.div<StyledBackgroundProps>(
     justify-content: center; 
     
     @media ${device.mobileM} { 
-    /* height: 100vw;
-    width: 95vw; */
+
     margin: auto;
   }  
 `

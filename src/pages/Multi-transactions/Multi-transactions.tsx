@@ -77,6 +77,7 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"coVER"}
         height={500}
         marginTop={0}
@@ -103,7 +104,8 @@ const Multitransactions = () => {
         desktopSizeOne={""}
         mobileSizeOne={""}
         desktopSizeTwo={""}
-        mobileSizeTwo={""} imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
+        mobileSizeTwo={""} 
+        imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
       <QuoteBlock
         heading={"User Insights"}
         quoteOne={
@@ -129,6 +131,7 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={900}
         marginTop={0}
@@ -165,6 +168,7 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={0}
@@ -361,6 +365,7 @@ const Multitransactions = () => {
       ></FullBleedGif>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={0}

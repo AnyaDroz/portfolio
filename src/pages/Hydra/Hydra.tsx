@@ -160,6 +160,7 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={0}
@@ -178,6 +179,7 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={0}
@@ -207,6 +209,7 @@ const Hydra = () => {
       />
       <SpacerSmall />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -305,6 +308,7 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={0}

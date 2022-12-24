@@ -10,33 +10,39 @@ export const device = {
 
 type StyledImageGallery = {
   color: string;
-  grid: any;
+  grid: string;
+  mobileGrid: string;
+  desktopPadding: string;
+  mobilePadding: string;
 };
 
 export const GalleryGrid = styled.div<StyledImageGallery>(
-  ({ color, grid }) => `
+  ({ color, grid, mobileGrid, mobilePadding, desktopPadding }) => `
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: ${grid};
   background-color: ${color};
-  padding-top: 16px;
-  
+  padding-top: ${desktopPadding};
+  padding-bottom: ${desktopPadding};
 
   @media ${device.mobileM} { 
     grid-template-columns: 100%;
-    grid-template-rows: 65vw 65vw 65vw 65vw 65vw 65vw 72vw 72vw;
-    gap: 15px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    grid-template-rows: ${mobileGrid};
+    gap: 0px;
+    padding-bottom: ${mobilePadding};
+    padding-top: ${mobilePadding};
+
 }`
 );
 
+
 type StyledImageProps = {
   image: string;
+  mobileSize: string;
 };
 
 export const StyledImageOne = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -58,7 +64,7 @@ export const StyledImageOne = styled.div<StyledImageProps>(
     grid-row-start: 1;
     grid-row-end: 2;
     border: none;
-
+    background-size: ${mobileSize};
     margin-right: 0px;
     margin-left: 0px;
 }`
@@ -67,7 +73,7 @@ export const StyledImageOne = styled.div<StyledImageProps>(
 //border
 
 export const StyledImageTwo = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -86,7 +92,7 @@ export const StyledImageTwo = styled.div<StyledImageProps>(
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  
+  background-size: ${mobileSize};
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -95,7 +101,7 @@ export const StyledImageTwo = styled.div<StyledImageProps>(
 );
 
 export const StyledImageThree = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -114,7 +120,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 4;
- 
+  background-size: ${mobileSize};
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -123,7 +129,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(
 );
 
 export const StyledImageFour = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -142,7 +148,7 @@ export const StyledImageFour = styled.div<StyledImageProps>(
   grid-column-end: 1;
   grid-row-start: 4;
   grid-row-end: 5;
-  
+  background-size: 90% auto;
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -151,7 +157,7 @@ export const StyledImageFour = styled.div<StyledImageProps>(
 );
 
 export const StyledImageFive = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -170,7 +176,7 @@ export const StyledImageFive = styled.div<StyledImageProps>(
   grid-column-end: 1;
   grid-row-start: 5;
   grid-row-end: 6;
-
+  background-size: ${mobileSize};
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -179,7 +185,7 @@ export const StyledImageFive = styled.div<StyledImageProps>(
 );
 
 export const StyledImageSix = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start:2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -197,7 +203,7 @@ export const StyledImageSix = styled.div<StyledImageProps>(
   grid-column-end: 1;
   grid-row-start: 6;
   grid-row-end: 7;
-
+  background-size: ${mobileSize};
   border: none;
   margin-right: 0px;
   margin-left: 0px;
@@ -206,7 +212,7 @@ export const StyledImageSix = styled.div<StyledImageProps>(
 );
 
 export const StyledImageSeven = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start:1;
   grid-column-end:2;
   grid-row-start: 4;
@@ -228,14 +234,14 @@ export const StyledImageSeven = styled.div<StyledImageProps>(
   grid-row-end: 8;
   margin-right: 0px;
   margin-left: 0px;
-
+  background-size: ${mobileSize};
   border: none;
 }
 `
 );
 
 export const StyledImageEight = styled.div<StyledImageProps>(
-  ({ image }) => `
+  ({ image, mobileSize }) => `
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -256,6 +262,7 @@ export const StyledImageEight = styled.div<StyledImageProps>(
   margin-right: 0px;
   margin-left: 0px;
   border: none;
+  background-size: ${mobileSize};
 }
 `
 );

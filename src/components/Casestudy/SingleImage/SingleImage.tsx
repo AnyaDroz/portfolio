@@ -8,6 +8,7 @@ type SingleImageProps = {
   marginBottom: number;
   height: number;
   fit: string;
+  mobileFit: string;
 };
 
 const SingleImage = ({
@@ -17,10 +18,12 @@ const SingleImage = ({
   marginTop,
   marginBottom,
   height,
+  mobileFit,
 }: SingleImageProps) => {
   return (
     <StyledContainer color={color}>
       <StyledImage
+        mobileFit={mobileFit}
         fit={fit}
         image={image}
         marginTop={marginTop}

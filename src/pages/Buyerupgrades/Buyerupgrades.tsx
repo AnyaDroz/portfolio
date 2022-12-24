@@ -42,10 +42,11 @@ import HighFidelityFour from "../../images/HighFidelityFour.png";
 import HighFidelityFive from "../../images/HighFidelityFive.png";
 import HighFidelitySix from "../../images/HighFidelitySix.png";
 import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg";
-import BuyerResults from "../../images/BuyerResult.svg";
+import BuyerResultsOne from "../../images/BuyerResultsOne.png";
 import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png";
 import Logo from "../../components/Logo/Logo"
 import { StyledLogoContainer} from "./Buyerupgrades.styles";
+import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
 
 const Buyerupgrades = () => {
   return (
@@ -227,6 +228,10 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <DoubleGallery
+        mobilePadding={""}
+        desktopPadding={""}
+        mobileSize={"80% auto"}
+        mobileGrid={"65vw 65vw 65vw 65vw 65vw 65vw 72vw 72vw;"}
         grid={"40vw 40vw 40vw 40vw"}
         color={"white"}
         imageOne={BuyerWireframeOne}
@@ -249,6 +254,7 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -330,15 +336,16 @@ const Buyerupgrades = () => {
         color={"#2D83D1"}
         imageOne={BuyerScreen}
         imageTwo={BuyerMobile}
-        desktopSizeOne={"contain"}
+        desktopSizeOne={"80% auto"}
         mobileSizeOne={"auto 80%"}
-        desktopSizeTwo={"contain"}
+        desktopSizeTwo={"auto 80%"}
         mobileSizeTwo={"auto 80%"}
       />
       <SpacerXSmall />
       <SingleImage
-        fit={"fit"}
-        height={700}
+        mobileFit={"950px auto"}
+        fit={"cover"}
+        height={600}
         marginTop={0}
         marginBottom={0}
         image={BuyerComponents}
@@ -356,6 +363,10 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <DoubleGallery
+       mobilePadding={"20px"}
+       desktopPadding={"60px"}
+      mobileSize={"90% auto"}
+        mobileGrid={"65vw 65vw 65vw 65vw 65vw 65vw"}
         color={"#2D83D1"}
         imageOne={HighFidelityOne}
         imageTwo={HighFidelityTwo}
@@ -378,13 +389,14 @@ const Buyerupgrades = () => {
         later than Pay now.
       </Paragraph>
       <SpacerLarge />
-      <SingleImage
-        fit={"contain"}
-        height={500}
-        marginTop={50}
-        marginBottom={50}
-        image={BuyerResults}
+      <TwoImages
         color={"white"}
+        imageOne={BuyerResultsOne}
+        imageTwo={BuyerResultsTwo}
+        desktopSizeOne={"80% auto"}
+        mobileSizeOne={"90% auto"}
+        desktopSizeTwo={"auto 40%"}
+        mobileSizeTwo={"auto 40%"}
       />
       <SpacerLarge />
   

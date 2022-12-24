@@ -32,6 +32,7 @@ export const StyledTextContainer = styled.div`
     width: 90vw;
     margin: auto;
     padding-bottom: 16px;
+    padding-top: 30px;
   }
 `;
 
@@ -41,16 +42,19 @@ type StyledImageProps = {
 
 export const StyledImageContainerOne = styled.div<StyledImageProps>(
   ({ image }) => `
- 
- height: 100vw;
- width: 100vw;
- margin: auto;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
     background-image:url(${image});
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: 90% auto; 
+    
     @media ${device.mobileM} {
       height: 400px; 
+      background-position: center;
       background-size: 60%;
       margin: auto;
       padding-top: 50px;
@@ -60,17 +64,19 @@ export const StyledImageContainerOne = styled.div<StyledImageProps>(
 
 export const StyledImageContainerTwo = styled.div<StyledImageProps>(
   ({ image }) => `
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 
-height: 100vw;
- width: 100vw;
- margin: auto;
 
     background-image:url(${image});
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: 90% auto; ; 
 
     @media ${device.mobileM} { 
+      background-position: center;
       height: 400px;
       background-size: 60%;
       margin-top: 20px;
@@ -78,26 +84,14 @@ height: 100vw;
 `
 );
 
-export const StyledImageContainer = styled.div`
-  display: flexbox;
-  gap: 10px;
-  justify-self: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
 
-  @media ${device.mobileM} {
-    display: block;
-    margin-top: 0px;
-  }
-`;
 
 export const StyledContainer = styled.div`
-  display: flexbox;
-  gap: 10px;
+  display: grid;
+grid-template-columns: 30% 30% 30%;
+grid-template-rows: 500px;
+  gap: 80px;
   background-color: #f9f9f9;
-  width: 100vw;
-  justify-content: center;
 
   @media ${device.mobileM} {
     display: block;

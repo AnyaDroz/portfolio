@@ -70,6 +70,7 @@ const Quotes = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
@@ -215,6 +216,7 @@ const Quotes = () => {
       </Quote>
       <SpacerLarge />
       <SingleImage
+      mobileFit={""}
         fit={"contain"}
         height={500}
         marginTop={50}
