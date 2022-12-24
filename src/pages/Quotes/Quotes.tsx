@@ -37,6 +37,9 @@ const Quotes = () => {
   return (
     <div>
       <Heroimage
+      sizeDesktop={"contain"}
+      sizeMobile={""}
+       paddingMobile={40}
         position={"bottom"}
         padding={40}
         color={"#E29FBB"}

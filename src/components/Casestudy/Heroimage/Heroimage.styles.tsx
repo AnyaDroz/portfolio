@@ -14,21 +14,23 @@ type StyledImageProps = {
   image: string;
   color: string;
   position: string;
+  sizeMobile: string;
+  sizeDesktop: string;
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, color, position }) => `
+  ({ image, color, position,sizeMobile,sizeDesktop }) => `
   height: 500px;
   background-image:url(${image});
   background-position: ${position};
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: ${sizeDesktop};
   background-color: ${color};
 
   
   @media ${device.mobileM} { 
     height: 300px;
-    background-size: 140vw; 
+    background-size: ${sizeMobile};
   }
 `
 );
@@ -36,18 +38,23 @@ export const StyledImage = styled.div<StyledImageProps>(
 type StyledContainerProps = {
   color: string;
   padding: number;
+  paddingMobile: number;
 };
 
 export const StyledContainer = styled.div<StyledContainerProps>(
-  ({ color, padding }) => `
+  ({ color, padding, paddingMobile }) => `
+  position: relative;
 height: 500px;
 padding: ${padding}px;
 background-color: ${color};
 
 
 @media ${device.mobileM} { 
-  height: 300px;
-
+  height: 320px;
+  padding: ${paddingMobile}px;
 }
 `
 );
+
+
+

@@ -39,6 +39,9 @@ const ModularPricing = () => {
   return (
     <div>
       <Heroimage
+      sizeDesktop={"contain"}
+      sizeMobile={""}
+       paddingMobile={40}
         position={"center"}
         padding={40}
         image={ModularPricingHero}
@@ -248,6 +251,10 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -265,6 +272,10 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
         imageOne={HighFidTwo}
         imageTwo={HighFidOne}
         color={"#F4CB59"}

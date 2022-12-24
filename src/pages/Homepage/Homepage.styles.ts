@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import ProjectOneInitial from "../../images/ProjectOneInitial.svg";
+import ProjectOneInitial from "../../images/ProjectOneInitial.png";
 import ProjectOne from "../../images/ProjectOne.png";
-import ProjectTwoInitial from "../../images/ProjectTwoInitial.svg";
+import ProjectTwoInitial from "../../images/ProjectTwoInitial.png";
 import ProjectTwo from "../../images/ProjectTwo.png";
-import ProjectThreeInitial from "../../images/ProjectThreeInitial.svg";
+import ProjectThreeInitial from "../../images/ProjectThreeInitial.png";
 import ProjectThree from "../../images/ProjectThree.png";
 import ProjectFour from "../../images/ProjectFour.png";
-import ProjectFourInitial from "../../images/ProjectFourInitial.svg";
-import ProjectFiveInitial from "../../images/ProjectFiveInitial.svg";
+import ProjectFourInitial from "../../images/ProjectFourInitial.png";
+import ProjectFiveInitial from "../../images/ProjectFiveInitial.png";
 import ProjectFive from "../../images/ProjectFive.png";
 import ProjectSix from "../../images/ProjectSix.png";
-import ProjectSixInitial from "../../images/ProjectSixInitial.svg";
+import ProjectSixInitial from "../../images/ProjectSixInitial.png";
 import Logo from "../../images/Logo.svg";
 
 const size = {
@@ -475,6 +475,7 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
   
   @media ${device.mobileM} {
     top: ${offset + introHeight + 150}px;
+    touch-action: none;
   }
   
   
@@ -499,6 +500,7 @@ export const StyledCursorVertical = styled.div<StyledLinedPropsV>(
   pointer-events: none; 
   @media ${device.mobileM} { 
     display: none;
+    touch-action: none;
    
   }
 `

@@ -44,12 +44,20 @@ import HighFidelitySix from "../../images/HighFidelitySix.png";
 import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg";
 import BuyerResults from "../../images/BuyerResult.svg";
 import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png";
-import { resolvePath } from "react-router-dom";
+import Logo from "../../components/Logo/Logo"
+import { StyledLogoContainer} from "./Buyerupgrades.styles";
 
 const Buyerupgrades = () => {
   return (
     <div>
+      <StyledLogoContainer>
+      <Logo/>
+      </StyledLogoContainer>
+   
       <Heroimage
+      sizeDesktop={"100vw"}
+      sizeMobile={"140vw"}
+      paddingMobile={0}
         position={"center"}
         padding={40}
         color={"#2D83D1"}
@@ -87,6 +95,10 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+        mobileWidth= {"95vw"}
+        mobileHeight= {"65vw"}
+        mobileMargin= {"20px"}
+        mobileSize= {"cover"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -134,6 +146,10 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
+     desktopSizeOne={"contain"}
+     mobileSizeOne={"contain"}
+     desktopSizeTwo={"contain"}
+     mobileSizeTwo={"fit"}
         imageOne={BuyerChartOne}
         imageTwo={BuyerChartTwo}
         color={"white"}
@@ -314,10 +330,14 @@ const Buyerupgrades = () => {
         color={"#2D83D1"}
         imageOne={BuyerScreen}
         imageTwo={BuyerMobile}
+        desktopSizeOne={"contain"}
+        mobileSizeOne={"auto 80%"}
+        desktopSizeTwo={"contain"}
+        mobileSizeTwo={"auto 80%"}
       />
       <SpacerXSmall />
       <SingleImage
-        fit={"cover"}
+        fit={"fit"}
         height={700}
         marginTop={0}
         marginBottom={0}
@@ -367,7 +387,8 @@ const Buyerupgrades = () => {
         color={"white"}
       />
       <SpacerLarge />
-    </div>
+  
+      </div>
   );
 };
 

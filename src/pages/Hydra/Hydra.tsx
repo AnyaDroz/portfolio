@@ -41,10 +41,16 @@ import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/Spacer
 import HydraOneOfTwo from "../../images/HydraOneOfTwo.png";
 import HydraTwoOfTwo from "../../images/HydraTwoOfTwo.png";
 
+
+
 const Hydra = () => {
   return (
     <div>
+    
       <Heroimage
+      sizeDesktop={"contain"}
+      sizeMobile={""}
+       paddingMobile={40}
         position={"bottom"}
         padding={0}
         image={HydraHero}
@@ -191,6 +197,10 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
         color={"#f9f9f9"}
         imageOne={WireframeTwo}
         imageTwo={WireframeOne}
@@ -232,6 +242,10 @@ const Hydra = () => {
         drop the plots inthe workspace directly.
       </Paragraph>
       <TwoImages
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
         color={"#F9f9f9"}
         imageOne={HydraOneOfTwo}
         imageTwo={HydraTwoOfTwo}
@@ -273,6 +287,10 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
         color={"#F9F9F9"}
         imageOne={TwoImagesOne}
         imageTwo={TwoImagesTwo}

@@ -14,10 +14,16 @@ type StyledImageProps = {
   height: number;
   marginTop: number;
   marginBottom: number;
-};
+  mobileWidth: string;
+  mobileHeight: string;
+  mobileMargin: string;
+  mobileSize: string;
+
+}
+
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, width, height, marginTop, marginBottom }) => `
+  ({ image, width, height, marginTop, marginBottom, mobileWidth, mobileHeight , mobileMargin, mobileSize }) => `
 margin: auto;
 width: ${width}px;
 height: ${height}px;
@@ -33,11 +39,16 @@ margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
-  width: ${width * 0.6}px;
-height: ${height * 0.6}px;
+  max-width: ${mobileWidth};
+  max-height: ${mobileHeight};
+  margin: ${mobileMargin};
+  background-size: ${mobileSize};
   }
 `
 );
+
+
+
 
 type StyledContainerProps = {
   color: string;
@@ -47,5 +58,7 @@ export const StyledContainer = styled.div<StyledContainerProps>(
     background-color: ${color};
     display: flex;
     justify-content: center;
+
+   
 `
 );

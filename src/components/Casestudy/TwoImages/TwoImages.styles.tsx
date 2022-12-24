@@ -14,7 +14,7 @@ type StyledContainerProps = {
 
 export const StyledContainerOne = styled.div<StyledContainerProps>(
   ({ color }) => `
-  padding: 40px;
+  
   grid-column-start: 1;
   grid-column-end: 13;
   background-color: ${color};
@@ -25,14 +25,14 @@ export const StyledContainerOne = styled.div<StyledContainerProps>(
   grid-column-end: 25;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding: 0px;
+ 
   }
 `
 );
 
 export const StyledContainerTwo = styled.div<StyledContainerProps>(
   ({ color }) => `
-  padding: 40px;
+
   grid-column-start: 13;
   grid-column-end: 25;
   background-color: ${color};
@@ -43,43 +43,54 @@ export const StyledContainerTwo = styled.div<StyledContainerProps>(
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding: 50px;
+ 
  
 }`
 );
 
-type StyledImageProps = {
+type StyledImagePropsOne = {
   image: string;
+  desktopSizeOne: string;
+  mobileSizeOne: string;
+
 };
 
-export const StyledImageOne = styled.div<StyledImageProps>(
-  ({ image }) => `
+export const StyledImageOne = styled.div<StyledImagePropsOne>(
+  ({ image, desktopSizeOne, mobileSizeOne  }) => `
   margin: auto;
   height: 500px;
   background-image:url(${image});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: ${desktopSizeOne}; 
   position:relative;
   
 @media ${device.mobileM} { 
   margin: auto;
   height: 300px;
+  background-size: ${mobileSizeOne};
   }`
 );
 
-export const StyledImageTwo = styled.div<StyledImageProps>(
-  ({ image }) => `
+type StyledImagePropsTwo = {
+  image: string;
+  desktopSizeTwo: string;
+  mobileSizeTwo: string;
+};
+
+
+export const StyledImageTwo = styled.div<StyledImagePropsTwo>(
+  ({ image, desktopSizeTwo, mobileSizeTwo  }) => `
   height: 500px;
   background-image:url(${image});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: ${desktopSizeTwo}; 
   position:relative;
 
 @media ${device.mobileM} { 
   margin: auto;
   height: 300px;
-  background-size: 120%; 
+  background-size: ${mobileSizeTwo};
   }`
 );

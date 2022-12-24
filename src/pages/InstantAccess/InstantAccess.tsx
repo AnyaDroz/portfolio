@@ -42,10 +42,13 @@ const InstantAccess = () => {
   return (
     <div>
       <Heroimage
-        position={"center"}
+      sizeMobile={"100vw"}
+       paddingMobile={0}
+        position={"99% 50%"}
         padding={0}
         image={InstantAccessHero}
         color={"#33885B"}
+        sizeDesktop={"contain"}
       />
       <Description
         companyName={"iwocaPay"}
@@ -93,7 +96,12 @@ const InstantAccess = () => {
         good news - once they try it - they’re staying more active!
       </Paragraph>
       <SpacerLarge />
-      <TwoImages imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
+      <TwoImages 
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
+        imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
       <TextLayout
         heading={"Show me examples"}
         paragraphOne={"“I would like more examples”"}
@@ -216,6 +224,10 @@ const InstantAccess = () => {
       />
       <SpacerSmall />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={100}
         marginBottom={100}
         color={"#33885B"}
@@ -262,6 +274,10 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -293,6 +309,10 @@ const InstantAccess = () => {
       />
       <SpacerSmall />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={50}
         marginBottom={50}
         color={"#33885B"}

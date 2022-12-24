@@ -20,10 +20,9 @@ import {
   StyledCaseStudyThreeActive,
   StyledCaseStudyFiveActive,
   StyledCaseStudySixActive,
-  StyledLogo,
   StyledContainerLogo,
 } from "./Homepage.styles";
-
+import Logo from "../../components/Logo/Logo"
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -74,6 +73,8 @@ const Homepage = () => {
     navigate(path);
   };
 
+  
+
   const getPosition = (e: React.MouseEvent) => {
     const x = e.clientX;
     const y = e.clientY;
@@ -112,7 +113,7 @@ const Homepage = () => {
         <StyledCursorVertical positionx={positionx} offset={offset} />
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
-            <StyledLogo />
+            <Logo/>
             <StyledIntro>
               Anya is a product designer creating soulful & strategic
               experiences, with a love for programming.

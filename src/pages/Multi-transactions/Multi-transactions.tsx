@@ -39,12 +39,19 @@ import FullBleedGif from "../../components/Casestudy/FullBleedGif/FullBleedGif";
 import MultiGifOne from "../../images/MultiGifOne.gif";
 import MultiGifTwo from "../../images/MultiGifTwo.gif";
 import MultiGifThree from "../../images/MultiGThree.gif";
-
+import Logo from "../../components/Logo/Logo"
+import { StyledLogoContainer} from "./Multi-transactions.styles";
 const Multitransactions = () => {
   return (
     <div>
+      <StyledLogoContainer>
+      <Logo/>
+      </StyledLogoContainer>
       <Heroimage
-        position={"center"}
+      sizeDesktop={"contain"}
+        sizeMobile={"90vw"}
+        paddingMobile={0}
+        position={"50% 60%"}
         padding={0}
         color={"#0E407E"}
         image={Hero}
@@ -92,7 +99,11 @@ const Multitransactions = () => {
         friction to usage - both for buyers and sellers.
       </Paragraph>
       <SpacerLarge />
-      <TwoImages imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
+      <TwoImages 
+        desktopSizeOne={""}
+        mobileSizeOne={""}
+        desktopSizeTwo={""}
+        mobileSizeTwo={""} imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
       <QuoteBlock
         heading={"User Insights"}
         quoteOne={
@@ -202,6 +213,10 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
+      desktopSizeOne={""}
+      mobileSizeOne={""}
+      desktopSizeTwo={""}
+      mobileSizeTwo={""}
         imageOne={HighFidOne}
         imageTwo={HighFidTwo}
         color={"#0E407E"}
@@ -215,6 +230,10 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -292,6 +311,10 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -325,6 +348,10 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
+      mobileWidth= {"95vw"}
+      mobileHeight= {"60vw"}
+      mobileMargin= {"20px"}
+      mobileSize= {"mobileSize"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
