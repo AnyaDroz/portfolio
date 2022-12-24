@@ -22,6 +22,7 @@ export const device = {
 };
 
 export const StyledGrid = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: [first] 50% [second] 8px [last] 50%;
   grid-template-rows: [first] 664px [line2] 8px [line3] 664px [line4] 8px [line5] 664px [line6] 8px;
@@ -36,6 +37,7 @@ export const StyledGrid = styled.div`
 `;
 
 export const StyledCaseStudyOneEmpty = styled.div`
+  cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -62,6 +64,7 @@ type StyledImageProps = {
 
 export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(
   ({ positiony, positionx, introHeight, offset }) => `
+   cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -72,6 +75,7 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(
   background-size: contain;
   background-color: #2D82D1;
   position:relative;
+  cursor: pointer;
   clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${
     positiony + offset - introHeight
   }px, 0% ${positiony + offset - introHeight}px);
@@ -94,6 +98,7 @@ export const StyledCaseStudyTwoEmpty = styled.div`
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  cursor: pointer;
   background-image: url(${ProjectTwoInitial});
   background-position: right;
   background-repeat: no-repeat;
@@ -121,6 +126,7 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  cursor: pointer;
   background-image:url(${ProjectTwo});
   background-position: right;
   background-repeat: no-repeat;
@@ -134,7 +140,9 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
   }px);
 
    @media ${device.mobileM} {
-   clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 408}px, 0% ${offset - 408}px);
+   clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 408}px, 0% ${
+    offset - 408
+  }px);
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 3;
@@ -146,6 +154,7 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
 );
 
 export const StyledCaseStudyThreeEmpty = styled.div`
+  cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -173,6 +182,7 @@ type StyledImageThreeProps = {
 
 export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
   ({ positiony, positionx, differenceHeight, introHeight, offset }) => `
+  cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -205,6 +215,7 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
 );
 
 export const StyledCaseStudyFourEmpty = styled.div`
+  cursor: pointer;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -240,6 +251,8 @@ export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(
     introHeight,
     differenceHeight,
   }) => `
+  cursor: pointer;
+  cursor: pointer;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -256,17 +269,21 @@ export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(
     positiony + offset - differenceHeight - introHeight - 8
   }px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
 @media ${device.mobileM} {
-clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224}px, 0% ${offset - 1224}px);
+clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224}px, 0% ${
+    offset - 1224
+  }px);
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 7;
     grid-row-end: 8;
+    
   }
 
 `
 );
 
 export const StyledCaseStudyFiveEmpty = styled.div`
+  cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
@@ -302,6 +319,7 @@ export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(
     introHeight,
     differenceHeight,
   }) => `
+  cursor: pointer;
  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
@@ -316,7 +334,9 @@ export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(
     positiony + offset - 2 * differenceHeight - introHeight - 16
   }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
 @media ${device.mobileM} {
-clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408}px, 0% ${offset - 1224 - 408}px);
+clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408}px, 0% ${
+    offset - 1224 - 408
+  }px);
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 9;
@@ -328,6 +348,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408}px, 0% ${offset - 
 );
 
 export const StyledCaseStudySixEmpty = styled.div`
+  cursor: pointer;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
@@ -363,6 +384,7 @@ export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
     introHeight,
     differenceHeight,
   }) => `
+  cursor: pointer;
  grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
@@ -379,7 +401,9 @@ export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
     positiony + offset - 2 * differenceHeight - introHeight - 16
   }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
  @media ${device.mobileM} {
- clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408 - 408}px, 0% ${offset - 1224 - 408 - 408}px);
+ clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408 - 408}px, 0% ${
+    offset - 1224 - 408 - 408
+  }px);
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 11;
@@ -389,7 +413,9 @@ export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
 `
 );
 
-export const StyledMainContent = styled.div``;
+export const StyledMainContent = styled.div`
+  position: relative;
+`;
 
 export const StyledFooter = styled.div`
   display: flex;
@@ -398,7 +424,8 @@ export const StyledFooter = styled.div`
   padding-left: 8px;
   padding-right: 8px;
   font-family: TWKLausanneLight;
-  font-size: 23px;
+  font-size: 18px;
+  letter-spacing: 1px;
   font-weight: 150;
 `;
 
@@ -409,22 +436,25 @@ type StyledLogoProps = {
 export const StyledLogo = styled.div`
   height: 20px;
   width: 20px;
-  margin: auto;
+
   background-image: url(${Logo});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  order: 1;
-  
 
   @media ${device.mobileM} {
     height: 20px;
     width: 20px;
-    background-size: contain;
     order: 1;
     margin-left: 0px;
     margin-bottom: 20px;
-   
+  }
+`;
+
+export const StyledContainerLogo = styled.div`
+  display: flexbox;
+  @media ${device.mobileM} {
+    display: block;
   }
 `;
 
@@ -468,6 +498,7 @@ export const StyledCursorVertical = styled.div<StyledLinedPropsV>(
   ({ positionx, offset }) => `
   top: 0;
   bottom:0;
+  height: 100%;
   width: 1px; 
   position: absolute;
   background-color: red;
@@ -501,37 +532,43 @@ export const StyledNavItems = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 80px;
-order: 3;
-  flex-flow: column;
+  a {
+    color: black;
+    :hover {
+      color: blue;
+    }
+  }
 
   @media ${device.mobileM} {
+    flex-flow: column;
     gap: 5px;
-    order: 2;
   }
 `;
 
 export const StyledNavItemOne = styled.div`
-margin-top: 10px;
+  @media ${device.mobileM} {
+  }
 `;
 
 export const StyledNavItemTwo = styled.div`
-  margin-top: 10px;`;
+  @media ${device.mobileM} {
+    margin-top: 10px;
+  }
+`;
 
 export const StyledNavItemThree = styled.div`
-  margin-top: 10px;
-  margin-bottom: 20px;`;
+  @media ${device.mobileM} {
+    margin-top: 5px;
+  }
+`;
 
 export const StyledIntro = styled.div`
   max-width: 100%;
-
+  margin-left: 16px;
   gap: 15px;
-  order: 2;
 
   @media ${device.mobileM} {
     max-width: 100%;
-    order: 3;
-  
-    
-    
+    margin-left: 0px;
   }
 `;
