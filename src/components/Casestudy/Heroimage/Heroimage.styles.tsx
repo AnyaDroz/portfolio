@@ -16,10 +16,11 @@ type StyledImageProps = {
   position: string;
   sizeMobile: string;
   sizeDesktop: string;
+  imageMobile: string;
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, color, position, sizeMobile, sizeDesktop }) => `
+  ({ image, color, position, sizeMobile, sizeDesktop, imageMobile }) => `
   height: 500px;
   background-image:url(${image});
   background-position: ${position};
@@ -31,6 +32,7 @@ export const StyledImage = styled.div<StyledImageProps>(
   @media ${device.mobileM} { 
     height: 300px;
     background-size: ${sizeMobile};
+    background-image:url(${imageMobile});
   }
 `
 );
@@ -45,13 +47,14 @@ export const StyledContainer = styled.div<StyledContainerProps>(
   ({ color, padding, paddingMobile }) => `
   position: relative;
 height: 500px;
-padding: ${padding}px;
+padding-top: ${padding}px;
 background-color: ${color};
 
 
 @media ${device.mobileM} { 
   height: 320px;
-  padding: ${paddingMobile}px;
+  padding-left: ${paddingMobile}px;
+  padding-right: ${paddingMobile}px;
 }
 `
 );

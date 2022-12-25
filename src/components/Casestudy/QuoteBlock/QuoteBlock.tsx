@@ -19,14 +19,14 @@ const QuoteBlock = ({
   quoteThree,
 }: QuoteProps) => {
   return (
-    <Grid>
+
       <StyledContainer>
         <StyledHeading>{heading}</StyledHeading>
         <StyledQuote>{quoteOne}</StyledQuote>
         <StyledQuote>{quoteTwo}</StyledQuote>
         <StyledQuote>{quoteThree}</StyledQuote>
       </StyledContainer>
-    </Grid>
+
   );
 };
 

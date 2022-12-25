@@ -9,6 +9,7 @@ type HeroImageProps = {
   paddingMobile: number;
   sizeMobile: string;
   sizeDesktop: string;
+  imageMobile: string;
 };
 
 const Heroimage = ({
@@ -19,6 +20,7 @@ const Heroimage = ({
   padding,
   position,
   sizeMobile,
+  imageMobile,
 }: HeroImageProps) => {
   return (
     <StyledContainer
@@ -27,6 +29,7 @@ const Heroimage = ({
       color={color}
     >
       <StyledImage
+        imageMobile={imageMobile}
         sizeDesktop={sizeDesktop}
         sizeMobile={sizeMobile}
         position={position}

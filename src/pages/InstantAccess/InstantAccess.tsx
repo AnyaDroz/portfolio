@@ -1,10 +1,9 @@
 //images
 import InstantAccessHero from "../../images/InstantAccessHero.png";
+import InstantAccessHeroMobile from "../../images/InstantAccessMobile.png";
 import MobileIA from "../../images/MobileIA.png";
 import GraphOne from "../../images/GraphOneIA.png";
 import GraphTwo from "../../images/GraphTwoIA.png";
-import SVGOne from "../../images/SvgOne.svg";
-import SVGTwo from "../../images/SvgTwo.svg";
 import WireframeOne from "../../images/IAwireframe_1.png";
 import WireframeTwo from "../../images/IAwireframe_2.png";
 import WireframeThree from "../../images/IAwireframe_3.png";
@@ -20,6 +19,7 @@ import IAHighFidThree from "../../images/IAHighFidelityThree.png";
 import IAHighFidFour from "../../images/IAHighFidelityFour.png";
 import IAGifthree from "../../images/instant_access3.gif";
 import IABottomFrame from "../../images/IABottomFrame.png";
+import {StyledLogoContainer} from "./InstantAccess.styles"
 //components
 import Heroimage from "../../components/Casestudy/Heroimage/Heroimage";
 import Description from "../../components/Casestudy/Description/Description";
@@ -37,15 +37,20 @@ import SpacerMedium from "../../components/Casestudy/Spacers/SpacerMedium/Spacer
 import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall";
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
-
+import Logo
+ from "../../components/Logo/Logo";
 const InstantAccess = () => {
   return (
     <div>
+      <StyledLogoContainer>
+        <Logo />
+      </StyledLogoContainer>
       <Heroimage
-        sizeMobile={"100vw"}
-        paddingMobile={0}
-        position={"99% 50%"}
-        padding={0}
+        imageMobile={InstantAccessHeroMobile}
+        sizeMobile={"fit"}
+        paddingMobile={10}
+        position={"center"}
+        padding={20}
         image={InstantAccessHero}
         color={"#33885B"}
         sizeDesktop={"contain"}
@@ -70,14 +75,14 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-        mobileFit={""}
+        mobilePosition={"center"}
+        mobileFit={"90% auto"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"400px"}
         marginTop={0}
         marginBottom={0}
-        color={"#F9F9F9"}
+        color={"white"}
         image={MobileIA}
       />
       <SpacerLarge />
@@ -100,15 +105,15 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"auto 100%"}
+        mobileSizeOne={"90% auto"}
+        desktopSizeTwo={"auto 100%"}
+        mobileSizeTwo={"90% auto"}
         imageOne={GraphOne}
         imageTwo={GraphTwo}
         color={"#F9F9F9"}
       />
-      <TextLayout
+      {/* <TextLayout
         heading={"Show me examples"}
         paragraphOne={"“I would like more examples”"}
         paragraphTwo={
@@ -138,7 +143,7 @@ const InstantAccess = () => {
         explainerTwo={
           "These insights highlight the way businesses have been experimenting and trying new products. It’s pretty clear self-serve has become very common place and having to call in or wait to use the product may cause friction."
         }
-      />
+      /> */}
       <SpacerLarge />
       <Heading>User journey</Heading>
       <SpacerSmall />
@@ -158,25 +163,25 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
-        marginTop={0}
-        marginBottom={0}
+        desktopHeight={"700px"}
+        mobileHeight={"300px"}
+        marginTop={10}
+        marginBottom={10}
         color={"#F9F9F9"}
         image={IAExplainer}
       />
       <SpacerXSmall />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
-        marginTop={0}
-        marginBottom={0}
+        desktopHeight={"900px"}
+        mobileHeight={"500px"}
+        marginTop={10}
+        marginBottom={10}
         color={"#F9F9F9"}
         image={IAUsermap}
       />

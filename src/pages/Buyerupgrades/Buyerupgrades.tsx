@@ -63,6 +63,7 @@ const Buyerupgrades = () => {
         padding={40}
         color={"#2D83D1"}
         image={Hero}
+        imageMobile={""}
       ></Heroimage>
       <Description
         companyName={"iwocaPay"}

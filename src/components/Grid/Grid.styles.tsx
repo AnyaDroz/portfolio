@@ -17,7 +17,7 @@ export const StyledGrid = styled.div`
   @media ${device.mobileM} {
     column-gap: 2px;
     row-gap: 8px;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 `;

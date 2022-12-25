@@ -18,8 +18,8 @@ export const StyledQuote = styled.div`
   margin-top: 20px;
  
   @media ${device.mobileM} { 
-    width: 100%;
-  
+    width: 85vw;
+    font-size: 16px;
 }
 `;
 
@@ -34,7 +34,7 @@ export const StyledHeading = styled.div`
 
 export const StyledContainer = styled.div`
 
-  width: 100vw;
+ 
   color: #0e407e;
   padding-top: 40px;
   padding-bottom: 40px;
