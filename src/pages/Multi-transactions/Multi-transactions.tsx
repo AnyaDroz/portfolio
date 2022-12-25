@@ -20,7 +20,7 @@ import Hero from "../../images/Multitransactions-Hero.png";
 import MultiSingleImage from "../../images/Multi-transactions-singleimage.png";
 import GraphOne from "../../images/Multi-Graph-One.png";
 import GraphTwo from "../../images/Multi-Graph-Two.png";
-import MultiJourney from "../../images/Multi-journeymap.svg";
+import MultiJourney from "../../images/Multi-journey.png";
 import MultiInlineImage from "../../images/Multi-InlineImage.png";
 import MultiExplainer from "../../images/Multi-explainer.png";
 import HighFidelityOne from "../../images/MThighfidelityOne.png";
@@ -48,8 +48,8 @@ const Multitransactions = () => {
         <Logo />
       </StyledLogoContainer>
       <Heroimage
-        sizeDesktop={"contain"}
-        sizeMobile={"90vw"}
+        sizeDesktop={"auto 90%"}
+        sizeMobile={"90% auto"}
         paddingMobile={0}
         position={"50% 60%"}
         padding={0}
@@ -77,10 +77,11 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-        mobileFit={""}
-        fit={"coVER"}
-        desktopHeight={""}
-        mobileHeight={""}
+        mobilePosition={"-100px"}
+        mobileFit={"cover"}
+        fit={"cover"}
+        desktopHeight={"500px"}
+        mobileHeight={"300px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -102,9 +103,9 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
+        desktopSizeOne={"auto 90%"}
         mobileSizeOne={""}
-        desktopSizeTwo={""}
+        desktopSizeTwo={"auto 90%"}
         mobileSizeTwo={""}
         imageOne={GraphOne}
         imageTwo={GraphTwo}
@@ -135,10 +136,11 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"1000px"}
+        mobileHeight={"500px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -153,11 +155,13 @@ const Multitransactions = () => {
         of varying urgency. For example, an overdue Pay link should take
         priority over a partial Pay link.
       </Paragraph>
+      <SpacerSmall/>
       <InlineImage
         image={MultiInlineImage}
         imageHeight={368}
         imageWidth={469}
       />
+      <SpacerSmall/>
       <Paragraph>
         The challenges were; figuring out the hierarchy of information on the
         dashboard - to show the most important top-level information first and
@@ -173,10 +177,11 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-        mobileFit={""}
+        mobilePosition={"center"}
+        mobileFit={"110% auto"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"500px"}
+        mobileHeight={"250px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -223,10 +228,10 @@ const Multitransactions = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"auto 90%"}
+        mobileSizeOne={"90% auto"}
+        desktopSizeTwo={"auto 90%"}
+        mobileSizeTwo={"90% auto"}
         imageOne={HighFidOne}
         imageTwo={HighFidTwo}
         color={"#0E407E"}
@@ -241,12 +246,12 @@ const Multitransactions = () => {
       <SpacerLarge />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -325,12 +330,12 @@ const Multitransactions = () => {
       <SpacerLarge />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -365,12 +370,12 @@ const Multitransactions = () => {
       <SpacerLarge />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -380,12 +385,13 @@ const Multitransactions = () => {
       ></FullBleedGif>
       <SpacerLarge />
       <SingleImage
-        mobileFit={""}
+        mobilePosition={""}
+        mobileFit={"contain"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
-        marginTop={0}
-        marginBottom={0}
+        desktopHeight={"600px"}
+        mobileHeight={"300px"}
+        marginTop={40}
+        marginBottom={40}
         color={"#F9F9F9"}
         image={MTFinal}
       />

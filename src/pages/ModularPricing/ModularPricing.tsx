@@ -72,6 +72,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -98,6 +99,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -117,6 +119,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -226,6 +229,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -246,6 +250,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -349,6 +354,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"cover"}
         desktopHeight={""}

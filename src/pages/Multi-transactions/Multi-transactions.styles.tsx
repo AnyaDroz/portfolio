@@ -9,9 +9,9 @@ export const device = {
 };
 
 export const StyledLogoContainer = styled.div`
-  @media ${device.mobileM} {
-    position: absolute;
-    z-index: 1;
-    padding: 8px;
-  }
+
+position: absolute;
+  z-index: 1;
+  padding: 8px;
+
 `;

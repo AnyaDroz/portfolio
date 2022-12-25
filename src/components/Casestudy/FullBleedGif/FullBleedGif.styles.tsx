@@ -46,7 +46,7 @@ background-position: ${desktopPosition};
 background-repeat: no-repeat;
 background-size: ${desktopSize};
 position: relative;
-border-radius: 16px;
+
 outline: 1px solid black;
 margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
@@ -57,7 +57,7 @@ margin-bottom: ${marginBottom}px;
   max-height: ${mobileHeight};
   margin: ${mobileMargin};
   background-position: ${mobilePosition};
-  border-radius: 16px;
+
   }
 `
 );

@@ -257,6 +257,7 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
        desktopHeight={"700px"}
        mobileHeight={"300px"}
         mobileFit={""}
@@ -347,6 +348,7 @@ const Buyerupgrades = () => {
       />
       <SpacerXSmall />
       <SingleImage
+      mobilePosition={""}
          desktopHeight={"600px"}
          mobileHeight={"300px"}
         mobileFit={"1000px auto"}

@@ -70,6 +70,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -157,6 +158,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -168,6 +170,7 @@ const InstantAccess = () => {
       />
       <SpacerXSmall />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={""}
@@ -224,6 +227,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
+      mobilePosition={""}
         mobileFit={""}
         fit={"cover"}
         desktopHeight={""}

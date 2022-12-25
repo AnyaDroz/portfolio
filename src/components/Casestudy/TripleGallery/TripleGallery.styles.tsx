@@ -1,4 +1,11 @@
 import styled from "styled-components";
+const size = {
+  mobileM: "768px",
+};
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
 type StyledImageGallery = {
   color: string;
@@ -6,11 +13,19 @@ type StyledImageGallery = {
 
 export const GalleryGrid = styled.div<StyledImageGallery>(
   ({ color }) => `
+  margin: auto;
+  justify-content: center;
 display: grid;
 grid-template-columns: 30% 8px 30% 8px 30%;;
 grid-template-rows: 20vw 20vw;
 padding: 16px;
 background-color: ${color};
+
+@media ${device.mobileM} { 
+  grid-template-columns: 50% 8px 50%;
+grid-template-rows: 35vw 35vw 35vw;
+padding: 8px;
+  }
 `
 );
 
@@ -28,6 +43,13 @@ grid-column-start: 1;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
 `
 );
 
@@ -41,6 +63,13 @@ grid-column-start: 3;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
 `
 );
 
@@ -54,6 +83,14 @@ export const StyledImageThree = styled.div<StyledImageProps>(
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
+
 `
 );
 
@@ -67,6 +104,13 @@ grid-column-start: 1;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobileM} { 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
 `
 );
 
@@ -80,7 +124,12 @@ grid-column-start: 3;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
   
 `
 );
@@ -95,5 +144,11 @@ grid-column-start: 5;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+  @media ${device.mobileM} { 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
 `
 );
