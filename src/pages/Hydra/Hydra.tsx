@@ -43,10 +43,13 @@ import HydraTwoOfTwo from "../../images/HydraTwoOfTwo.png";
 import HydraMobile from "../../images/HydraHeroMobile.png"
 import Logo from "../../components/Logo/Logo";
 import {StyledLogoContainer} from "./Hydra.styles"
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 
 const Hydra = () => {
   return (
     <div>
+      <PasscodeChecker/>
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>

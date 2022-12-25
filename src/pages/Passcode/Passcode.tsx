@@ -1,12 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import useLocalStorage from "use-local-storage";
 import { useNavigate } from "react-router-dom";
+
+
 
 const Passcode = () => {
   const [number, setNumber] = useLocalStorage<string | null>("secret", null);
   let navigate = useNavigate();
-  const passwordEnteredRef = useRef(false);
-
+  
   useEffect(() => {
     if (number==="223") {navigate("/home")};
     if (number !== "223") {
@@ -15,11 +16,15 @@ const Passcode = () => {
     setNumber(enteredNumber);
     } else {
       console.log("hi")
-      passwordEnteredRef.current = true;
-      navigate("/home");
+      setTimeout(()=>{
+        let path = `/home`;
+        navigate(path);
+      },1000)
       
     }
   }, []);
+  
+  
   
 
   return <div></div>;

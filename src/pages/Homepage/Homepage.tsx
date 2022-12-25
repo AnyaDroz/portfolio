@@ -26,7 +26,6 @@ import Logo from "../../components/Logo/Logo";
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-import useLocalStorage from "use-local-storage";
 
 
 const Homepage = () => {
@@ -39,7 +38,7 @@ const Homepage = () => {
   const [introHeight, setintroHeight] = useState<any>(0);
   const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
-  const [passcode] = useLocalStorage<string | null>("secret", null);
+ 
 
   const routeChangeBuyer = (e: React.MouseEvent) => {
     console.log("click");
