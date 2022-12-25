@@ -25,6 +25,7 @@ import {
 import Logo from "../../components/Logo/Logo";
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 
 const Homepage = () => {
   const firstContainerRef = useRef<any>(null);
@@ -94,17 +95,16 @@ const Homepage = () => {
     const onScroll = () => setOffset(window.pageYOffset);
     window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
-    console.log(offset);
     const introHeight: number =
       introContainerRef.current.getBoundingClientRect().height;
     setintroHeight(introHeight);
-    console.log(introHeight);
     setOffset(offset);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <>
+    <PasscodeChecker/>
       <StyledMainContent onMouseMove={getPosition}>
         <StyledCursorHorizontal
           introHeight={introHeight}
@@ -115,12 +115,12 @@ const Homepage = () => {
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
             <Logo />
-          </StyledContainerLogo>
+          
           <StyledIntro>
             Anya is a product designer creating soulful & strategic experiences,
             with a love for programming.
           </StyledIntro>
-
+          </StyledContainerLogo>
           <StyledNavItems>
             <StyledNavItem>
               <a

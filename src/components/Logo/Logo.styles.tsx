@@ -13,6 +13,9 @@ type StyledLogoProps = {
 };
 
 export const StyledLogo = styled.div`
+:hover {
+    cursor: pointer;
+}
   height: 20px;
   width: 20px;
   background-image: url(${Logo});
