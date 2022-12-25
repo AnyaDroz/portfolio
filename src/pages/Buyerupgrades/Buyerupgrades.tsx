@@ -17,11 +17,10 @@ import SubHeading from "../../components/Casestudy/TextSection/SubHeading/SubHea
 import Quote from "../../components/Casestudy/TextSection/Quote/Quote";
 import Callout from "../../components/Casestudy/TextSection/CallOut/CallOut";
 //images
-import BuyerProblemImage from "../../images/BuyerUpgradesInlineImage.png";
 import Hero from "../../images/BuyerupgradesHero.png";
 import BuyerChartOne from "../../images/BuyerChartOne.svg";
 import BuyerChartTwo from "../../images/BuyerChartTwo.svg";
-import BuyerUpgradeGifOne from "../../images/Buyerupgradesgif01.gif";
+import BuyerUpgradeGifOne from "../../images/Buyerupgradeone.gif";
 import BuyerResearchOne from "../../images/buyerresearchwall.png";
 import BuyerResearchTwo from "../../images/buyerresearchwalltwo.png";
 import BuyerWireframeOne from "../../images/BuyerWireframeOne.png";
@@ -41,13 +40,13 @@ import HighFidelityThree from "../../images/HighFidelityThree.png";
 import HighFidelityFour from "../../images/HighFidelityFour.png";
 import HighFidelityFive from "../../images/HighFidelityFive.png";
 import HighFidelitySix from "../../images/HighFidelitySix.png";
-import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg";
 import BuyerResultsOne from "../../images/BuyerResultsOne.png";
 import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Buyerupgrades.styles";
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 
 const Buyerupgrades = () => {
   return (
@@ -410,6 +409,11 @@ const Buyerupgrades = () => {
         mobileSizeTwo={"auto 40%"}
       />
       <SpacerLarge />
+      <RecommendedProjects 
+      nextPath={"/instant-access"}
+      previousPath={"/multi-transactions"}
+      previousProject={"Multi-transactions"}
+      nextProject={"Instant Access"}/>
     </div>
   );
 };

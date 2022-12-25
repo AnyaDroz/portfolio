@@ -56,7 +56,7 @@ export const StyledTripleImageGrid = styled.div<StyledTripleProps>(
   ({ color }) => `
 display: grid;
 grid-template-columns: 30% 16px 30% 16px 30%;
-height:50vh;
+height: 380px;
 width: 100vw;
 justify-content: center;
 background-color: ${color};
@@ -81,7 +81,7 @@ export const StyledImageOne = styled.div<StyledImageProps>(
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 400px;
+  height: 300px;
 width: auto;
 @media ${device.mobileM} { 
   background-size: contain;
@@ -98,7 +98,7 @@ export const StyledImageTwo = styled.div<StyledImageProps>(
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 400px;
+  height: 300px;
 width: auto;
 @media ${device.mobileM} { 
   background-size: contain;
@@ -114,7 +114,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 400px;
+  height: 300px;
     width: auto;
     @media ${device.mobileM} { 
       background-size: contain;
@@ -128,6 +128,5 @@ export const StyledCaption = styled.div`
   font-size: 16px;
   width: 100%;
   line-height: 120%;
-  margin-top: 20px;
   height: 20px;
 `;

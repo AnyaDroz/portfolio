@@ -37,7 +37,7 @@ import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLa
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./ModularPricing.styles";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-
+import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 const ModularPricing = () => {
   return (
     <div>
@@ -372,6 +372,11 @@ const ModularPricing = () => {
         color={"#F9F9F9"}
         image={MPFinal}
       />
+       <RecommendedProjects 
+      nextPath={"/quotes"}
+      previousPath={"/buyer-upgrades"}
+      previousProject={"Buyer Upgrades"}
+      nextProject={"Quotes"}/>
     </div>
   );
 };

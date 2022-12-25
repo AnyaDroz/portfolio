@@ -37,7 +37,7 @@ import { StyledLogoContainer } from "./Quotes.styles";
 import QuotesGif from "../../images/QuotesGif.gif";
 import QuotesGifTwo from "../../images/QuotesGifTwo.gif";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-
+import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 const Quotes = () => {
   return (
     <div>
@@ -296,6 +296,11 @@ const Quotes = () => {
         imageFour={QuotesHighFour}
         color={"#E29FBB"}
       />
+      <RecommendedProjects 
+      nextPath={"/hydra"}
+      previousPath={"/modular-pricing"}
+      previousProject={"Modular Pricing"}
+      nextProject={"Hydra"}/>
     </div>
   );
 };

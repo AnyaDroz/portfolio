@@ -42,7 +42,7 @@ import MultiGifThree from "../../images/MultiGThree.gif";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Multi-transactions.styles";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-
+import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 const Multitransactions = () => {
   return (
     <div>
@@ -400,6 +400,11 @@ const Multitransactions = () => {
         color={"#F9F9F9"}
         image={MTFinal}
       />
+       <RecommendedProjects 
+      nextPath={"/instant-access"}
+      previousPath={"/buyer-upgrades"}
+      previousProject={"Buyer Upgrades"}
+      nextProject={"Instant Access"}/>
     </div>
   );
 };

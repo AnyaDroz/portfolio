@@ -41,6 +41,7 @@ import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLa
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import Logo from "../../components/Logo/Logo";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 
 const InstantAccess = () => {
   return (
@@ -360,6 +361,11 @@ const InstantAccess = () => {
         width={830}
         height={519}
       />
+       <RecommendedProjects 
+      nextPath={"/modular-pricing"}
+      previousPath={"/multi-transactions"}
+      previousProject={"Multi-transactions"}
+      nextProject={"Modular pricing"}/>
     </div>
   );
 };
