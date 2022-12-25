@@ -11,7 +11,6 @@ import ProjectFiveInitial from "../../images/ProjectFiveInitial.png";
 import ProjectFive from "../../images/ProjectFive.png";
 import ProjectSix from "../../images/ProjectSix.png";
 import ProjectSixInitial from "../../images/ProjectSixInitial.png";
-import Logo from "../../images/Logo.svg";
 
 const size = {
   mobileM: "768px",
@@ -28,11 +27,11 @@ export const StyledGrid = styled.div`
   grid-template-rows: [first] 664px [line2] 8px [line3] 664px [line4] 8px [line5] 664px [line6] 8px;
 
   @media ${device.mobileM} {
-      margin-top: 150px;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px;
-      margin-bottom: 496px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px 400px 8px;
+    margin-bottom: 496px;
   }
 `;
 
@@ -427,35 +426,14 @@ export const StyledFooter = styled.div`
   font-weight: 150;
 `;
 
-type StyledLogoProps = {
-  image: string;
-};
-
-export const StyledLogo = styled.div`
-  height: 20px;
-  width: 20px;
-
-  background-image: url(${Logo});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media ${device.mobileM} {
-    height: 20px;
-    width: 20px;
-    order: 1;
-    margin-left: 0px;
-    margin-bottom: 20px;
-  }
-`;
-
 export const StyledContainerLogo = styled.div`
   display: flexbox;
   @media ${device.mobileM} {
     display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
   }
 `;
-
 
 type StyledLinedProps = {
   positiony: number;
@@ -464,7 +442,7 @@ type StyledLinedProps = {
 };
 
 export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
-  ({ positiony, offset, introHeight}) => `
+  ({ positiony, offset, introHeight }) => `
   height: 1px;
   width: 100%; 
   background-color: red;
@@ -538,8 +516,6 @@ export const StyledNavItems = styled.div`
     gap: 5px;
   }
 `;
-
-
 
 export const StyledNavItem = styled.div`
   @media ${device.mobileM} {

@@ -53,11 +53,11 @@ export const StyledImageContainerOne = styled.div<StyledImageProps>(
     background-size: 90% auto; 
     
     @media ${device.mobileM} {
-      height: 400px; 
+      height: 550px; 
       background-position: center;
-      background-size: 60%;
+      background-size: 85% auto;
       margin: auto;
-      padding-top: 50px;
+
   }
 `
 );
@@ -68,28 +68,24 @@ export const StyledImageContainerTwo = styled.div<StyledImageProps>(
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-
-
-    background-image:url(${image});
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 90% auto; ; 
+  background-image:url(${image});
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 90% auto; 
 
     @media ${device.mobileM} { 
+      height: 420px; 
       background-position: center;
-      height: 400px;
-      background-size: 60%;
-      margin-top: 20px;
+      background-size: 85% auto;
+      margin: auto;
   }
 `
 );
 
-
-
 export const StyledContainer = styled.div`
   display: grid;
-grid-template-columns: 30% 30% 30%;
-grid-template-rows: 500px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 600px;
   gap: 80px;
   background-color: #f9f9f9;
 

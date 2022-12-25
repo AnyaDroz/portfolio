@@ -1,20 +1,17 @@
-
 import styled from "styled-components";
 
 const size = {
-    mobileM: "768px",
-  };
-  
-  export const device = {
-    mobileM: `(max-width: ${size.mobileM})`,
-  };
+  mobileM: "768px",
+};
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
 export const StyledLogoContainer = styled.div`
-@media ${device.mobileM} { 
-
-  position:absolute;
-  z-index: 1;
-  padding: 8px;
-
-}
+  @media ${device.mobileM} {
+    position: absolute;
+    z-index: 1;
+    padding: 8px;
+  }
 `;

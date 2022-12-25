@@ -43,18 +43,32 @@ const DoubleGallery = ({
   mobileGrid,
   mobileSize,
   desktopPadding,
-  mobilePadding
+  mobilePadding,
 }: GalleryProps) => {
   return (
-    <GalleryGrid mobilePadding={mobilePadding} desktopPadding={desktopPadding} mobileGrid={mobileGrid} color={color} grid={grid}>
+    <GalleryGrid
+      mobilePadding={mobilePadding}
+      desktopPadding={desktopPadding}
+      mobileGrid={mobileGrid}
+      color={color}
+      grid={grid}
+    >
       <StyledImageOne mobileSize={mobileSize} image={imageOne} />
       <StyledImageTwo mobileSize={mobileSize} image={imageTwo} />
       <StyledImageThree mobileSize={mobileSize} image={imageThree} />
       <StyledImageFour mobileSize={mobileSize} image={imageFour} />
       <StyledImageFive mobileSize={mobileSize} image={imageFive} />
       <StyledImageSix mobileSize={mobileSize} image={imageSix} />
-      {imageSeven ? <StyledImageSeven  mobileSize={mobileSize} image={imageSeven} /> : ""}
-      {imageEight ? <StyledImageEight  mobileSize={mobileSize} image={imageEight} /> : ""}
+      {imageSeven ? (
+        <StyledImageSeven mobileSize={mobileSize} image={imageSeven} />
+      ) : (
+        ""
+      )}
+      {imageEight ? (
+        <StyledImageEight mobileSize={mobileSize} image={imageEight} />
+      ) : (
+        ""
+      )}
     </GalleryGrid>
   );
 };

@@ -12,6 +12,9 @@ type FullBleedProps = {
   mobileMargin: string;
   mobileHeight: string;
   mobileWidth: string;
+  desktopPosition: string;
+  desktopSize: string;
+  mobilePosition: string;
 };
 
 const FullBleedGif = ({
@@ -24,16 +27,21 @@ const FullBleedGif = ({
   mobileSize,
   mobileMargin,
   mobileHeight,
-  mobileWidth
+  mobileWidth,
+  desktopPosition,
+  desktopSize,
+  mobilePosition,
 }: FullBleedProps) => {
   return (
     <StyledContainer color={color}>
       <StyledImage
-      mobileWidth= {mobileWidth}
-      mobileHeight= {mobileHeight}
-      mobileMargin= {mobileMargin}
-      mobileSize= {mobileSize}
-    
+        mobilePosition={mobilePosition}
+        desktopSize={desktopSize}
+        mobileWidth={mobileWidth}
+        mobileHeight={mobileHeight}
+        mobileMargin={mobileMargin}
+        mobileSize={mobileSize}
+        desktopPosition={desktopPosition}
         marginTop={marginTop}
         marginBottom={marginBottom}
         image={image}

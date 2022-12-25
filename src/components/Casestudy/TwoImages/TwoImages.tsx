@@ -13,20 +13,34 @@ type TwoImagesProps = {
   color: string;
   mobileSizeOne: string;
   desktopSizeOne: string;
-  mobileSizeTwo:string;
-  desktopSizeTwo:string;
-
-
+  mobileSizeTwo: string;
+  desktopSizeTwo: string;
 };
 
-const TwoImages = ({ imageOne, imageTwo, color, mobileSizeOne, desktopSizeOne, mobileSizeTwo, desktopSizeTwo }: TwoImagesProps) => {
+const TwoImages = ({
+  imageOne,
+  imageTwo,
+  color,
+  mobileSizeOne,
+  desktopSizeOne,
+  mobileSizeTwo,
+  desktopSizeTwo,
+}: TwoImagesProps) => {
   return (
     <Grid>
       <StyledContainerOne color={color}>
-        <StyledImageOne desktopSizeOne={desktopSizeOne} mobileSizeOne={mobileSizeOne} image={imageOne} />
+        <StyledImageOne
+          desktopSizeOne={desktopSizeOne}
+          mobileSizeOne={mobileSizeOne}
+          image={imageOne}
+        />
       </StyledContainerOne>
       <StyledContainerTwo color={color}>
-        <StyledImageTwo desktopSizeTwo={desktopSizeTwo} mobileSizeTwo={mobileSizeTwo} image={imageTwo} />
+        <StyledImageTwo
+          desktopSizeTwo={desktopSizeTwo}
+          mobileSizeTwo={mobileSizeTwo}
+          image={imageTwo}
+        />
       </StyledContainerTwo>
     </Grid>
   );

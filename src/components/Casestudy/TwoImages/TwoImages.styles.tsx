@@ -52,11 +52,10 @@ type StyledImagePropsOne = {
   image: string;
   desktopSizeOne: string;
   mobileSizeOne: string;
-
 };
 
 export const StyledImageOne = styled.div<StyledImagePropsOne>(
-  ({ image, desktopSizeOne, mobileSizeOne  }) => `
+  ({ image, desktopSizeOne, mobileSizeOne }) => `
   margin: auto;
   height: 500px;
   background-image:url(${image});
@@ -78,9 +77,8 @@ type StyledImagePropsTwo = {
   mobileSizeTwo: string;
 };
 
-
 export const StyledImageTwo = styled.div<StyledImagePropsTwo>(
-  ({ image, desktopSizeTwo, mobileSizeTwo  }) => `
+  ({ image, desktopSizeTwo, mobileSizeTwo }) => `
   height: 500px;
   background-image:url(${image});
   background-position: center;

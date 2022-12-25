@@ -37,9 +37,9 @@ const Quotes = () => {
   return (
     <div>
       <Heroimage
-      sizeDesktop={"contain"}
-      sizeMobile={""}
-       paddingMobile={40}
+        sizeDesktop={"contain"}
+        sizeMobile={""}
+        paddingMobile={40}
         position={"bottom"}
         padding={40}
         color={"#E29FBB"}
@@ -70,9 +70,10 @@ const Quotes = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"contain"}
-        height={500}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={50}
         marginBottom={50}
         image={QuotesHighFid}
@@ -216,9 +217,10 @@ const Quotes = () => {
       </Quote>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"contain"}
-        height={500}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={50}
         marginBottom={50}
         image={QuotesMobileSingle}

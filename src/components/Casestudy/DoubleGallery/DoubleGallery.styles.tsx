@@ -35,7 +35,6 @@ export const GalleryGrid = styled.div<StyledImageGallery>(
 }`
 );
 
-
 type StyledImageProps = {
   image: string;
   mobileSize: string;

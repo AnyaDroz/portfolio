@@ -44,21 +44,21 @@ import HighFidelitySix from "../../images/HighFidelitySix.png";
 import BuyerResultsGraph from "../../images/BuyerResultsGraph.svg";
 import BuyerResultsOne from "../../images/BuyerResultsOne.png";
 import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png";
-import Logo from "../../components/Logo/Logo"
-import { StyledLogoContainer} from "./Buyerupgrades.styles";
+import Logo from "../../components/Logo/Logo";
+import { StyledLogoContainer } from "./Buyerupgrades.styles";
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
 
 const Buyerupgrades = () => {
   return (
     <div>
       <StyledLogoContainer>
-      <Logo/>
+        <Logo />
       </StyledLogoContainer>
-   
+
       <Heroimage
-      sizeDesktop={"100vw"}
-      sizeMobile={"140vw"}
-      paddingMobile={0}
+        sizeDesktop={"100vw"}
+        sizeMobile={"140vw"}
+        paddingMobile={0}
         position={"center"}
         padding={40}
         color={"#2D83D1"}
@@ -96,10 +96,13 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
-        mobileWidth= {"95vw"}
-        mobileHeight= {"65vw"}
-        mobileMargin= {"20px"}
-        mobileSize= {"cover"}
+        mobilePosition={"-3px -3px"}
+        desktopSize={"auto 102%"}
+        desktopPosition={"-6px -6px"}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"auto 98%"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -147,10 +150,10 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-     desktopSizeOne={"contain"}
-     mobileSizeOne={"contain"}
-     desktopSizeTwo={"contain"}
-     mobileSizeTwo={"fit"}
+        desktopSizeOne={"contain"}
+        mobileSizeOne={"contain"}
+        desktopSizeTwo={"contain"}
+        mobileSizeTwo={"fit"}
         imageOne={BuyerChartOne}
         imageTwo={BuyerChartTwo}
         color={"white"}
@@ -230,8 +233,8 @@ const Buyerupgrades = () => {
       <DoubleGallery
         mobilePadding={""}
         desktopPadding={""}
-        mobileSize={"80% auto"}
-        mobileGrid={"65vw 65vw 65vw 65vw 65vw 65vw 72vw 72vw;"}
+        mobileSize={"90%"}
+        mobileGrid={"70vw 70vw 70vw 70vw 70vw 70vw 80vw 80vw"}
         grid={"40vw 40vw 40vw 40vw"}
         color={"white"}
         imageOne={BuyerWireframeOne}
@@ -254,11 +257,12 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+       desktopHeight={"700px"}
+       mobileHeight={"300px"}
+        mobileFit={""}
         fit={"contain"}
-        height={500}
-        marginTop={50}
-        marginBottom={50}
+        marginTop={0}
+        marginBottom={0}
         image={BuyerBeforeAndAfter}
         color={"#2D83D1"}
       />
@@ -337,15 +341,16 @@ const Buyerupgrades = () => {
         imageOne={BuyerScreen}
         imageTwo={BuyerMobile}
         desktopSizeOne={"80% auto"}
-        mobileSizeOne={"auto 80%"}
+        mobileSizeOne={"90% auto "}
         desktopSizeTwo={"auto 80%"}
-        mobileSizeTwo={"auto 80%"}
+        mobileSizeTwo={"auto 90%"}
       />
       <SpacerXSmall />
       <SingleImage
-        mobileFit={"950px auto"}
+         desktopHeight={"600px"}
+         mobileHeight={"300px"}
+        mobileFit={"1000px auto"}
         fit={"cover"}
-        height={600}
         marginTop={0}
         marginBottom={0}
         image={BuyerComponents}
@@ -363,9 +368,9 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <DoubleGallery
-       mobilePadding={"20px"}
-       desktopPadding={"60px"}
-      mobileSize={"90% auto"}
+        mobilePadding={"20px"}
+        desktopPadding={"60px"}
+        mobileSize={"90% auto"}
         mobileGrid={"65vw 65vw 65vw 65vw 65vw 65vw"}
         color={"#2D83D1"}
         imageOne={HighFidelityOne}
@@ -399,8 +404,7 @@ const Buyerupgrades = () => {
         mobileSizeTwo={"auto 40%"}
       />
       <SpacerLarge />
-  
-      </div>
+    </div>
   );
 };
 

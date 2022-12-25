@@ -13,10 +13,4 @@
   src: url("./fonts/TWKLausanne-600.woff2");
 }
 
-const size = {
-  mobilem: "425px";
-}
 
-export const device = {
-  mobilem: `(max-width: ${size.mobileM}) `;
-}

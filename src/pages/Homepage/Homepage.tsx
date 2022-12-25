@@ -22,7 +22,7 @@ import {
   StyledCaseStudySixActive,
   StyledContainerLogo,
 } from "./Homepage.styles";
-import Logo from "../../components/Logo/Logo"
+import Logo from "../../components/Logo/Logo";
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const Homepage = () => {
   const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
 
-  const routeChangeBuyer= (e: React.MouseEvent) => {
+  const routeChangeBuyer = (e: React.MouseEvent) => {
     console.log("click");
     let path = `/buyer-upgrades`;
     navigate(path);
@@ -61,7 +61,7 @@ const Homepage = () => {
     navigate(path);
   };
 
-  const routeChangeQuotes= (e: React.MouseEvent) => {
+  const routeChangeQuotes = (e: React.MouseEvent) => {
     console.log("click");
     let path = `/quotes`;
     navigate(path);
@@ -72,8 +72,6 @@ const Homepage = () => {
     let path = `/hydra`;
     navigate(path);
   };
-
-  
 
   const getPosition = (e: React.MouseEvent) => {
     const x = e.clientX;
@@ -90,7 +88,6 @@ const Homepage = () => {
     const introHeight: number =
       introContainerRef.current.getBoundingClientRect().height;
     setintroHeight(introHeight);
-    
   };
 
   useEffect(() => {
@@ -99,9 +96,9 @@ const Homepage = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     console.log(offset);
     const introHeight: number =
-    introContainerRef.current.getBoundingClientRect().height;
+      introContainerRef.current.getBoundingClientRect().height;
     setintroHeight(introHeight);
-    console.log(introHeight)
+    console.log(introHeight);
     setOffset(offset);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -109,16 +106,21 @@ const Homepage = () => {
   return (
     <>
       <StyledMainContent onMouseMove={getPosition}>
-        <StyledCursorHorizontal introHeight={introHeight} positiony={positiony} offset={offset} />
+        <StyledCursorHorizontal
+          introHeight={introHeight}
+          positiony={positiony}
+          offset={offset}
+        />
         <StyledCursorVertical positionx={positionx} offset={offset} />
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
-            <Logo/>
-            <StyledIntro>
-              Anya is a product designer creating soulful & strategic
-              experiences, with a love for programming.
-            </StyledIntro>
+            <Logo />
           </StyledContainerLogo>
+          <StyledIntro>
+            Anya is a product designer creating soulful & strategic experiences,
+            with a love for programming.
+          </StyledIntro>
+
           <StyledNavItems>
             <StyledNavItem>
               <a

@@ -19,7 +19,7 @@ type StyledImageProps = {
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, color, position,sizeMobile,sizeDesktop }) => `
+  ({ image, color, position, sizeMobile, sizeDesktop }) => `
   height: 500px;
   background-image:url(${image});
   background-position: ${position};
@@ -55,6 +55,3 @@ background-color: ${color};
 }
 `
 );
-
-
-

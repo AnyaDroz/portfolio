@@ -28,10 +28,9 @@ const ImageAndText = ({
 }: ImageAndTextProps) => {
   return (
     <StyledContainer>
-    
-        <StyledImageContainerOne image={imageOne} />
-        <StyledImageContainerTwo image={imageTwo} />
-    
+      <StyledImageContainerOne image={imageOne} />
+      <StyledImageContainerTwo image={imageTwo} />
+
       <StyledTextContainer>
         <StyledHeader>{header}</StyledHeader>
         <StyledBulletPoint>{bulletPointOne}</StyledBulletPoint>

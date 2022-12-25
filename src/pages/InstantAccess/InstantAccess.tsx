@@ -42,8 +42,8 @@ const InstantAccess = () => {
   return (
     <div>
       <Heroimage
-      sizeMobile={"100vw"}
-       paddingMobile={0}
+        sizeMobile={"100vw"}
+        paddingMobile={0}
         position={"99% 50%"}
         padding={0}
         image={InstantAccessHero}
@@ -70,9 +70,10 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"contain"}
-        height={500}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -97,12 +98,15 @@ const InstantAccess = () => {
         good news - once they try it - they’re staying more active!
       </Paragraph>
       <SpacerLarge />
-      <TwoImages 
-      desktopSizeOne={""}
-      mobileSizeOne={""}
-      desktopSizeTwo={""}
-      mobileSizeTwo={""}
-        imageOne={GraphOne} imageTwo={GraphTwo} color={"#F9F9F9"} />
+      <TwoImages
+        desktopSizeOne={""}
+        mobileSizeOne={""}
+        desktopSizeTwo={""}
+        mobileSizeTwo={""}
+        imageOne={GraphOne}
+        imageTwo={GraphTwo}
+        color={"#F9F9F9"}
+      />
       <TextLayout
         heading={"Show me examples"}
         paragraphOne={"“I would like more examples”"}
@@ -153,9 +157,10 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"contain"}
-        height={500}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -163,9 +168,10 @@ const InstantAccess = () => {
       />
       <SpacerXSmall />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"contain"}
-        height={1000}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -218,9 +224,10 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobileFit={""}
+        mobileFit={""}
         fit={"cover"}
-        height={500}
+        desktopHeight={""}
+        mobileHeight={""}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -228,10 +235,13 @@ const InstantAccess = () => {
       />
       <SpacerSmall />
       <FullBleedGif
-      mobileWidth= {"95vw"}
-      mobileHeight= {"60vw"}
-      mobileMargin= {"20px"}
-      mobileSize= {"mobileSize"}
+        mobilePosition={""}
+        desktopSize={""}
+        desktopPosition={""}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"mobileSize"}
         marginTop={100}
         marginBottom={100}
         color={"#33885B"}
@@ -278,10 +288,13 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FullBleedGif
-      mobileWidth= {"95vw"}
-      mobileHeight= {"60vw"}
-      mobileMargin= {"20px"}
-      mobileSize= {"mobileSize"}
+        mobilePosition={""}
+        desktopSize={""}
+        desktopPosition={""}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"mobileSize"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -313,10 +326,13 @@ const InstantAccess = () => {
       />
       <SpacerSmall />
       <FullBleedGif
-      mobileWidth= {"95vw"}
-      mobileHeight= {"60vw"}
-      mobileMargin= {"20px"}
-      mobileSize= {"mobileSize"}
+        mobilePosition={""}
+        desktopSize={""}
+        desktopPosition={""}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"mobileSize"}
         marginTop={50}
         marginBottom={50}
         color={"#33885B"}

@@ -18,37 +18,49 @@ type StyledImageProps = {
   mobileHeight: string;
   mobileMargin: string;
   mobileSize: string;
-
-}
-
+  desktopPosition: string;
+  desktopSize: string;
+  mobilePosition: string;
+};
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, width, height, marginTop, marginBottom, mobileWidth, mobileHeight , mobileMargin, mobileSize }) => `
+  ({
+    image,
+    desktopSize,
+    width,
+    height,
+    marginTop,
+    marginBottom,
+    mobileWidth,
+    mobileHeight,
+    mobileMargin,
+    mobileSize,
+    desktopPosition,
+    mobilePosition,
+  }) => `
 margin: auto;
 width: ${width}px;
 height: ${height}px;
 background-image:url(${image});
-background-position: center;
+background-position: ${desktopPosition};
 background-repeat: no-repeat;
-background-size: cover; 
+background-size: ${desktopSize};
 position: relative;
 border-radius: 16px;
-outline: 5px solid black;
-outline-offset: -4px;
+outline: 1px solid black;
 margin-top: ${marginTop}px;
 margin-bottom: ${marginBottom}px;
 
 @media ${device.mobileM} { 
+  background-size: ${mobileSize};
   max-width: ${mobileWidth};
   max-height: ${mobileHeight};
   margin: ${mobileMargin};
-  background-size: ${mobileSize};
+  background-position: ${mobilePosition};
+  border-radius: 16px;
   }
 `
 );
-
-
-
 
 type StyledContainerProps = {
   color: string;
@@ -58,6 +70,7 @@ export const StyledContainer = styled.div<StyledContainerProps>(
     background-color: ${color};
     display: flex;
     justify-content: center;
+    
 
    
 `

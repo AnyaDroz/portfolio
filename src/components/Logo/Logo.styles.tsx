@@ -1,24 +1,22 @@
 import styled from "styled-components";
 import Logo from "../../images/Logo.svg";
 const size = {
-    mobileM: "768px",
-  };
-  
-  export const device = {
-    mobileM: `(max-width: ${size.mobileM})`,
-  };
+  mobileM: "768px",
+};
 
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
 
 type StyledLogoProps = {
-    image: string;
-  };
-  
-  export const StyledLogo = styled.div`
-    height: 20px;
-    width: 20px;
-    background-image: url(${Logo});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-  `;
+  image: string;
+};
+
+export const StyledLogo = styled.div`
+  height: 20px;
+  width: 20px;
+  background-image: url(${Logo});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+`;
