@@ -56,14 +56,15 @@ const Buyerupgrades = () => {
       </StyledLogoContainer>
 
       <Heroimage
-        sizeDesktop={"auto 100% "}
-        sizeMobile={"140vw"}
+        sizeDesktop={"auto 100%"}
+        sizeMobile={"auto 75%"}
         paddingMobile={0}
         position={"center"}
-        padding={40}
+        paddingTop={40}
+        paddingBottom={0}
         color={"#2D83D1"}
         image={Hero}
-        imageMobile={""}
+        imageMobile={Hero}
       ></Heroimage>
       <Description
         companyName={"iwocaPay"}

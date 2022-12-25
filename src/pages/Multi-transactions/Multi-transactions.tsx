@@ -48,12 +48,13 @@ const Multitransactions = () => {
         <Logo />
       </StyledLogoContainer>
       <Heroimage
-      imageMobile={""}
+      imageMobile={Hero}
         sizeDesktop={"auto 90%"}
-        sizeMobile={"90% auto"}
+        sizeMobile={"95% auto"}
         paddingMobile={0}
         position={"50% 60%"}
-        padding={0}
+        paddingTop={0}
+        paddingBottom={0}
         color={"#0E407E"}
         image={Hero}
       ></Heroimage>

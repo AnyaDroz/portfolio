@@ -4,12 +4,13 @@ import { StyledImage, StyledContainer } from "./Heroimage.styles";
 type HeroImageProps = {
   image: string;
   color: string;
-  padding: number;
+  paddingTop: number;
   position: string;
   paddingMobile: number;
   sizeMobile: string;
   sizeDesktop: string;
   imageMobile: string;
+  paddingBottom: number;
 };
 
 const Heroimage = ({
@@ -17,15 +18,17 @@ const Heroimage = ({
   paddingMobile,
   image,
   color,
-  padding,
+  paddingTop,
   position,
   sizeMobile,
   imageMobile,
+  paddingBottom
 }: HeroImageProps) => {
   return (
     <StyledContainer
       paddingMobile={paddingMobile}
-      padding={padding}
+      paddingTop={paddingTop}
+      paddingBottom={paddingBottom}
       color={color}
     >
       <StyledImage

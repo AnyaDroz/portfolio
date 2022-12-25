@@ -32,18 +32,23 @@ import SpacerMedium from "../../components/Casestudy/Spacers/SpacerMedium/Spacer
 import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall";
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
-
+import Logo from "../../components/Logo/Logo";
+import { StyledLogoContainer } from "./Quotes.styles";
 const Quotes = () => {
   return (
     <div>
+      <StyledLogoContainer>
+        <Logo />
+      </StyledLogoContainer>
       <Heroimage
-      imageMobile={""}
+        imageMobile={QuotesHero}
         sizeDesktop={"contain"}
-        sizeMobile={""}
-        paddingMobile={40}
-        position={"bottom"}
-        padding={40}
+        sizeMobile={"95% auto"}
+        paddingMobile={0}
+        position={"center"}
+        paddingTop={40}
         color={"#E29FBB"}
+        paddingBottom={0}
         image={QuotesHero}
       ></Heroimage>
       <Description

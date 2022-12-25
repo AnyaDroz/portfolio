@@ -52,7 +52,8 @@ const InstantAccess = () => {
         sizeMobile={"fit"}
         paddingMobile={10}
         position={"center"}
-        padding={20}
+        paddingTop={20}
+        paddingBottom={0}
         image={InstantAccessHero}
         color={"#33885B"}
         sizeDesktop={"contain"}

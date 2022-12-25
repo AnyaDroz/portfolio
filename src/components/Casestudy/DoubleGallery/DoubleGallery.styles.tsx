@@ -32,7 +32,8 @@ export const GalleryGrid = styled.div<StyledImageGallery>(
     padding-bottom: ${mobilePadding};
     padding-top: ${mobilePadding};
 
-}`
+}
+`
 );
 
 type StyledImageProps = {

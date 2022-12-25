@@ -34,17 +34,22 @@ import SpacerMedium from "../../components/Casestudy/Spacers/SpacerMedium/Spacer
 import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall";
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
-
+import Logo from "../../components/Logo/Logo";
+import {StyledLogoContainer} from "./ModularPricing.styles"
 const ModularPricing = () => {
   return (
     <div>
+       <StyledLogoContainer>
+        <Logo />
+      </StyledLogoContainer>
       <Heroimage
-        imageMobile={""}
+        imageMobile={ModularPricingHero}
         sizeDesktop={"contain"}
-        sizeMobile={""}
-        paddingMobile={40}
+        sizeMobile={"90% auto"}
+        paddingMobile={0}
         position={"center"}
-        padding={40}
+        paddingTop={40}
+        paddingBottom={40}
         image={ModularPricingHero}
         color={"#F4CB59"}
       />
@@ -73,11 +78,11 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-        mobileFit={""}
+        mobilePosition={""}
+        mobileFit={"90% auto"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px;"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -103,8 +108,8 @@ const ModularPricing = () => {
       mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -120,11 +125,11 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-        mobileFit={""}
+        mobilePosition={""}
+        mobileFit={"95% auto"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"150px"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -206,10 +211,10 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <DoubleGallery
-        mobilePadding={""}
+        mobilePadding={"20px"}
         desktopPadding={""}
-        mobileSize={"mobileSize"}
-        mobileGrid={""}
+        mobileSize={""}
+        mobileGrid={"65vw 65vw 65vw 65vw 65vw 65vw"}
         grid={"40vw 40vw 40vw"}
         color={"#F9F9F9"}
         imageOne={WireframeOne}
@@ -230,11 +235,11 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"900px"}
+        mobileHeight={"400px"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -251,11 +256,11 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-        mobileFit={""}
-        fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        mobilePosition={""}
+        mobileFit={"80% auto"}
+        fit={"auto 90%"}
+        desktopHeight={"900px"}
+        mobileHeight={"200px"}
         marginTop={20}
         marginBottom={20}
         color={"#F4CB59"}
@@ -272,20 +277,19 @@ const ModularPricing = () => {
       <SpacerLarge />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
-        marginTop={0}
-        marginBottom={0}
+        mobileSize={"cover"}
+        marginTop={40}
+        marginBottom={40}
         color={"#F9F9F9"}
         image={MPGif}
         width={830}
         height={519}
       />
-      //Gif
       <SpacerLarge />
       <Heading>Release three</Heading>
       <SpacerSmall />
@@ -295,10 +299,10 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"auto 90%"}
+        mobileSizeOne={"90% auto"}
+        desktopSizeTwo={"auto 90%"}
+        mobileSizeTwo={"auto 90%"}
         imageOne={HighFidTwo}
         imageTwo={HighFidOne}
         color={"#F4CB59"}
@@ -355,11 +359,11 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"cover"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"800px"}
+        mobileHeight={"400px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}

@@ -39,15 +39,17 @@ export const StyledImage = styled.div<StyledImageProps>(
 
 type StyledContainerProps = {
   color: string;
-  padding: number;
+  paddingTop: number;
   paddingMobile: number;
+  paddingBottom: number;
 };
 
 export const StyledContainer = styled.div<StyledContainerProps>(
-  ({ color, padding, paddingMobile }) => `
+  ({ color, paddingTop, paddingMobile, paddingBottom }) => `
   position: relative;
 height: 500px;
-padding-top: ${padding}px;
+padding-top: ${paddingTop}px;
+padding-bottom: ${paddingBottom}px;
 background-color: ${color};
 
 
@@ -55,6 +57,8 @@ background-color: ${color};
   height: 320px;
   padding-left: ${paddingMobile}px;
   padding-right: ${paddingMobile}px;
+  padding-bottom: 0px;
+  padding-top: 10px;
 }
 `
 );

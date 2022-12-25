@@ -40,19 +40,26 @@ import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLa
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import HydraOneOfTwo from "../../images/HydraOneOfTwo.png";
 import HydraTwoOfTwo from "../../images/HydraTwoOfTwo.png";
+import HydraMobile from "../../images/HydraHeroMobile.png"
+import Logo from "../../components/Logo/Logo";
+import {StyledLogoContainer} from "./Hydra.styles"
 
 const Hydra = () => {
   return (
     <div>
+      <StyledLogoContainer>
+        <Logo />
+      </StyledLogoContainer>
       <Heroimage
-      imageMobile={""}
+        imageMobile={HydraMobile}
         sizeDesktop={"contain"}
-        sizeMobile={""}
-        paddingMobile={40}
-        position={"bottom"}
-        padding={0}
+        sizeMobile={"95% auto"}
+        paddingMobile={0}
+        position={"center"}
+        paddingTop={40}
+        paddingBottom={0}
         image={HydraHero}
-        color={"#141414"}
+        color={"#cacaca"}
       />
       <Description
         companyName={"iwoca"}
