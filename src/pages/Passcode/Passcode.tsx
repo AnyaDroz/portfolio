@@ -9,6 +9,10 @@ const Passcode = () => {
   let navigate = useNavigate();
   
   useEffect(() => {
+    setTimeout(()=>{
+      let path = `/home`;
+      navigate(path);
+    },1000)
     if (number==="223") {navigate("/home")};
     if (number !== "223") {
      console.log("hi")
@@ -16,10 +20,7 @@ const Passcode = () => {
     setNumber(enteredNumber);
     } else {
       console.log("hi")
-      setTimeout(()=>{
-        let path = `/home`;
-        navigate(path);
-      },1000)
+      
       
     }
   }, []);
