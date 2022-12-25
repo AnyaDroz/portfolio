@@ -16,7 +16,6 @@ const PasscodeChecker = () => {
     return null; 
   } 
 
-  
   return <div></div>;
 }
 

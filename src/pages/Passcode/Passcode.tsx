@@ -8,7 +8,7 @@ const Passcode = () => {
   const passwordEnteredRef = useRef(false);
 
   useEffect(() => {
-    if (number==="1992") {return}
+    if (number==="1992") {navigate("/home")};
     if (number !== "1992") {
      console.log("hi")
     const enteredNumber = window.prompt("Enter the passcode", "");
