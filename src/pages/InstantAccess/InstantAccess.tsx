@@ -19,6 +19,8 @@ import IAHighFidThree from "../../images/IAHighFidelityThree.png";
 import IAHighFidFour from "../../images/IAHighFidelityFour.png";
 import IAGifthree from "../../images/instant_access3.gif";
 import IABottomFrame from "../../images/IABottomFrame.png";
+import SVGOne from "../../images/SvgOne.svg"
+import SVGTwo from "../../images/SvgTwo.svg"
 import {StyledLogoContainer} from "./InstantAccess.styles"
 //components
 import Heroimage from "../../components/Casestudy/Heroimage/Heroimage";
@@ -79,7 +81,7 @@ const InstantAccess = () => {
         mobileFit={"90% auto"}
         fit={"contain"}
         desktopHeight={"600px"}
-        mobileHeight={"400px"}
+        mobileHeight={"300px"}
         marginTop={0}
         marginBottom={0}
         color={"white"}
@@ -113,7 +115,7 @@ const InstantAccess = () => {
         imageTwo={GraphTwo}
         color={"#F9F9F9"}
       />
-      {/* <TextLayout
+      <TextLayout
         heading={"Show me examples"}
         paragraphOne={"“I would like more examples”"}
         paragraphTwo={
@@ -143,7 +145,7 @@ const InstantAccess = () => {
         explainerTwo={
           "These insights highlight the way businesses have been experimenting and trying new products. It’s pretty clear self-serve has become very common place and having to call in or wait to use the product may cause friction."
         }
-      /> */}
+      />
       <SpacerLarge />
       <Heading>User journey</Heading>
       <SpacerSmall />
@@ -201,6 +203,8 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
+        mobileSize={"contain"}
+        mobileGrid={"300px 300px 300px 300px"}
         color={"#F9F9F9"}
         imageOne={WireframeOne}
         imageTwo={WireframeTwo}
@@ -232,11 +236,11 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"cover"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"400px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -245,12 +249,12 @@ const InstantAccess = () => {
       <SpacerSmall />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={100}
         marginBottom={100}
         color={"#33885B"}
@@ -295,15 +299,15 @@ const InstantAccess = () => {
         I run an initiative called 'UserTV' which is a tick-tock-style slack
         channel of User insights.
       </Paragraph>
-      <SpacerLarge />
+      <SpacerMedium />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
         mobileWidth={"95vw"}
         mobileHeight={"60vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={50}
         marginBottom={50}
         color={"#F9F9F9"}
@@ -327,6 +331,8 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
+        mobileSize={"100% auto"}
+        mobileGrid={"65vw 65vw 65vw 65vw"}
         color={"#F9F9F9"}
         imageOne={IAHighFidOne}
         imageTwo={IAHighFidTwo}
@@ -336,12 +342,12 @@ const InstantAccess = () => {
       <SpacerSmall />
       <FullBleedGif
         mobilePosition={""}
-        desktopSize={""}
-        desktopPosition={""}
-        mobileWidth={"95vw"}
-        mobileHeight={"60vw"}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
+        mobileWidth={"100vw"}
+        mobileHeight={"56vw"}
         mobileMargin={"20px"}
-        mobileSize={"mobileSize"}
+        mobileSize={"cover"}
         marginTop={50}
         marginBottom={50}
         color={"#33885B"}

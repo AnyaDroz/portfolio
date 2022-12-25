@@ -246,6 +246,8 @@ const Quotes = () => {
       <SpacerLarge />
       //gif
       <FourByFourGrid
+      mobileSize={"mobileSize"}
+        mobileGrid={"mobileGrid"}
         imageOne={QuotesHighOne}
         imageTwo={QuotesHighTwo}
         imageThree={QuotesHighThree}
