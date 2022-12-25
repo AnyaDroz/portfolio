@@ -7,6 +7,7 @@ const Passcode = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
+    window.prompt("Enter the passcode", "");
     if (number !== "1998") {
       const enteredNumber = window.prompt("Enter the passcode", "");
       setNumber(enteredNumber);
