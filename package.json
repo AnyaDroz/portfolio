@@ -13,7 +13,8 @@
     "prompt-sync": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "typescript": "^4.9.3",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
     "prettier": "2.8.1"
   }
