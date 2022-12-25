@@ -1,8 +1,6 @@
 import styled from "styled-components";
 export const StyledLogoContainer = styled.div`
-
-position: absolute;
+  position: absolute;
   z-index: 1;
   padding: 8px;
-
 `;

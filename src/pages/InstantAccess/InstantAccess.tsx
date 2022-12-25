@@ -19,9 +19,9 @@ import IAHighFidThree from "../../images/IAHighFidelityThree.png";
 import IAHighFidFour from "../../images/IAHighFidelityFour.png";
 import IAGifthree from "../../images/instant_access3.gif";
 import IABottomFrame from "../../images/IABottomFrame.png";
-import SVGOne from "../../images/SvgOne.svg"
-import SVGTwo from "../../images/SvgTwo.svg"
-import {StyledLogoContainer} from "./InstantAccess.styles"
+import SVGOne from "../../images/SvgOne.svg";
+import SVGTwo from "../../images/SvgTwo.svg";
+import { StyledLogoContainer } from "./InstantAccess.styles";
 //components
 import Heroimage from "../../components/Casestudy/Heroimage/Heroimage";
 import Description from "../../components/Casestudy/Description/Description";
@@ -39,14 +39,13 @@ import SpacerMedium from "../../components/Casestudy/Spacers/SpacerMedium/Spacer
 import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall";
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
-import Logo
- from "../../components/Logo/Logo";
+import Logo from "../../components/Logo/Logo";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 
 const InstantAccess = () => {
   return (
     <div>
-        <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
@@ -207,7 +206,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
-      height={"70%"}
+        height={"70%"}
         mobileSize={"contain"}
         mobileGrid={"300px 300px 300px 300px"}
         color={"#F9F9F9"}
@@ -336,7 +335,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
-      height={"70%"}
+        height={"70%"}
         mobileSize={"100% auto"}
         mobileGrid={"65vw 65vw 65vw 65vw"}
         color={"#F9F9F9"}

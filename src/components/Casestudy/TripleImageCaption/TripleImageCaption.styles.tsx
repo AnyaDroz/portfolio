@@ -12,39 +12,39 @@ export const StyledContainerOne = styled.div`
   grid-column-start: 1;
   grid-column-end: 2;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     padding: 10px;
     display: block;
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 `;
 
 export const StyledContainerTwo = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     padding: 10px;
     display: block;
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 `;
 
 export const StyledContainerThree = styled.div`
   grid-column-start: 5;
   grid-column-end: 6;
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     padding: 10px;
     display: block;
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 `;
 
@@ -125,9 +125,9 @@ export const StyledImageThree = styled.div<StyledImageProps>(
 );
 
 export const StyledCaption = styled.div`
-    font-size: 16px;
-    width: 100%;
-    line-height: 120%;
-    margin-top: 20px;
-    height: 20px;
+  font-size: 16px;
+  width: 100%;
+  line-height: 120%;
+  margin-top: 20px;
+  height: 20px;
 `;

@@ -22,7 +22,7 @@ const SingleImage = ({
   mobileFit,
   mobileHeight,
   desktopHeight,
-  mobilePosition
+  mobilePosition,
 }: SingleImageProps) => {
   return (
     <StyledContainer color={color}>

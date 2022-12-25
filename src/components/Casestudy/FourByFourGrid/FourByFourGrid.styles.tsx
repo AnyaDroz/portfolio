@@ -32,8 +32,6 @@ background-color: ${color};
 `
 );
 
-
-
 export const StyledGridItemOne = styled.div`
   display: block;
   text-align: center;
@@ -41,29 +39,27 @@ export const StyledGridItemOne = styled.div`
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-
-}
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 `;
 
 export const StyledGridItemTwo = styled.div`
-   display: block;
+  display: block;
   text-align: center;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  @media ${device.mobileM} { 
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-}
+  @media ${device.mobileM} {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 `;
 
 export const StyledGridItemThree = styled.div`
@@ -73,13 +69,12 @@ export const StyledGridItemThree = styled.div`
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-
-}
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 `;
 export const StyledGridItemFour = styled.div`
   display: block;
@@ -89,13 +84,12 @@ export const StyledGridItemFour = styled.div`
   grid-row-start: 2;
   grid-row-end: 3;
 
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
-
-}
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 `;
 export const StyledCaption = styled.div`
   margin-top: 20px;
@@ -105,24 +99,23 @@ export const StyledCaption = styled.div`
   font-family: TWKLausanneLight;
   font-size: 18px;
   line-height: 150%;
-  @media ${device.mobileM} { 
+  @media ${device.mobileM} {
     font-size: 16px;
     width: 100%;
     line-height: 120%;
     margin-top: 20px;
     height: 20px;
-
-}
+  }
 `;
 
 type StyledImageProps = {
   image: string;
   mobileSize: string;
-  height: string
+  height: string;
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, mobileSize, height}) => `
+  ({ image, mobileSize, height }) => `
 height:${height};
 width: auto;
 background-image:url(${image});

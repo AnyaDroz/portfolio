@@ -7,7 +7,6 @@ export const device = {
   mobileM: `(max-width: ${size.mobileM})`,
 };
 
-
 type StyledTripleContainerProps = {
   color: string;
 };

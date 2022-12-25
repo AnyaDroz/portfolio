@@ -46,12 +46,12 @@ import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 const Multitransactions = () => {
   return (
     <div>
-        <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
       <Heroimage
-      imageMobile={Hero}
+        imageMobile={Hero}
         sizeDesktop={"auto 90%"}
         sizeMobile={"95% auto"}
         paddingMobile={0}
@@ -160,13 +160,13 @@ const Multitransactions = () => {
         of varying urgency. For example, an overdue Pay link should take
         priority over a partial Pay link.
       </Paragraph>
-      <SpacerSmall/>
+      <SpacerSmall />
       <InlineImage
         image={MultiInlineImage}
         imageHeight={368}
         imageWidth={469}
       />
-      <SpacerSmall/>
+      <SpacerSmall />
       <Paragraph>
         The challenges were; figuring out the hierarchy of information on the
         dashboard - to show the most important top-level information first and

@@ -34,15 +34,14 @@ import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/Spacer
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Quotes.styles";
-import QuotesGif from "../../images/QuotesGif.gif"
-import QuotesGifTwo from "../../images/QuotesGifTwo.gif"
+import QuotesGif from "../../images/QuotesGif.gif";
+import QuotesGifTwo from "../../images/QuotesGifTwo.gif";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-
 
 const Quotes = () => {
   return (
     <div>
-      <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
@@ -82,7 +81,7 @@ const Quotes = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={"90% auto"}
         fit={"contain"}
         desktopHeight={"600px"}
@@ -196,7 +195,8 @@ const Quotes = () => {
         width={720}
         height={452}
         image={QuotesGifTwo}
-      /><SpacerLarge/>
+      />
+      <SpacerLarge />
       <Heading>High Fidelity</Heading>
       <SpacerSmall />
       <Paragraph>
@@ -245,7 +245,7 @@ const Quotes = () => {
       </Quote>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={"600px"}
@@ -284,7 +284,8 @@ const Quotes = () => {
         width={720}
         height={452}
         image={QuotesGif}
-      /><SpacerLarge/>
+      />
+      <SpacerLarge />
       <FourByFourGrid
         height={"80%"}
         mobileSize={"95% auto"}

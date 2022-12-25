@@ -20,7 +20,16 @@ type StyledImageProps = {
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ fit, image, marginTop, marginBottom, mobileHeight, mobileFit, desktopHeight, mobilePosition }) => `
+  ({
+    fit,
+    image,
+    marginTop,
+    marginBottom,
+    mobileHeight,
+    mobileFit,
+    desktopHeight,
+    mobilePosition,
+  }) => `
 width: 100vw;
 height: ${desktopHeight};
 background-image:url(${image});

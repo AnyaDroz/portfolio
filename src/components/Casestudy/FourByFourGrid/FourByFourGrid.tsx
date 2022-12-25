@@ -21,7 +21,7 @@ type FourByFourGridProps = {
   color: string;
   mobileGrid: string;
   mobileSize: string;
-  height: string
+  height: string;
 };
 
 const FourByFourGrid = ({
@@ -36,7 +36,7 @@ const FourByFourGrid = ({
   color,
   mobileGrid,
   mobileSize,
-  height
+  height,
 }: FourByFourGridProps) => {
   return (
     <StyledGrid color={color} mobileGrid={mobileGrid}>
@@ -49,11 +49,19 @@ const FourByFourGrid = ({
         {captionTwo ? <StyledCaption>{captionTwo}</StyledCaption> : ""}
       </StyledGridItemTwo>
       <StyledGridItemThree>
-        <StyledImage height={height} mobileSize={mobileSize} image={imageThree} />
+        <StyledImage
+          height={height}
+          mobileSize={mobileSize}
+          image={imageThree}
+        />
         {captionThree ? <StyledCaption>{captionThree}</StyledCaption> : ""}
       </StyledGridItemThree>
       <StyledGridItemFour>
-        <StyledImage height={height} mobileSize={mobileSize} image={imageFour} />
+        <StyledImage
+          height={height}
+          mobileSize={mobileSize}
+          image={imageFour}
+        />
         {captionFour ? <StyledCaption>{captionFour}</StyledCaption> : ""}
       </StyledGridItemFour>
     </StyledGrid>

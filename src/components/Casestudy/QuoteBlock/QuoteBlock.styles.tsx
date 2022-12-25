@@ -16,15 +16,14 @@ export const StyledQuote = styled.div`
   width: 50%;
   margin: auto;
   margin-top: 20px;
- 
-  @media ${device.mobileM} { 
+
+  @media ${device.mobileM} {
     width: 85vw;
     font-size: 16px;
-}
+  }
 `;
 
 export const StyledHeading = styled.div`
-
   text-align: center;
   font-family: TWKLausanneMedium;
   line-height: 150%;
@@ -33,8 +32,6 @@ export const StyledHeading = styled.div`
 `;
 
 export const StyledContainer = styled.div`
-
- 
   color: #0e407e;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -43,6 +40,4 @@ export const StyledContainer = styled.div`
   line-height: 150%;
   font-size: 18px;
   background-color: #f9f9f9;
-  
-  
 `;

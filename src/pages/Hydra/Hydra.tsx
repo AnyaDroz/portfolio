@@ -40,16 +40,15 @@ import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLa
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import HydraOneOfTwo from "../../images/HydraOneOfTwo.png";
 import HydraTwoOfTwo from "../../images/HydraTwoOfTwo.png";
-import HydraMobile from "../../images/HydraHeroMobile.png"
+import HydraMobile from "../../images/HydraHeroMobile.png";
 import Logo from "../../components/Logo/Logo";
-import {StyledLogoContainer} from "./Hydra.styles"
+import { StyledLogoContainer } from "./Hydra.styles";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
-
 
 const Hydra = () => {
   return (
     <div>
-      <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
@@ -168,7 +167,7 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={"bottom"}
+        mobilePosition={"bottom"}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={"600px"}
@@ -221,7 +220,7 @@ const Hydra = () => {
       />
       <SpacerSmall />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={"600px"}
@@ -322,7 +321,7 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={"600px"}

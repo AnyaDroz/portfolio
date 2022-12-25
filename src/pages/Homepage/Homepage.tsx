@@ -27,7 +27,6 @@ import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 
-
 const Homepage = () => {
   const firstContainerRef = useRef<any>(null);
   const introContainerRef = useRef<any>(null);
@@ -38,7 +37,6 @@ const Homepage = () => {
   const [introHeight, setintroHeight] = useState<any>(0);
   const [offset, setOffset] = useState<any>(0);
   let navigate = useNavigate();
- 
 
   const routeChangeBuyer = (e: React.MouseEvent) => {
     console.log("click");
@@ -106,7 +104,7 @@ const Homepage = () => {
 
   return (
     <>
-    <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledMainContent onMouseMove={getPosition}>
         <StyledCursorHorizontal
           introHeight={introHeight}
@@ -117,11 +115,11 @@ const Homepage = () => {
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
             <Logo />
-          
-          <StyledIntro>
-            Anya is a product designer creating soulful & strategic experiences,
-            with a love for programming.
-          </StyledIntro>
+
+            <StyledIntro>
+              Anya is a product designer creating soulful & strategic
+              experiences, with a love for programming.
+            </StyledIntro>
           </StyledContainerLogo>
           <StyledNavItems>
             <StyledNavItem>

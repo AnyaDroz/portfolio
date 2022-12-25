@@ -49,11 +49,10 @@ import { StyledLogoContainer } from "./Buyerupgrades.styles";
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 
-
 const Buyerupgrades = () => {
   return (
     <div>
-        <PasscodeChecker/>
+      <PasscodeChecker />
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
@@ -262,9 +261,9 @@ const Buyerupgrades = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-       desktopHeight={"700px"}
-       mobileHeight={"300px"}
+        mobilePosition={""}
+        desktopHeight={"700px"}
+        mobileHeight={"300px"}
         mobileFit={""}
         fit={"contain"}
         marginTop={0}

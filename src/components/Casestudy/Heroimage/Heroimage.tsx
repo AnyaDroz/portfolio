@@ -22,7 +22,7 @@ const Heroimage = ({
   position,
   sizeMobile,
   imageMobile,
-  paddingBottom
+  paddingBottom,
 }: HeroImageProps) => {
   return (
     <StyledContainer

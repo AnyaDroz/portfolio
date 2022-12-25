@@ -35,14 +35,14 @@ import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSm
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import Logo from "../../components/Logo/Logo";
-import {StyledLogoContainer} from "./ModularPricing.styles"
+import { StyledLogoContainer } from "./ModularPricing.styles";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 
 const ModularPricing = () => {
   return (
     <div>
-        <PasscodeChecker/>
-       <StyledLogoContainer>
+      <PasscodeChecker />
+      <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
       <Heroimage
@@ -108,7 +108,7 @@ const ModularPricing = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+        mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
         desktopHeight={"600px"}
