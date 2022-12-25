@@ -41,9 +41,12 @@ import MultiGifTwo from "../../images/MultiGifTwo.gif";
 import MultiGifThree from "../../images/MultiGThree.gif";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Multi-transactions.styles";
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 const Multitransactions = () => {
   return (
     <div>
+        <PasscodeChecker/>
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>

@@ -36,10 +36,13 @@ import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Quotes.styles";
 import QuotesGif from "../../images/QuotesGif.gif"
 import QuotesGifTwo from "../../images/QuotesGifTwo.gif"
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 
 const Quotes = () => {
   return (
     <div>
+      <PasscodeChecker/>
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>

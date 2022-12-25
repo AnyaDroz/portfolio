@@ -47,10 +47,13 @@ import BuyerBeforeAndAfter from "../../images/BuyerBeforeAndAfter.png";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Buyerupgrades.styles";
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 
 const Buyerupgrades = () => {
   return (
     <div>
+        <PasscodeChecker/>
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>

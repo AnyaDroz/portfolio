@@ -36,9 +36,12 @@ import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/Spacer
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import Logo from "../../components/Logo/Logo";
 import {StyledLogoContainer} from "./ModularPricing.styles"
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 const ModularPricing = () => {
   return (
     <div>
+        <PasscodeChecker/>
        <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>

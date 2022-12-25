@@ -41,9 +41,12 @@ import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLa
 import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
 import Logo
  from "../../components/Logo/Logo";
+import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+
 const InstantAccess = () => {
   return (
     <div>
+        <PasscodeChecker/>
       <StyledLogoContainer>
         <Logo />
       </StyledLogoContainer>
