@@ -48,8 +48,8 @@ const ModularPricing = () => {
         sizeMobile={"90% auto"}
         paddingMobile={0}
         position={"center"}
-        paddingTop={40}
-        paddingBottom={40}
+        paddingTop={50}
+        paddingBottom={50}
         image={ModularPricingHero}
         color={"#F4CB59"}
       />

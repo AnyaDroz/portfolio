@@ -53,13 +53,13 @@ const Hydra = () => {
       <Heroimage
         imageMobile={HydraMobile}
         sizeDesktop={"contain"}
-        sizeMobile={"95% auto"}
+        sizeMobile={"90% auto"}
         paddingMobile={0}
         position={"center"}
         paddingTop={40}
         paddingBottom={0}
         image={HydraHero}
-        color={"#cacaca"}
+        color={"#141414"}
       />
       <Description
         companyName={"iwoca"}
@@ -149,9 +149,9 @@ const Hydra = () => {
         reports are broken but there’s no way of knowing that until users add it
         to the dashboard.
       </Paragraph>
-      <SpacerLarge />
+      <SpacerMedium />
       <InlineImage image={HydraInline} imageHeight={371} imageWidth={606} />
-      <SpacerLarge />
+      <SpacerMedium />
       <Paragraph>
         We found that most users only ever use a handful of reports so there is
         now recent and frequently used report filtering. The new system has
@@ -165,11 +165,11 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
+      mobilePosition={"bottom"}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={0}
         marginBottom={0}
         color={"#141414"}
@@ -186,11 +186,11 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <SingleImage
-      mobilePosition={""}
-        mobileFit={""}
-        fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        mobilePosition={""}
+        mobileFit={"90% auto"}
+        fit={"auto 80%"}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={0}
         marginBottom={0}
         color={"#F9F9F9"}
@@ -208,10 +208,10 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"auto 80%"}
+        mobileSizeOne={"100% auto"}
+        desktopSizeTwo={"auto 80%"}
+        mobileSizeTwo={"100% auto"}
         color={"#f9f9f9"}
         imageOne={WireframeTwo}
         imageTwo={WireframeOne}
@@ -221,8 +221,8 @@ const Hydra = () => {
       mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={50}
         marginBottom={50}
         color={"#141414"}
@@ -256,10 +256,10 @@ const Hydra = () => {
         drop the plots inthe workspace directly.
       </Paragraph>
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"90% auto"}
+        mobileSizeOne={"100% auto"}
+        desktopSizeTwo={"90% auto"}
+        mobileSizeTwo={"100% auto"}
         color={"#F9f9f9"}
         imageOne={HydraOneOfTwo}
         imageTwo={HydraTwoOfTwo}
@@ -301,10 +301,10 @@ const Hydra = () => {
       </Paragraph>
       <SpacerLarge />
       <TwoImages
-        desktopSizeOne={""}
-        mobileSizeOne={""}
-        desktopSizeTwo={""}
-        mobileSizeTwo={""}
+        desktopSizeOne={"90% auto"}
+        mobileSizeOne={"100% auto"}
+        desktopSizeTwo={"90% auto"}
+        mobileSizeTwo={"100% auto"}
         color={"#F9F9F9"}
         imageOne={TwoImagesOne}
         imageTwo={TwoImagesTwo}
@@ -322,10 +322,10 @@ const Hydra = () => {
       mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
-        marginTop={0}
-        marginBottom={0}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
+        marginTop={20}
+        marginBottom={20}
         color={"#141414"}
         image={SingleImageCompare}
       />

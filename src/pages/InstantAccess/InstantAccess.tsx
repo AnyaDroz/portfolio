@@ -52,8 +52,8 @@ const InstantAccess = () => {
         sizeMobile={"fit"}
         paddingMobile={10}
         position={"center"}
-        paddingTop={20}
-        paddingBottom={0}
+        paddingTop={40}
+        paddingBottom={40}
         image={InstantAccessHero}
         color={"#33885B"}
         sizeDesktop={"contain"}
@@ -204,6 +204,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
+      height={"70%"}
         mobileSize={"contain"}
         mobileGrid={"300px 300px 300px 300px"}
         color={"#F9F9F9"}
@@ -332,6 +333,7 @@ const InstantAccess = () => {
       </Paragraph>
       <SpacerLarge />
       <FourByFourGrid
+      height={"70%"}
         mobileSize={"100% auto"}
         mobileGrid={"65vw 65vw 65vw 65vw"}
         color={"#F9F9F9"}

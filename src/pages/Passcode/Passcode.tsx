@@ -7,13 +7,15 @@ const Passcode = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    window.prompt("Enter the passcode", "");
+    
     if (number !== "1998") {
+     
       const enteredNumber = window.prompt("Enter the passcode", "");
-      setNumber(enteredNumber);
+    setNumber(enteredNumber);
     } else {
       window.prompt("Enter the passcode", "");
       navigate("/home");
+      
     }
   }, []);
   //stupid strict mode runs twice had to delete it

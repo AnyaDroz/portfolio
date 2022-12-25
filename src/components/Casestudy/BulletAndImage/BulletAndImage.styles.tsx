@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+const size = {
+  mobileM: "768px",
+};
+
+export const device = {
+  mobileM: `(max-width: ${size.mobileM})`,
+};
+
 export const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,6 +16,12 @@ export const StyledGrid = styled.div`
   font-family: TWKLausanneLight;
   font-size: 18px;
   line-height: 150%;
+
+  @media ${device.mobileM} { 
+   padding: 8px;
+    grid-template-columns: 100%;
+    grid-template-rows: 800px 70vw 60vw 50vw 40vw;
+}
 `;
 
 export const StyledBulletOne = styled.div`
@@ -15,6 +29,13 @@ export const StyledBulletOne = styled.div`
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  @media ${device.mobileM} { 
+    padding-top: 40px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 `;
 
 export const StyledBulletTwo = styled.div`
@@ -22,6 +43,13 @@ export const StyledBulletTwo = styled.div`
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  
+  }
 `;
 
 export const StyledBulletThree = styled.div`
@@ -29,6 +57,14 @@ export const StyledBulletThree = styled.div`
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  
+  
+  }
 `;
 
 export const StyledBulletFour = styled.div`
@@ -36,6 +72,13 @@ export const StyledBulletFour = styled.div`
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
+  @media ${device.mobileM} { 
+    
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  }
 `;
 
 export const Heading = styled.div`
@@ -61,5 +104,12 @@ export const StyledImage = styled.div<StyledImageProps>(
   height: 100%;
   width: 100%;
   margin: auto;
+  @media ${device.mobileM} { 
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+  }
 `
 );

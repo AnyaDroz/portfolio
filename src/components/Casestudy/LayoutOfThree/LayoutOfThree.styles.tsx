@@ -20,7 +20,7 @@ grid-template-rows: 30vw 30vw;
 background-color: ${color};
 @media ${device.mobileM} {
   grid-template-columns: 100%;
-  grid-template-rows: 80vw 80vw 100vw;
+  grid-template-rows: 80vw 80vw 80vw;
 }
 `
 );
@@ -88,6 +88,7 @@ export const StyledImageThree = styled.div<StyledImageProps>(
     margin-right: 60px; 
 
     @media ${device.mobileM} {
+      background-size: 90% auto;
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 3;

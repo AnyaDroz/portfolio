@@ -34,6 +34,9 @@ import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/Spacer
 import SpacerLarge from "../../components/Casestudy/Spacers/SpacerLarge/SpacerLarge";
 import Logo from "../../components/Logo/Logo";
 import { StyledLogoContainer } from "./Quotes.styles";
+import QuotesGif from "../../images/QuotesGif.gif"
+import QuotesGifTwo from "../../images/QuotesGifTwo.gif"
+
 const Quotes = () => {
   return (
     <div>
@@ -48,7 +51,7 @@ const Quotes = () => {
         position={"center"}
         paddingTop={40}
         color={"#E29FBB"}
-        paddingBottom={0}
+        paddingBottom={40}
         image={QuotesHero}
       ></Heroimage>
       <Description
@@ -77,10 +80,10 @@ const Quotes = () => {
       <SpacerLarge />
       <SingleImage
       mobilePosition={""}
-        mobileFit={""}
+        mobileFit={"90% auto"}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={50}
         marginBottom={50}
         image={QuotesHighFid}
@@ -176,6 +179,21 @@ const Quotes = () => {
         imageSix={QuotesWireframeSix}
       />
       <SpacerLarge />
+      <FullBleedGif
+        mobilePosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"cover"}
+        marginTop={0}
+        marginBottom={0}
+        color={"white"}
+        width={720}
+        height={452}
+        image={QuotesGifTwo}
+      /><SpacerLarge/>
       <Heading>High Fidelity</Heading>
       <SpacerSmall />
       <Paragraph>
@@ -227,8 +245,8 @@ const Quotes = () => {
       mobilePosition={""}
         mobileFit={""}
         fit={"contain"}
-        desktopHeight={""}
-        mobileHeight={""}
+        desktopHeight={"600px"}
+        mobileHeight={"200px"}
         marginTop={50}
         marginBottom={50}
         image={QuotesMobileSingle}
@@ -249,10 +267,25 @@ const Quotes = () => {
         merchant.
       </Paragraph>
       <SpacerLarge />
-      //gif
+      <FullBleedGif
+        mobilePosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"cover"}
+        marginTop={0}
+        marginBottom={0}
+        color={"white"}
+        width={720}
+        height={452}
+        image={QuotesGif}
+      /><SpacerLarge/>
       <FourByFourGrid
-      mobileSize={"mobileSize"}
-        mobileGrid={"mobileGrid"}
+        height={"80%"}
+        mobileSize={"95% auto"}
+        mobileGrid={"280px 280px 280px 280px"}
         imageOne={QuotesHighOne}
         imageTwo={QuotesHighTwo}
         imageThree={QuotesHighThree}

@@ -61,7 +61,7 @@ const Buyerupgrades = () => {
         paddingMobile={0}
         position={"center"}
         paddingTop={40}
-        paddingBottom={0}
+        paddingBottom={40}
         color={"#2D83D1"}
         image={Hero}
         imageMobile={Hero}
@@ -350,9 +350,9 @@ const Buyerupgrades = () => {
       />
       <SpacerXSmall />
       <SingleImage
-      mobilePosition={""}
-         desktopHeight={"600px"}
-         mobileHeight={"300px"}
+        mobilePosition={""}
+        desktopHeight={"600px"}
+        mobileHeight={"300px"}
         mobileFit={"1000px auto"}
         fit={"cover"}
         marginTop={0}

@@ -53,8 +53,8 @@ const Multitransactions = () => {
         sizeMobile={"95% auto"}
         paddingMobile={0}
         position={"50% 60%"}
-        paddingTop={0}
-        paddingBottom={0}
+        paddingTop={20}
+        paddingBottom={40}
         color={"#0E407E"}
         image={Hero}
       ></Heroimage>
@@ -384,7 +384,7 @@ const Multitransactions = () => {
         width={720}
         height={452}
         image={MultiGifThree}
-      ></FullBleedGif>
+      />
       <SpacerLarge />
       <SingleImage
         mobilePosition={""}

@@ -118,11 +118,12 @@ export const StyledCaption = styled.div`
 type StyledImageProps = {
   image: string;
   mobileSize: string;
+  height: string
 };
 
 export const StyledImage = styled.div<StyledImageProps>(
-  ({ image, mobileSize }) => `
-height: 70%;
+  ({ image, mobileSize, height}) => `
+height:${height};
 width: auto;
 background-image:url(${image});
 background-position: center;
