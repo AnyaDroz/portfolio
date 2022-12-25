@@ -50,7 +50,7 @@ export const StyledImageContainerOne = styled.div<StyledImageProps>(
     background-image:url(${image});
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 90% auto; 
+    background-size: auto 90%;
     
     @media ${device.mobileM} {
       height: 550px; 
@@ -71,7 +71,7 @@ export const StyledImageContainerTwo = styled.div<StyledImageProps>(
   background-image:url(${image});
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 90% auto; 
+  background-size:  auto 90%; 
 
     @media ${device.mobileM} { 
       height: 420px; 

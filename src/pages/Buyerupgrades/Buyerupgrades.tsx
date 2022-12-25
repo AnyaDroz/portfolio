@@ -56,7 +56,7 @@ const Buyerupgrades = () => {
       </StyledLogoContainer>
 
       <Heroimage
-        sizeDesktop={"100vw"}
+        sizeDesktop={"auto 100% "}
         sizeMobile={"140vw"}
         paddingMobile={0}
         position={"center"}
@@ -340,7 +340,7 @@ const Buyerupgrades = () => {
         color={"#2D83D1"}
         imageOne={BuyerScreen}
         imageTwo={BuyerMobile}
-        desktopSizeOne={"80% auto"}
+        desktopSizeOne={"auto 80%"}
         mobileSizeOne={"90% auto "}
         desktopSizeTwo={"auto 80%"}
         mobileSizeTwo={"auto 90%"}
@@ -398,7 +398,7 @@ const Buyerupgrades = () => {
         color={"white"}
         imageOne={BuyerResultsOne}
         imageTwo={BuyerResultsTwo}
-        desktopSizeOne={"80% auto"}
+        desktopSizeOne={"auto 100% "}
         mobileSizeOne={"90% auto"}
         desktopSizeTwo={"auto 40%"}
         mobileSizeTwo={"auto 40%"}
