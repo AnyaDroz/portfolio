@@ -16,6 +16,7 @@ export const StyledLogo = styled.div`
   :hover {
     cursor: pointer;
   }
+  z-index: 1;
   height: 20px;
   width: 20px;
   background-image: url(${Logo});

@@ -9,7 +9,9 @@ export const device = {
 };
 
 export const StyledLogoContainer = styled.div`
-  position: absolute;
+    position: -webkit-fixed;
+  position: fixed;
   z-index: 1;
   padding: 8px;
+  top: 0;
 `;
