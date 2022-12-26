@@ -138,7 +138,8 @@ const Homepage = () => {
           <StyledCaseStudySixActive offset={offset} onClick={routeChangeHydra} differenceHeight={differenceHeight} differenceWidth={differenceWidth} positionY={positionY} positionX={positionX} introHeight={introHeight}/>
         </StyledGrid>
         <StyledFooter>
-          <div>anya.drozdova@gmail.com</div>
+          <div>Site built by me :)</div>
+          <div>anya.productdesign@gmail.com</div>
           <div>07426728951</div>
         </StyledFooter>
       </StyledMainContent>

@@ -47,7 +47,7 @@ import { StyledLogoContainer } from "./Buyerupgrades.styles";
 import BuyerResultsTwo from "../../images/BuyerResultsTwo.png";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
-
+import Interactions from "../../images/INTERACTIONS.gif"
 const Buyerupgrades = () => {
   return (
     <div>
@@ -273,6 +273,7 @@ const Buyerupgrades = () => {
         image={BuyerBeforeAndAfter}
         color={"#2D83D1"}
       />
+      
       <SpacerLarge />
       <Heading>Release One</Heading>
       <SpacerMedium />
@@ -363,6 +364,21 @@ const Buyerupgrades = () => {
         marginBottom={0}
         image={BuyerComponents}
         color={"#2D83D1"}
+      />
+      <FullBleedGif
+        mobilePosition={""}
+        desktopSize={"cover"}
+        desktopPosition={"center"}
+        mobileWidth={"95vw"}
+        mobileHeight={"60vw"}
+        mobileMargin={"20px"}
+        mobileSize={"cover"}
+        marginTop={80}
+        marginBottom={0}
+        color={"1C1C1C"}
+        width={800}
+        height={600}
+        image={Interactions}
       />
       <SpacerLarge />
       <Heading>Release two</Heading>
