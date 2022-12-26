@@ -26,6 +26,8 @@ import Logo from "../../components/Logo/Logo";
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
+import SpacerXSmall from "../../components/Casestudy/Spacers/SpacerXSmall/SpacerXSmall";
+import SpacerSmall from "../../components/Casestudy/Spacers/SpacerSmall/SpacerSmall";
 
 const Homepage = () => {
   const firstContainerRef = useRef<any>(null);
@@ -115,7 +117,7 @@ const Homepage = () => {
         <StyledNavbar ref={introContainerRef}>
           <StyledContainerLogo>
             <Logo />
-
+            <SpacerXSmall/>
             <StyledIntro>
               Anya is a product designer creating soulful & strategic
               experiences, with a love for programming.

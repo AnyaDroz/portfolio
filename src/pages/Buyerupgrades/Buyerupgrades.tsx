@@ -71,6 +71,7 @@ const Buyerupgrades = () => {
         companyName={"iwocaPay"}
         projectName={"Buyer Upgrades"}
         description={"Get sellers paid more by increasing usage of Pay Later"}
+        linkToProject={"https://www.figma.com/file/wJ2C4EKTZJLzfM9wvHcbV5/BUYER-CASE-STUDY?node-id=1%3A2663&t=Gg91inAiWPLXxRtf-1"}
       />
       <Heading>The problem</Heading>
       <SpacerSmall />
