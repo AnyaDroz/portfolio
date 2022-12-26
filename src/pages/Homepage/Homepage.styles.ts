@@ -55,14 +55,14 @@ export const StyledCaseStudyOneEmpty = styled.div`
 `;
 
 type StyledImageProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   introHeight: number;
   offset: number;
 };
 
 export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(
-  ({ positiony, positionx, introHeight, offset }) => `
+  ({ positionY, positionX, introHeight, offset }) => `
    cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -75,9 +75,9 @@ export const StyledCaseStudyOneActive = styled.div<StyledImageProps>(
   background-color: #2D82D1;
   position:relative;
   cursor: pointer;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${
-    positiony + offset - introHeight
-  }px, 0% ${positiony + offset - introHeight}px);
+  clip-path: polygon(0% 0%, ${positionX}px 0%, ${positionX}px ${
+    positionY + offset - introHeight
+  }px, 0% ${positionY + offset - introHeight}px);
 
   @media ${device.mobileM} { 
     clip-path: polygon(0% 0%, 100% 0%, 100% ${offset}px, 0% ${offset}px);
@@ -112,15 +112,15 @@ export const StyledCaseStudyTwoEmpty = styled.div`
 `;
 
 type StyledImageTwoProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   differenceWidth: number;
   introHeight: number;
   offset: number;
 };
 
 export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
-  ({ differenceWidth, offset, positiony, positionx, introHeight }) => `
+  ({ differenceWidth, offset, positionY, positionX, introHeight }) => `
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -132,10 +132,10 @@ export const StyledCaseStudyTwoActive = styled.div<StyledImageTwoProps>(
   background-size: contain;
   background-color: #0E407E;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx - differenceWidth - 8}px 0%, ${
-    positionx - differenceWidth - 8
-  }px ${positiony + offset - introHeight}px, 0% ${
-    positiony + offset - introHeight
+  clip-path: polygon(0% 0%, ${positionX - differenceWidth - 8}px 0%, ${
+    positionX - differenceWidth - 8
+  }px ${positionY + offset - introHeight}px, 0% ${
+    positionY + offset - introHeight
   }px);
 
    @media ${device.mobileM} {
@@ -172,15 +172,15 @@ export const StyledCaseStudyThreeEmpty = styled.div`
 `;
 
 type StyledImageThreeProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   differenceHeight: number;
   introHeight: number;
   offset: number;
 };
 
 export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
-  ({ positiony, positionx, differenceHeight, introHeight, offset }) => `
+  ({ positionY, positionX, differenceHeight, introHeight, offset }) => `
   cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -192,9 +192,9 @@ export const StyledCaseStudyThreeActive = styled.div<StyledImageThreeProps>(
   background-size: contain;
   background-color: #33885B;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px ${
-    positiony + offset - differenceHeight - introHeight - 8
-  }px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
+  clip-path: polygon(0% 0%, ${positionX}px 0%, ${positionX}px ${
+    positionY + offset - differenceHeight - introHeight - 8
+  }px, 0% ${positionY + offset - differenceHeight - introHeight - 8}px);
   
   @media ${device.mobileM} { 
   
@@ -231,8 +231,8 @@ export const StyledCaseStudyFourEmpty = styled.div`
 `;
 
 type StyledImageFourProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   differenceWidth: number;
   introHeight: number;
   differenceHeight: number;
@@ -241,8 +241,8 @@ type StyledImageFourProps = {
 
 export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(
   ({
-    positiony,
-    positionx,
+    positionY,
+    positionX,
     offset,
     differenceWidth,
     introHeight,
@@ -260,11 +260,11 @@ export const StyledCaseStudyFourActive = styled.div<StyledImageFourProps>(
   background-size: contain;
   background-color: #FFCC3D;
   position:relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${
-    positionx - differenceWidth - 8
-  }px 0%, ${positionx - differenceWidth - 8}px ${
-    positiony + offset - differenceHeight - introHeight - 8
-  }px, 0% ${positiony + offset - differenceHeight - introHeight - 8}px);
+  clip-path: polygon(0% 0%, ${positionX}px 0%, ${
+    positionX - differenceWidth - 8
+  }px 0%, ${positionX - differenceWidth - 8}px ${
+    positionY + offset - differenceHeight - introHeight - 8
+  }px, 0% ${positionY + offset - differenceHeight - introHeight - 8}px);
 @media ${device.mobileM} {
 clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224}px, 0% ${
     offset - 1224
@@ -299,8 +299,8 @@ export const StyledCaseStudyFiveEmpty = styled.div`
 `;
 
 type StyledImageFiveProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   differenceWidth: number;
   introHeight: number;
   differenceHeight: number;
@@ -309,8 +309,8 @@ type StyledImageFiveProps = {
 
 export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(
   ({
-    positiony,
-    positionx,
+    positionY,
+    positionX,
     differenceWidth,
     offset,
     introHeight,
@@ -327,9 +327,9 @@ export const StyledCaseStudyFiveActive = styled.div<StyledImageFiveProps>(
   background-size: contain;
   background-color: #E29FBB;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${positionx}px 0%, ${positionx}px ${
-    positiony + offset - 2 * differenceHeight - introHeight - 16
-  }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
+  clip-path: polygon(0% 0%, ${positionX}px 0%, ${positionX}px 0%, ${positionX}px ${
+    positionY + offset - 2 * differenceHeight - introHeight - 16
+  }px, 0% ${positionY + offset - 2 * differenceHeight - introHeight - 16}px);
 @media ${device.mobileM} {
 clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408}px, 0% ${
     offset - 1224 - 408
@@ -364,8 +364,8 @@ export const StyledCaseStudySixEmpty = styled.div`
 `;
 
 type StyledImageSixProps = {
-  positiony: number;
-  positionx: number;
+  positionY: number;
+  positionX: number;
   differenceWidth: number;
   introHeight: number;
   differenceHeight: number;
@@ -374,9 +374,9 @@ type StyledImageSixProps = {
 
 export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
   ({
-    positiony,
+    positionY,
     offset,
-    positionx,
+    positionX,
     differenceWidth,
     introHeight,
     differenceHeight,
@@ -392,11 +392,11 @@ export const StyledCaseStudySixActive = styled.div<StyledImageSixProps>(
   background-size: contain;
   background-color: #141414;
   position: relative;
-  clip-path: polygon(0% 0%, ${positionx}px 0%, ${
-    positionx - differenceWidth - 8
-  }px 0%, ${positionx - differenceWidth - 8}px ${
-    positiony + offset - 2 * differenceHeight - introHeight - 16
-  }px, 0% ${positiony + offset - 2 * differenceHeight - introHeight - 16}px);
+  clip-path: polygon(0% 0%, ${positionX}px 0%, ${
+    positionX - differenceWidth - 8
+  }px 0%, ${positionX - differenceWidth - 8}px ${
+    positionY + offset - 2 * differenceHeight - introHeight - 16
+  }px, 0% ${positionY + offset - 2 * differenceHeight - introHeight - 16}px);
  @media ${device.mobileM} {
  clip-path: polygon(0% 0%, 100% 0%, 100% ${offset - 1224 - 408 - 408}px, 0% ${
     offset - 1224 - 408 - 408
@@ -436,18 +436,18 @@ export const StyledContainerLogo = styled.div`
 `;
 
 type StyledLinedProps = {
-  positiony: number;
+  positionY: number;
   offset: number;
   introHeight: number;
 };
 
 export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
-  ({ positiony, offset, introHeight }) => `
+  ({ positionY, offset, introHeight }) => `
   height: 1px;
   width: 100%; 
   background-color: red;
   position: absolute;
-  top: ${positiony + offset}px;
+  top: ${positionY + offset}px;
   z-index:1;
   pointer-events: none; 
   
@@ -461,19 +461,19 @@ export const StyledCursorHorizontal = styled.div<StyledLinedProps>(
 );
 
 type StyledLinedPropsV = {
-  positionx: number;
+  positionX: number;
   offset: number;
 };
 
 export const StyledCursorVertical = styled.div<StyledLinedPropsV>(
-  ({ positionx, offset }) => `
+  ({ positionX, offset }) => `
   top: 0;
   bottom:0;
   height: 100%;
   width: 1px; 
   position: absolute;
   background-color: red;
-  left: ${positionx}px;
+  left: ${positionX}px;
   z-index:1;
   pointer-events: none; 
   @media ${device.mobileM} { 

@@ -400,11 +400,12 @@ const Multitransactions = () => {
         color={"#F9F9F9"}
         image={MTFinal}
       />
-       <RecommendedProjects 
-      nextPath={"/instant-access"}
-      previousPath={"/buyer-upgrades"}
-      previousProject={"Buyer Upgrades"}
-      nextProject={"Instant Access"}/>
+      <RecommendedProjects
+        nextPath={"/instant-access"}
+        previousPath={"/buyer-upgrades"}
+        previousProject={"Buyer Upgrades"}
+        nextProject={"Instant Access"}
+      />
     </div>
   );
 };

@@ -361,11 +361,12 @@ const InstantAccess = () => {
         width={830}
         height={519}
       />
-       <RecommendedProjects 
-      nextPath={"/modular-pricing"}
-      previousPath={"/multi-transactions"}
-      previousProject={"Multi-transactions"}
-      nextProject={"Modular pricing"}/>
+      <RecommendedProjects
+        nextPath={"/modular-pricing"}
+        previousPath={"/multi-transactions"}
+        previousProject={"Multi-transactions"}
+        nextProject={"Modular pricing"}
+      />
     </div>
   );
 };

@@ -372,11 +372,12 @@ const ModularPricing = () => {
         color={"#F9F9F9"}
         image={MPFinal}
       />
-       <RecommendedProjects 
-      nextPath={"/quotes"}
-      previousPath={"/buyer-upgrades"}
-      previousProject={"Buyer Upgrades"}
-      nextProject={"Quotes"}/>
+      <RecommendedProjects
+        nextPath={"/quotes"}
+        previousPath={"/buyer-upgrades"}
+        previousProject={"Buyer Upgrades"}
+        nextProject={"Quotes"}
+      />
     </div>
   );
 };

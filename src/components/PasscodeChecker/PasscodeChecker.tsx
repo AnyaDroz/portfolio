@@ -8,14 +8,20 @@ const PasscodeChecker = () => {
   const [passcode] = useLocalStorage<string | null>("secret", null);
 
   useEffect(() => {
-    if (passcode !== "223") {
-      let path = `/`;
-      navigate(path);
-      return;
-    }
-  }, []);
+    console.log("checker " + passcode);
+    if (passcode !== "223") navigate("/");
+  }, [passcode])
 
-  return <div></div>;
+  // useEffect(() => {
+  //   if (passcode !== "223") {
+  //     let path = `/`;
+  //     navigate(path);
+  //     return;
+  //   }
+  // }, []);
+
+  // return <div></div>;
+  return null;
 };
 
 export default PasscodeChecker;

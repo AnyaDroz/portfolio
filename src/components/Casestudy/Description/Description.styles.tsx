@@ -56,15 +56,15 @@ export const StyledDescription = styled.div`
 `;
 
 export const StyledLink = styled.div`
-padding-top: 10px;
-a {
-font-family: TWKLausanneLight;
-font-size: 20px;
-text-decoration: underline 1px;
-text-underline-offset: 2px;
-    
+  padding-top: 10px;
+  a {
+    font-family: TWKLausanneLight;
+    font-size: 20px;
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+
     @media ${device.mobileM} {
-        font-size: 16px;
+      font-size: 16px;
+    }
   }
-}
 `;

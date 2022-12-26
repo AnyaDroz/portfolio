@@ -46,7 +46,6 @@ import { StyledLogoContainer } from "./Hydra.styles";
 import PasscodeChecker from "../../components/PasscodeChecker/PasscodeChecker";
 import RecommendedProjects from "../../components/RecommendedProjects/RecommendedProjects";
 
-
 const Hydra = () => {
   return (
     <div>
@@ -333,11 +332,12 @@ const Hydra = () => {
         color={"#141414"}
         image={SingleImageCompare}
       />
-      <RecommendedProjects 
-      nextPath={"/quotes"}
-      previousPath={"/buyer-upgrades"}
-      previousProject={"Buyer Upgrades"}
-      nextProject={"Quotes"}/>
+      <RecommendedProjects
+        nextPath={"/quotes"}
+        previousPath={"/buyer-upgrades"}
+        previousProject={"Buyer Upgrades"}
+        nextProject={"Quotes"}
+      />
     </div>
   );
 };

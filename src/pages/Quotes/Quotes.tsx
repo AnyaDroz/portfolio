@@ -296,11 +296,12 @@ const Quotes = () => {
         imageFour={QuotesHighFour}
         color={"#E29FBB"}
       />
-      <RecommendedProjects 
-      nextPath={"/hydra"}
-      previousPath={"/modular-pricing"}
-      previousProject={"Modular Pricing"}
-      nextProject={"Hydra"}/>
+      <RecommendedProjects
+        nextPath={"/hydra"}
+        previousPath={"/modular-pricing"}
+        previousProject={"Modular Pricing"}
+        nextProject={"Hydra"}
+      />
     </div>
   );
 };

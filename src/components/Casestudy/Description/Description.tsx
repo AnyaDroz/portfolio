@@ -19,27 +19,24 @@ const Description = ({
   companyName,
   projectName,
   description,
-  linkToProject
+  linkToProject,
 }: DescriptionProps) => {
-  
-
-
   return (
     <>
       <Grid>
         <StyledDescriptionContainer>
           <StyledCompanyName>{companyName}</StyledCompanyName>
           <StyledProjectName>{projectName}</StyledProjectName>
-          <StyledDescription>{description}</StyledDescription>  
-          {linkToProject ? <StyledLink>
-    <a
-      href={linkToProject}
-      target="_blank"
-      rel="noreferrer"
-    >
-      Open in Figma ↗︎
-    </a>
-    </StyledLink> : ""}
+          <StyledDescription>{description}</StyledDescription>
+          {linkToProject ? (
+            <StyledLink>
+              <a href={linkToProject} target="_blank" rel="noreferrer">
+                Open in Figma ↗︎
+              </a>
+            </StyledLink>
+          ) : (
+            ""
+          )}
         </StyledDescriptionContainer>
       </Grid>
     </>
